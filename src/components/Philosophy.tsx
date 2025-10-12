@@ -19,9 +19,11 @@ export default function Philosophy() {
           </div>
 
           <div className="flex justify-end items-center gap-4 pt-8 border-t border-slate-200">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white font-bold text-lg">
-              IP
-            </div>
+            <img
+              src="/IGOR_1974x1974.jpg"
+              alt="Igor Palatkevich"
+              className="w-12 h-12 rounded-full object-cover"
+            />
             <div className="text-right">
               <p className="font-semibold text-slate-900">Igor Palatkevich</p>
               <p className="text-sm text-slate-500">CEO, Solution Architect</p>
