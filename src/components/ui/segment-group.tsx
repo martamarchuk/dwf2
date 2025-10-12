@@ -13,14 +13,14 @@ export default function CatalogueSegmentGroup({ value, onValueChange, options }:
         value={value}
         onValueChange={onValueChange}
         orientation="horizontal"
-        className="flex gap-0.5 bg-slate-100 relative p-1 rounded-xl"
+        className="flex gap-1 bg-slate-200 relative p-1.5 rounded-xl shadow-inner"
       >
-        <SegmentGroup.Indicator className="bg-white z-10 rounded-lg shadow-md h-(--height) w-(--width) transition-all duration-300" />
+        <SegmentGroup.Indicator className="bg-gradient-to-br from-orange-500 to-orange-600 z-10 rounded-lg shadow-lg h-(--height) w-(--width) transition-all duration-300" />
         {options.map((option) => (
           <SegmentGroup.Item
             key={option}
             value={option}
-            className="flex flex-1 items-center justify-center select-none cursor-pointer text-sm font-medium px-4 py-3 z-20 text-slate-600 hover:text-slate-900 data-[state=checked]:text-slate-900 data-disabled:cursor-not-allowed data-disabled:opacity-40 transition-colors duration-200"
+            className="flex flex-1 items-center justify-center select-none cursor-pointer text-sm font-semibold px-4 py-3.5 z-20 text-slate-500 hover:text-slate-700 data-[state=checked]:text-white data-disabled:cursor-not-allowed data-disabled:opacity-40 transition-all duration-300"
           >
             <SegmentGroup.ItemText>{option}</SegmentGroup.ItemText>
             <SegmentGroup.ItemControl />
