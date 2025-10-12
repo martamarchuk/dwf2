@@ -15,7 +15,7 @@ export default function CatalogueSegmentGroup({ value, onValueChange, options }:
         orientation="horizontal"
         className="flex gap-1 bg-slate-200 relative p-1.5 rounded-xl shadow-inner"
       >
-        <SegmentGroup.Indicator className="bg-gradient-to-br from-orange-500 to-orange-600 z-10 rounded-lg shadow-lg h-(--height) w-(--width) transition-all duration-300" />
+        <SegmentGroup.Indicator className="bg-orange-500 z-10 rounded-lg shadow-lg h-(--height) w-(--width) transition-all duration-300" />
         {options.map((option) => (
           <SegmentGroup.Item
             key={option}
