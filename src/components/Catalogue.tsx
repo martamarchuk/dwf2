@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
@@ -11,64 +11,16 @@ const CATEGORIES = [
 
 export default function Catalogue() {
   const [selectedCategory, setSelectedCategory] = useState(CATEGORIES[0]);
-  const [isSegmentSticky, setIsSegmentSticky] = useState(false);
-  const [showHeader, setShowHeader] = useState(true);
-  const segmentRef = useRef<HTMLDivElement>(null);
-  const sectionRef = useRef<HTMLElement>(null);
-  const lastScrollY = useRef(0);
-  const headerHeight = 72;
 
   const handleCategoryChange = (details: { value: string }) => {
     setSelectedCategory(details.value);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!segmentRef.current || !sectionRef.current) return;
-
-      const currentScrollY = window.scrollY;
-      const segmentRect = segmentRef.current.getBoundingClientRect();
-      const sectionRect = sectionRef.current.getBoundingClientRect();
-
-      const shouldStick = segmentRect.top <= headerHeight && sectionRect.bottom > headerHeight + 100;
-      setIsSegmentSticky(shouldStick);
-
-      if (shouldStick) {
-        if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-          setShowHeader(false);
-        } else if (currentScrollY < lastScrollY.current) {
-          setShowHeader(true);
-        }
-      } else {
-        setShowHeader(true);
-      }
-
-      lastScrollY.current = currentScrollY;
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const header = document.querySelector('header');
-    if (header) {
-      if (showHeader) {
-        header.style.transform = 'translateY(0)';
-      } else {
-        header.style.transform = 'translateY(-100%)';
-      }
-      header.style.transition = 'transform 0.3s ease-in-out';
-    }
-  }, [showHeader]);
-
   const catalogueItems = getCatalogueItems();
   const filteredItems = catalogueItems.filter(item => item.category === selectedCategory);
 
   return (
-    <section id="catalogue" ref={sectionRef} className="py-24 lg:py-32 bg-gradient-to-br from-blue-50 to-slate-50">
+    <section id="catalogue" className="py-24 lg:py-32 bg-gradient-to-br from-blue-50 to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-4">
@@ -82,27 +34,13 @@ export default function Catalogue() {
           </p>
         </div>
 
-        <div
-          ref={segmentRef}
-          className={`transition-all duration-300 ${
-            isSegmentSticky
-              ? 'fixed left-0 right-0 z-40 bg-gradient-to-br from-blue-50 to-slate-50 py-6 shadow-lg'
-              : 'py-6 mb-6'
-          }`}
-          style={{
-            top: isSegmentSticky ? `${headerHeight}px` : 'auto',
-          }}
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <CatalogueSegmentGroup
-              value={selectedCategory}
-              onValueChange={handleCategoryChange}
-              options={CATEGORIES}
-            />
-          </div>
-        </div>
+        <CatalogueSegmentGroup
+          value={selectedCategory}
+          onValueChange={handleCategoryChange}
+          options={CATEGORIES}
+        />
 
-        <div className={`space-y-8 ${isSegmentSticky ? 'mt-20' : ''}`}>
+        <div className="space-y-8">
           {filteredItems.map((item, index) => (
             <AgentCard key={index} {...item} />
           ))}
