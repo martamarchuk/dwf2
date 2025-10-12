@@ -300,7 +300,7 @@ function AgentCard({
                 <div className="flex items-start gap-3">
                   <Users className="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5" />
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    <span className="text-slate-500 font-semibold">Human role synonym for digital employee:</span>
+                    <span className="text-slate-500 font-semibold">Human role synonym for digital employee</span>
                     <br />
                     {subtitle}
                   </p>
