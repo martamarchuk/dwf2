@@ -12,8 +12,11 @@ const CATEGORIES = [
 export default function Catalogue() {
   const [selectedCategory, setSelectedCategory] = useState(CATEGORIES[0]);
   const [isSegmentSticky, setIsSegmentSticky] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
   const segmentRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
+  const lastScrollY = useRef(0);
+  const headerHeight = 72;
 
   const handleCategoryChange = (details: { value: string }) => {
     setSelectedCategory(details.value);
@@ -23,32 +26,43 @@ export default function Catalogue() {
     const handleScroll = () => {
       if (!segmentRef.current || !sectionRef.current) return;
 
+      const currentScrollY = window.scrollY;
       const segmentRect = segmentRef.current.getBoundingClientRect();
       const sectionRect = sectionRef.current.getBoundingClientRect();
 
-      const shouldStick = segmentRect.top <= 0 && sectionRect.bottom > 100;
+      const shouldStick = segmentRect.top <= headerHeight && sectionRect.bottom > headerHeight + 100;
       setIsSegmentSticky(shouldStick);
 
-      const header = document.querySelector('header');
-      if (header) {
-        if (shouldStick) {
-          header.style.transform = 'translateY(-100%)';
-          header.style.transition = 'transform 0.3s ease-in-out';
-        } else {
-          header.style.transform = 'translateY(0)';
+      if (shouldStick) {
+        if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+          setShowHeader(false);
+        } else if (currentScrollY < lastScrollY.current) {
+          setShowHeader(true);
         }
+      } else {
+        setShowHeader(true);
       }
+
+      lastScrollY.current = currentScrollY;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      const header = document.querySelector('header');
-      if (header) {
-        header.style.transform = 'translateY(0)';
-      }
     };
   }, []);
+
+  useEffect(() => {
+    const header = document.querySelector('header');
+    if (header) {
+      if (showHeader) {
+        header.style.transform = 'translateY(0)';
+      } else {
+        header.style.transform = 'translateY(-100%)';
+      }
+      header.style.transition = 'transform 0.3s ease-in-out';
+    }
+  }, [showHeader]);
 
   const catalogueItems = getCatalogueItems();
   const filteredItems = catalogueItems.filter(item => item.category === selectedCategory);
@@ -72,9 +86,12 @@ export default function Catalogue() {
           ref={segmentRef}
           className={`transition-all duration-300 ${
             isSegmentSticky
-              ? 'fixed top-0 left-0 right-0 z-40 bg-gradient-to-br from-blue-50 to-slate-50 py-6 shadow-lg'
-              : 'mb-12'
+              ? 'fixed left-0 right-0 z-40 bg-gradient-to-br from-blue-50 to-slate-50 py-6 shadow-lg'
+              : 'py-6 mb-6'
           }`}
+          style={{
+            top: isSegmentSticky ? `${headerHeight}px` : 'auto',
+          }}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <CatalogueSegmentGroup
@@ -85,7 +102,7 @@ export default function Catalogue() {
           </div>
         </div>
 
-        <div className={`space-y-8 ${isSegmentSticky ? 'mt-24' : ''}`}>
+        <div className={`space-y-8 ${isSegmentSticky ? 'mt-20' : ''}`}>
           {filteredItems.map((item, index) => (
             <AgentCard key={index} {...item} />
           ))}
