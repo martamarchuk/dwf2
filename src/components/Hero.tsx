@@ -53,7 +53,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative hidden lg:block">
             <div className="relative z-10 bg-white rounded-3xl shadow-2xl p-8 space-y-6">
               <ChatBubble
                 message="Hi! I'm interested in your real estate services"
