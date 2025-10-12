@@ -15,10 +15,10 @@ export default function Header() {
 
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#catalogue" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
-              Solutions
+              Explore AI Employees
             </a>
             <a href="#philosophy" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
-              About
+              About Us
             </a>
             <a href="#cta" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
               Contact
@@ -52,14 +52,14 @@ export default function Header() {
               className="block py-2 text-slate-900 font-medium hover:text-orange-500"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Solutions
+              Explore AI Employees
             </a>
             <a
               href="#philosophy"
               className="block py-2 text-slate-900 font-medium hover:text-orange-500"
               onClick={() => setMobileMenuOpen(false)}
             >
-              About
+              About Us
             </a>
             <a
               href="#cta"
