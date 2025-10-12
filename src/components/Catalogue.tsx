@@ -3,7 +3,7 @@ import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Us
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
-  'Ready-to-use (3)',
+  'Ready-to-use (4)',
   'Case studies (1)',
   'Upcoming AI employyes (1)',
   'Classic automations (1)',
@@ -71,7 +71,7 @@ export default function Catalogue() {
 function getCatalogueItems(): AgentCardProps[] {
   return [
     {
-      category: 'Ready-to-use (3)',
+      category: 'Ready-to-use (4)',
       badge: 'Ready-to-use',
       icon: <MessageSquare className="w-12 h-12" />,
       title: 'Text-based AI Sales Agent for initial client communication',
@@ -90,7 +90,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Ready-to-use (3)',
+      category: 'Ready-to-use (4)',
       badge: 'Ready-to-use',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'Full-cycle AI Sales Agent for e-commerce',
@@ -113,7 +113,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Ready-to-use (3)',
+      category: 'Ready-to-use (4)',
       badge: 'Ready-to-use',
       icon: <Linkedin className="w-12 h-12" />,
       title: 'AI LinkedIn SDR',
@@ -132,6 +132,27 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: '1-2 weeks',
       shareLink: 'https://digitalworkforce.com/#linkedin-sdr',
       imageUrl: 'https://images.pexels.com/photos/5940844/pexels-photo-5940844.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Ready-to-use (4)',
+      badge: 'Ready-to-use',
+      icon: <MessageSquare className="w-12 h-12" />,
+      title: 'Telegram lead catcher from public group chats and initiating conversations qualification AI agent',
+      subtitle: 'Lead Generation & Qualification Specialist',
+      description: 'It scans public group chats, instantly spotting relevant requests and starting conversations with potential clients. It qualifies leads by asking the right questions and passes only warm prospects to your sales team, all while handling multiple chats 24/7.',
+      functions: [
+        'Scans Telegram groups for buyer intent',
+        'Starts and maintains smart conversations automatically',
+        'Qualifies leads through adaptive questions',
+        'Follows up with non-responsive prospects',
+        'Transfers only warm leads to CRM',
+        'Works 24/7 across multiple chats simultaneously',
+      ],
+      channels: ['Telegram', 'CRM'],
+      industries: ['Real Estate', 'Recruiting & HR', 'Digital Marketing Agencies', 'Education & EdTech', 'Fitness & Wellness', 'Travel & Hospitality', 'Finance & Investments'],
+      integrationTime: '1-2 weeks',
+      shareLink: 'https://digitalworkforce.com/#telegram-lead-catcher',
+      imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Case studies (1)',
