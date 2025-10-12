@@ -271,7 +271,7 @@ function AgentCard({
 
   return (
     <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
-      <div className="grid lg:grid-cols-2 gap-8">
+      <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8">
         <div className="p-8 space-y-6">
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-4">
@@ -390,7 +390,7 @@ function AgentCard({
 
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="w-full mt-4 px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold rounded-full transition-colors duration-200 flex items-center justify-center gap-2"
+            className="w-full px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold rounded-full transition-colors duration-200 flex items-center justify-center gap-2"
           >
             {isExpanded ? (
               <>
@@ -406,7 +406,7 @@ function AgentCard({
           </button>
         </div>
 
-        <div className={`relative transition-all duration-500 ${isExpanded ? 'lg:min-h-full' : 'lg:h-80'}`}>
+        <div className="relative min-h-[400px] lg:min-h-full">
           <img
             src={imageUrl}
             alt={title}
