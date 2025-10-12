@@ -3,10 +3,10 @@ import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Us
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
-  '1. Ready-to-use (4)',
-  '2. Case studies (4)',
-  '3. Upcoming AI employyes (6)',
-  '4. Classic automations (4)',
+  'Ready-to-use (4)',
+  'Case studies (4)',
+  'Upcoming AI employyes (6)',
+  'Classic automations (4)',
 ];
 
 export default function Catalogue() {
@@ -71,7 +71,7 @@ export default function Catalogue() {
 function getCatalogueItems(): AgentCardProps[] {
   return [
     {
-      category: '1. Ready-to-use (4)',
+      category: 'Ready-to-use (4)',
       badge: 'Ready-to-use',
       icon: <MessageSquare className="w-12 h-12" />,
       title: 'Text-based AI Sales Agent for initial client communication',
@@ -113,7 +113,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: '2. Case studies (4)',
+      category: 'Case studies (4)',
       badge: 'Case Study',
       icon: <Users className="w-12 h-12" />,
       title: 'AI Customer Support Agent Implementation',
@@ -152,7 +152,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: '3. Upcoming AI employyes (6)',
+      category: 'Upcoming AI employyes (6)',
       badge: 'Coming Soon',
       icon: <Rocket className="w-12 h-12" />,
       title: 'Voice-enabled AI Sales Agent',
@@ -191,7 +191,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: '4. Classic automations (4)',
+      category: 'Classic automations (4)',
       badge: 'Automation',
       icon: <Zap className="w-12 h-12" />,
       title: 'Business Process Automation Suite',
