@@ -1,12 +1,30 @@
-import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap } from 'lucide-react';
+import { useState } from 'react';
+import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket } from 'lucide-react';
+import CatalogueSegmentGroup from '@/components/ui/segment-group';
+
+const CATEGORIES = [
+  'Ready-to-use digital AI employees',
+  'Cases of implementing to business AI employees',
+  'Upcoming digital employees',
+  'Classic automation and products to boost business',
+];
 
 export default function Catalogue() {
+  const [selectedCategory, setSelectedCategory] = useState(CATEGORIES[0]);
+
+  const handleCategoryChange = (details: { value: string }) => {
+    setSelectedCategory(details.value);
+  };
+
+  const catalogueItems = getCatalogueItems();
+  const filteredItems = catalogueItems.filter(item => item.category === selectedCategory);
+
   return (
     <section id="catalogue" className="py-24 lg:py-32 bg-gradient-to-br from-blue-50 to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-4">
-            Ready-to-use Solutions
+            Complete Solutions
           </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
             AI Employees Catalogue
@@ -16,48 +34,16 @@ export default function Catalogue() {
           </p>
         </div>
 
-        <div className="space-y-8">
-          <AgentCard
-            badge="Ready-to-use"
-            icon={<MessageSquare className="w-12 h-12" />}
-            title="Text-based AI Sales Agent for initial client communication"
-            subtitle="Inbound Sales Representative (ISR) or Sales Qualification Representative (SQR)"
-            description="Handle initial conversations incoming to the business and initiate outgoing conversations with new clients as a response on filled website form or leads generated during marketing campaigns."
-            functions={[
-              'Responds instantly to all incoming messages',
-              'Replies in the same language as the client',
-              'Provides product or services consultation and checks product availability',
-              'Guides potential clients to the target action: booking a meeting, making a purchase, or requesting a quote',
-            ]}
-            channels={['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM', 'CRM']}
-            industries={['Real Estate', 'Hospitality', 'Travel', 'Wellness & Fitness', 'Healthcare & Clinics']}
-            integrationTime="1-3 weeks"
-            shareLink="https://digitalworkforce.com/#ai-sales-agent-for-incoming-comminication"
-            imageUrl="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800"
-          />
+        <CatalogueSegmentGroup
+          value={selectedCategory}
+          onValueChange={handleCategoryChange}
+          options={CATEGORIES}
+        />
 
-          <AgentCard
-            badge="Ready-to-use"
-            icon={<ShoppingCart className="w-12 h-12" />}
-            title="Full-cycle AI Sales Agent for e-commerce"
-            subtitle="In-house shop consultant and top sales agent"
-            description="A fully independent, full-cycle, text-based AI Sales Agent designed for e-commerce stores like Shopify. It's like having an in-house sales consultant who never misses a lead 24/7/365 in any language."
-            functions={[
-              'Responds instantly to all incoming messages from clients',
-              'Engages and consults customers about your products',
-              'Assists shoppers in choosing the right items',
-              'Invites them to place an order and creates orders',
-              'Handles the entire checkout process, including delivery details',
-              'Issues invoices automatically and provides payment links',
-              'Follows up with customers at every stage to close the deal',
-            ]}
-            channels={['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM']}
-            platforms={['Shopify', 'WooCommerce', 'Ecwid']}
-            industries={['E-commerce & Retail']}
-            integrationTime="2-4 weeks"
-            shareLink="https://digitalworkforce.com/#ai-sales-agent-for-incoming-comminication"
-            imageUrl="https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=800"
-          />
+        <div className="space-y-8">
+          {filteredItems.map((item, index) => (
+            <AgentCard key={index} {...item} />
+          ))}
         </div>
 
         <div className="mt-16 p-8 bg-white rounded-2xl shadow-lg border border-slate-200">
@@ -82,7 +68,173 @@ export default function Catalogue() {
   );
 }
 
+function getCatalogueItems(): AgentCardProps[] {
+  return [
+    {
+      category: 'Ready-to-use digital AI employees',
+      badge: 'Ready-to-use',
+      icon: <MessageSquare className="w-12 h-12" />,
+      title: 'Text-based AI Sales Agent for initial client communication',
+      subtitle: 'Inbound Sales Representative (ISR) or Sales Qualification Representative (SQR)',
+      description: 'Handle initial conversations incoming to the business and initiate outgoing conversations with new clients as a response on filled website form or leads generated during marketing campaigns.',
+      functions: [
+        'Responds instantly to all incoming messages',
+        'Replies in the same language as the client',
+        'Provides product or services consultation and checks product availability',
+        'Guides potential clients to the target action: booking a meeting, making a purchase, or requesting a quote',
+      ],
+      channels: ['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM', 'CRM'],
+      industries: ['Real Estate', 'Hospitality', 'Travel', 'Wellness & Fitness', 'Healthcare & Clinics'],
+      integrationTime: '1-3 weeks',
+      shareLink: 'https://digitalworkforce.com/#ai-sales-agent-for-incoming-comminication',
+      imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Ready-to-use digital AI employees',
+      badge: 'Ready-to-use',
+      icon: <ShoppingCart className="w-12 h-12" />,
+      title: 'Full-cycle AI Sales Agent for e-commerce',
+      subtitle: 'In-house shop consultant and top sales agent',
+      description: 'A fully independent, full-cycle, text-based AI Sales Agent designed for e-commerce stores like Shopify. It\'s like having an in-house sales consultant who never misses a lead 24/7/365 in any language.',
+      functions: [
+        'Responds instantly to all incoming messages from clients',
+        'Engages and consults customers about your products',
+        'Assists shoppers in choosing the right items',
+        'Invites them to place an order and creates orders',
+        'Handles the entire checkout process, including delivery details',
+        'Issues invoices automatically and provides payment links',
+        'Follows up with customers at every stage to close the deal',
+      ],
+      channels: ['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM'],
+      platforms: ['Shopify', 'WooCommerce', 'Ecwid'],
+      industries: ['E-commerce & Retail'],
+      integrationTime: '2-4 weeks',
+      shareLink: 'https://digitalworkforce.com/#ai-sales-agent-for-incoming-comminication',
+      imageUrl: 'https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Cases of implementing to business AI employees',
+      badge: 'Case Study',
+      icon: <Users className="w-12 h-12" />,
+      title: 'AI Customer Support Agent Implementation',
+      subtitle: 'Real-world business transformation',
+      description: 'See how businesses have successfully implemented AI sales agents to handle customer inquiries, qualification, and support at scale, reducing response times by 90% while maintaining high customer satisfaction.',
+      functions: [
+        'Handles 1000+ customer conversations simultaneously',
+        'Reduced customer wait time from hours to seconds',
+        'Increased lead qualification rate by 65%',
+        'Maintains 24/7 availability across all channels',
+      ],
+      channels: ['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM', 'CRM'],
+      industries: ['Real Estate', 'Hospitality', 'Travel', 'Wellness & Fitness', 'Healthcare & Clinics'],
+      integrationTime: '3-5 weeks',
+      shareLink: 'https://digitalworkforce.com/#case-study-customer-support',
+      imageUrl: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Cases of implementing to business AI employees',
+      badge: 'Case Study',
+      icon: <Briefcase className="w-12 h-12" />,
+      title: 'E-commerce Sales Automation Success Story',
+      subtitle: 'Doubling conversion rates with AI',
+      description: 'Discover how online retailers transformed their sales process with full-cycle AI agents that guide customers from browsing to checkout, resulting in doubled conversion rates and 3x revenue growth.',
+      functions: [
+        'Personalized product recommendations for each customer',
+        'Automated entire sales funnel from discovery to payment',
+        'Reduced cart abandonment by 70%',
+        'Handles multi-language customer inquiries automatically',
+      ],
+      channels: ['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM'],
+      platforms: ['Shopify', 'WooCommerce', 'Ecwid'],
+      industries: ['E-commerce & Retail'],
+      integrationTime: '4-6 weeks',
+      shareLink: 'https://digitalworkforce.com/#case-study-ecommerce',
+      imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Upcoming digital employees',
+      badge: 'Coming Soon',
+      icon: <Rocket className="w-12 h-12" />,
+      title: 'Voice-enabled AI Sales Agent',
+      subtitle: 'Next generation conversational AI',
+      description: 'Our upcoming voice-enabled AI agent will handle phone calls, voice messages, and voice-based customer interactions with natural, human-like conversations in multiple languages.',
+      functions: [
+        'Natural voice conversations with customers',
+        'Handles inbound and outbound calls automatically',
+        'Real-time language translation during calls',
+        'Seamless integration with existing phone systems',
+      ],
+      channels: ['Phone calls', 'Voice messages', 'WhatsApp voice', 'Telegram voice'],
+      industries: ['Real Estate', 'Hospitality', 'Travel', 'Healthcare & Clinics', 'Financial Services'],
+      integrationTime: 'Q2 2026',
+      shareLink: 'https://digitalworkforce.com/#voice-ai-agent',
+      imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Upcoming digital employees',
+      badge: 'Coming Soon',
+      icon: <Globe className="w-12 h-12" />,
+      title: 'AI Video Sales Representative',
+      subtitle: 'Face-to-face digital employee',
+      description: 'Experience the future with our AI-powered video sales representative that conducts face-to-face video consultations, product demonstrations, and personalized sales presentations.',
+      functions: [
+        'Conducts video calls with realistic AI avatar',
+        'Personalized product demonstrations',
+        'Real-time facial expression and emotion recognition',
+        'Screen sharing for detailed product walkthroughs',
+      ],
+      channels: ['Video calls', 'Website video chat', 'Zoom integration', 'Teams integration'],
+      platforms: ['Zoom', 'Microsoft Teams', 'Google Meet'],
+      industries: ['E-commerce & Retail', 'Real Estate', 'Financial Services', 'B2B Services'],
+      integrationTime: 'Q3 2026',
+      shareLink: 'https://digitalworkforce.com/#video-ai-agent',
+      imageUrl: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Classic automation and products to boost business',
+      badge: 'Automation',
+      icon: <Zap className="w-12 h-12" />,
+      title: 'Business Process Automation Suite',
+      subtitle: 'Streamline operations without AI',
+      description: 'Classic automation tools that integrate with your existing systems to automate repetitive tasks, data entry, reporting, and workflow management without requiring AI implementation.',
+      functions: [
+        'Automated data entry and processing',
+        'Scheduled report generation and distribution',
+        'Workflow automation across multiple platforms',
+        'Integration with CRM, ERP, and other business tools',
+      ],
+      channels: ['Email', 'Slack', 'Microsoft Teams', 'CRM systems'],
+      platforms: ['Zapier', 'Make', 'N8n', 'Custom integrations'],
+      industries: ['All Industries'],
+      integrationTime: '1-2 weeks',
+      shareLink: 'https://digitalworkforce.com/#automation-suite',
+      imageUrl: 'https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Classic automation and products to boost business',
+      badge: 'Automation',
+      icon: <CheckCircle className="w-12 h-12" />,
+      title: 'Lead Management & Tracking System',
+      subtitle: 'Never lose a lead again',
+      description: 'Comprehensive lead management system that captures, tracks, and nurtures leads from multiple sources, with automated follow-ups and detailed analytics to boost your sales pipeline.',
+      functions: [
+        'Automatic lead capture from all channels',
+        'Lead scoring and prioritization',
+        'Automated follow-up sequences',
+        'Detailed analytics and reporting dashboard',
+      ],
+      channels: ['Website forms', 'Email', 'Social media', 'CRM integration'],
+      platforms: ['HubSpot', 'Salesforce', 'Pipedrive', 'Custom CRM'],
+      industries: ['All Industries'],
+      integrationTime: '2-3 weeks',
+      shareLink: 'https://digitalworkforce.com/#lead-management',
+      imageUrl: 'https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+  ];
+}
+
 interface AgentCardProps {
+  category: string;
   badge: string;
   icon: React.ReactNode;
   title: string;
