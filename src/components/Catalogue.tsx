@@ -3,7 +3,7 @@ import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Us
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
-  'Ready-to-use (4)',
+  'Ready-to-use (5)',
   'Case studies (4)',
   'Upcoming AI employyes (6)',
   'Classic automations (4)',
@@ -71,7 +71,7 @@ export default function Catalogue() {
 function getCatalogueItems(): AgentCardProps[] {
   return [
     {
-      category: 'Ready-to-use (4)',
+      category: 'Ready-to-use (5)',
       badge: 'Ready-to-use',
       icon: <MessageSquare className="w-12 h-12" />,
       title: 'Text-based AI Sales Agent for initial client communication',
@@ -90,27 +90,27 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Ready-to-use digital AI employees',
+      category: 'Ready-to-use (5)',
       badge: 'Ready-to-use',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'Full-cycle AI Sales Agent for e-commerce',
       subtitle: 'In-house shop consultant and top sales agent',
-      description: 'A fully independent, full-cycle, text-based AI Sales Agent designed for e-commerce stores like Shopify. It\'s like having an in-house sales consultant who never misses a lead 24/7/365 in any language.',
+      description: 'A fully independent, full-cycle, text-based AI Sales Agent designed for e-commerce stores like Shopify in any DM or website chat.',
       functions: [
-        'Responds instantly to all incoming messages from clients',
+        'Responds instantly to all incoming messages from clients on any DM, WhatsApp or website chat',
         'Engages and consults customers about your products',
         'Assists shoppers in choosing the right items',
-        'Invites them to place an order and creates orders',
-        'Handles the entire checkout process, including delivery details',
-        'Issues invoices automatically and provides payment links',
-        'Follows up with customers at every stage to close the deal',
+        'Invites them to place an order',
+        'Creates orders and handles the entire checkout process, including delivery details',
+        'Issues invoices automatically and providing payment links',
+        'Follows-up with customers at every stage of the sales funnel to close the deal',
       ],
       channels: ['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM'],
       platforms: ['Shopify', 'WooCommerce', 'Ecwid'],
       industries: ['E-commerce & Retail'],
-      integrationTime: '2-4 weeks',
-      shareLink: 'https://digitalworkforce.com/#ai-sales-agent-for-incoming-comminication',
-      imageUrl: 'https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=800',
+      integrationTime: '1-3 weeks',
+      shareLink: 'https://digitalworkforce.com/#full-cycle-ecommerce-agent',
+      imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Case studies (4)',
@@ -132,7 +132,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Cases of implementing to business AI employees',
+      category: 'Case studies (4)',
       badge: 'Case Study',
       icon: <Briefcase className="w-12 h-12" />,
       title: 'E-commerce Sales Automation Success Story',
@@ -171,7 +171,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming digital employees',
+      category: 'Upcoming AI employyes (6)',
       badge: 'Coming Soon',
       icon: <Globe className="w-12 h-12" />,
       title: 'AI Video Sales Representative',
@@ -211,7 +211,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Classic automation and products to boost business',
+      category: 'Classic automations (4)',
       badge: 'Automation',
       icon: <CheckCircle className="w-12 h-12" />,
       title: 'Lead Management & Tracking System',
