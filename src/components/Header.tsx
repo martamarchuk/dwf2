@@ -8,7 +8,8 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
+            <img src="/image (1).png" alt="Digital Workforce Logo" className="h-10 w-10" />
             <span className="text-2xl font-bold text-slate-900">Digital Workforce</span>
           </div>
 
