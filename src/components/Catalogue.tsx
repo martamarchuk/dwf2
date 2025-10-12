@@ -71,7 +71,7 @@ export default function Catalogue() {
 function getCatalogueItems(): AgentCardProps[] {
   return [
     {
-      category: 'Ready-to-use digital AI employees',
+      category: 'Ready-to-use',
       badge: 'Ready-to-use',
       icon: <MessageSquare className="w-12 h-12" />,
       title: 'Text-based AI Sales Agent for initial client communication',
@@ -113,7 +113,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Cases of implementing to business AI employees',
+      category: 'Case studies',
       badge: 'Case Study',
       icon: <Users className="w-12 h-12" />,
       title: 'AI Customer Support Agent Implementation',
@@ -152,7 +152,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming digital employees',
+      category: 'Upcoming AI employyes',
       badge: 'Coming Soon',
       icon: <Rocket className="w-12 h-12" />,
       title: 'Voice-enabled AI Sales Agent',
@@ -191,7 +191,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Classic automation and products to boost business',
+      category: 'Classic automation',
       badge: 'Automation',
       icon: <Zap className="w-12 h-12" />,
       title: 'Business Process Automation Suite',
