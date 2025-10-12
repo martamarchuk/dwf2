@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp } from 'lucide-react';
+import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
-  'Ready-to-use (2)',
+  'Ready-to-use (3)',
   'Case studies (1)',
   'Upcoming AI employyes (1)',
   'Classic automations (1)',
@@ -71,7 +71,7 @@ export default function Catalogue() {
 function getCatalogueItems(): AgentCardProps[] {
   return [
     {
-      category: 'Ready-to-use (2)',
+      category: 'Ready-to-use (3)',
       badge: 'Ready-to-use',
       icon: <MessageSquare className="w-12 h-12" />,
       title: 'Text-based AI Sales Agent for initial client communication',
@@ -90,7 +90,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Ready-to-use (2)',
+      category: 'Ready-to-use (3)',
       badge: 'Ready-to-use',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'Full-cycle AI Sales Agent for e-commerce',
@@ -111,6 +111,27 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: '1-3 weeks',
       shareLink: 'https://digitalworkforce.com/#full-cycle-ecommerce-agent',
       imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Ready-to-use (3)',
+      badge: 'Ready-to-use',
+      icon: <Linkedin className="w-12 h-12" />,
+      title: 'AI LinkedIn SDR',
+      subtitle: 'Sales Development Representative',
+      description: 'AI LinkedIn SDR finds and engages target clients on LinkedIn, automatically initiating contact and handling conversations from the first message to qualification. It manages dozens of conversations simultaneously, responds instantly, and is available 24/7.',
+      functions: [
+        'Finds profiles',
+        'Filters whom to contact',
+        'Creates and sends connection requests',
+        'Creates and sends follow-up sequences',
+        'Carries the conversation',
+        'Books meetings directly into your calendar',
+      ],
+      channels: ['LinkedIn', 'Calendly', 'Google Calendar', 'CRM'],
+      industries: ['IT & Software (SaaS, startups, B2B software)', 'Marketing & Digital Agencies', 'Consulting & Training', 'Financial Services', 'Recruiting & HR Tech', 'Real Estate', 'Medical Technology & Supplies', 'Manufacturing & Distribution', 'Logistics & Transportation', 'Education & EdTech'],
+      integrationTime: '1-2 weeks',
+      shareLink: 'https://digitalworkforce.com/#linkedin-sdr',
+      imageUrl: 'https://images.pexels.com/photos/5940844/pexels-photo-5940844.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Case studies (1)',
