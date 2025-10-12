@@ -34,7 +34,7 @@ export default function Catalogue() {
           </p>
         </div>
 
-        <div className="sticky top-0 z-40 py-6 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 bg-gradient-to-br from-blue-50 to-slate-50">
+        <div className="sticky top-20 z-30 py-6 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 bg-gradient-to-br from-blue-50 to-slate-50">
           <CatalogueSegmentGroup
             value={selectedCategory}
             onValueChange={handleCategoryChange}
