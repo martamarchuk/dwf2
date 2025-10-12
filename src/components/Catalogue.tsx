@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
@@ -11,16 +11,50 @@ const CATEGORIES = [
 
 export default function Catalogue() {
   const [selectedCategory, setSelectedCategory] = useState(CATEGORIES[0]);
+  const [isSegmentSticky, setIsSegmentSticky] = useState(false);
+  const segmentRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const handleCategoryChange = (details: { value: string }) => {
     setSelectedCategory(details.value);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!segmentRef.current || !sectionRef.current) return;
+
+      const segmentRect = segmentRef.current.getBoundingClientRect();
+      const sectionRect = sectionRef.current.getBoundingClientRect();
+
+      const shouldStick = segmentRect.top <= 0 && sectionRect.bottom > 100;
+      setIsSegmentSticky(shouldStick);
+
+      const header = document.querySelector('header');
+      if (header) {
+        if (shouldStick) {
+          header.style.transform = 'translateY(-100%)';
+          header.style.transition = 'transform 0.3s ease-in-out';
+        } else {
+          header.style.transform = 'translateY(0)';
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      const header = document.querySelector('header');
+      if (header) {
+        header.style.transform = 'translateY(0)';
+      }
+    };
+  }, []);
+
   const catalogueItems = getCatalogueItems();
   const filteredItems = catalogueItems.filter(item => item.category === selectedCategory);
 
   return (
-    <section id="catalogue" className="py-24 lg:py-32 bg-gradient-to-br from-blue-50 to-slate-50">
+    <section id="catalogue" ref={sectionRef} className="py-24 lg:py-32 bg-gradient-to-br from-blue-50 to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-4">
@@ -34,13 +68,24 @@ export default function Catalogue() {
           </p>
         </div>
 
-        <CatalogueSegmentGroup
-          value={selectedCategory}
-          onValueChange={handleCategoryChange}
-          options={CATEGORIES}
-        />
+        <div
+          ref={segmentRef}
+          className={`transition-all duration-300 ${
+            isSegmentSticky
+              ? 'fixed top-0 left-0 right-0 z-40 bg-gradient-to-br from-blue-50 to-slate-50 py-6 shadow-lg'
+              : 'mb-12'
+          }`}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <CatalogueSegmentGroup
+              value={selectedCategory}
+              onValueChange={handleCategoryChange}
+              options={CATEGORIES}
+            />
+          </div>
+        </div>
 
-        <div className="space-y-8">
+        <div className={`space-y-8 ${isSegmentSticky ? 'mt-24' : ''}`}>
           {filteredItems.map((item, index) => (
             <AgentCard key={index} {...item} />
           ))}
