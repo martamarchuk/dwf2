@@ -3,10 +3,10 @@ import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Us
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
-  'Ready-to-use (5)',
-  'Case studies (4)',
-  'Upcoming AI employyes (6)',
-  'Classic automations (4)',
+  'Ready-to-use (2)',
+  'Case studies (1)',
+  'Upcoming AI employyes (1)',
+  'Classic automations (1)',
 ];
 
 export default function Catalogue() {
@@ -71,7 +71,7 @@ export default function Catalogue() {
 function getCatalogueItems(): AgentCardProps[] {
   return [
     {
-      category: 'Ready-to-use (5)',
+      category: 'Ready-to-use (2)',
       badge: 'Ready-to-use',
       icon: <MessageSquare className="w-12 h-12" />,
       title: 'Text-based AI Sales Agent for initial client communication',
@@ -90,7 +90,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Ready-to-use (5)',
+      category: 'Ready-to-use (2)',
       badge: 'Ready-to-use',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'Full-cycle AI Sales Agent for e-commerce',
@@ -113,7 +113,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (4)',
+      category: 'Case studies (1)',
       badge: 'Case Study',
       icon: <Users className="w-12 h-12" />,
       title: 'AI Customer Support Agent Implementation',
@@ -132,27 +132,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (4)',
-      badge: 'Case Study',
-      icon: <Briefcase className="w-12 h-12" />,
-      title: 'E-commerce Sales Automation Success Story',
-      subtitle: 'Doubling conversion rates with AI',
-      description: 'Discover how online retailers transformed their sales process with full-cycle AI agents that guide customers from browsing to checkout, resulting in doubled conversion rates and 3x revenue growth.',
-      functions: [
-        'Personalized product recommendations for each customer',
-        'Automated entire sales funnel from discovery to payment',
-        'Reduced cart abandonment by 70%',
-        'Handles multi-language customer inquiries automatically',
-      ],
-      channels: ['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM'],
-      platforms: ['Shopify', 'WooCommerce', 'Ecwid'],
-      industries: ['E-commerce & Retail'],
-      integrationTime: '4-6 weeks',
-      shareLink: 'https://digitalworkforce.com/#case-study-ecommerce',
-      imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
-    },
-    {
-      category: 'Upcoming AI employyes (6)',
+      category: 'Upcoming AI employyes (1)',
       badge: 'Coming Soon',
       icon: <Rocket className="w-12 h-12" />,
       title: 'Voice-enabled AI Sales Agent',
@@ -171,27 +151,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employyes (6)',
-      badge: 'Coming Soon',
-      icon: <Globe className="w-12 h-12" />,
-      title: 'AI Video Sales Representative',
-      subtitle: 'Face-to-face digital employee',
-      description: 'Experience the future with our AI-powered video sales representative that conducts face-to-face video consultations, product demonstrations, and personalized sales presentations.',
-      functions: [
-        'Conducts video calls with realistic AI avatar',
-        'Personalized product demonstrations',
-        'Real-time facial expression and emotion recognition',
-        'Screen sharing for detailed product walkthroughs',
-      ],
-      channels: ['Video calls', 'Website video chat', 'Zoom integration', 'Teams integration'],
-      platforms: ['Zoom', 'Microsoft Teams', 'Google Meet'],
-      industries: ['E-commerce & Retail', 'Real Estate', 'Financial Services', 'B2B Services'],
-      integrationTime: 'Q3 2026',
-      shareLink: 'https://digitalworkforce.com/#video-ai-agent',
-      imageUrl: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800',
-    },
-    {
-      category: 'Classic automations (4)',
+      category: 'Classic automations (1)',
       badge: 'Automation',
       icon: <Zap className="w-12 h-12" />,
       title: 'Business Process Automation Suite',
@@ -209,26 +169,6 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: '1-2 weeks',
       shareLink: 'https://digitalworkforce.com/#automation-suite',
       imageUrl: 'https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&w=800',
-    },
-    {
-      category: 'Classic automations (4)',
-      badge: 'Automation',
-      icon: <CheckCircle className="w-12 h-12" />,
-      title: 'Lead Management & Tracking System',
-      subtitle: 'Never lose a lead again',
-      description: 'Comprehensive lead management system that captures, tracks, and nurtures leads from multiple sources, with automated follow-ups and detailed analytics to boost your sales pipeline.',
-      functions: [
-        'Automatic lead capture from all channels',
-        'Lead scoring and prioritization',
-        'Automated follow-up sequences',
-        'Detailed analytics and reporting dashboard',
-      ],
-      channels: ['Website forms', 'Email', 'Social media', 'CRM integration'],
-      platforms: ['HubSpot', 'Salesforce', 'Pipedrive', 'Custom CRM'],
-      industries: ['All Industries'],
-      integrationTime: '2-3 weeks',
-      shareLink: 'https://digitalworkforce.com/#lead-management',
-      imageUrl: 'https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
   ];
 }
