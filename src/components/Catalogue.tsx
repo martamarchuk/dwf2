@@ -3,10 +3,10 @@ import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Us
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
-  'Ready-to-use digital AI employees',
-  'Cases of implementing to business AI employees',
-  'Upcoming digital employees',
-  'Classic automation and products to boost business',
+  'Ready-to-use',
+  'Case studies',
+  'Upcoming AI employyes',
+  'Classic automation',
 ];
 
 export default function Catalogue() {
