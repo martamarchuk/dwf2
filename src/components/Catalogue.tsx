@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket } from 'lucide-react';
+import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
@@ -263,6 +263,8 @@ function AgentCard({
   shareLink,
   imageUrl,
 }: AgentCardProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   const handleShare = () => {
     navigator.clipboard.writeText(shareLink);
   };
@@ -290,101 +292,125 @@ function AgentCard({
             <p className="text-slate-600 leading-relaxed">{description}</p>
           </div>
 
-          <div>
-            <h4 className="text-sm font-semibold text-slate-900 mb-3 flex items-center gap-2">
-              <Zap className="w-4 h-4 text-orange-500" />
-              Digital Employee Functions
-            </h4>
-            <ul className="space-y-2">
-              {functions.map((func, index) => (
-                <li key={index} className="flex items-start gap-2 text-sm text-slate-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span>{func}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="pt-6 border-t border-slate-200 space-y-4">
-            <div>
-              <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
-                Digital Habitat
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {channels.map((channel, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full border border-blue-200"
-                  >
-                    {channel}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {platforms && (
+          <div
+            className="overflow-hidden transition-all duration-500 ease-in-out"
+            style={{ maxHeight: isExpanded ? '2000px' : '0px' }}
+          >
+            <div className="space-y-6">
               <div>
-                <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
-                  E-commerce Platforms
+                <h4 className="text-sm font-semibold text-slate-900 mb-3 flex items-center gap-2">
+                  <Zap className="w-4 h-4 text-orange-500" />
+                  Digital Employee Functions
                 </h4>
-                <div className="flex flex-wrap gap-2">
-                  {platforms.map((platform, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full border border-slate-300"
-                    >
-                      {platform}
-                    </span>
+                <ul className="space-y-2">
+                  {functions.map((func, index) => (
+                    <li key={index} className="flex items-start gap-2 text-sm text-slate-600">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>{func}</span>
+                    </li>
                   ))}
+                </ul>
+              </div>
+
+              <div className="pt-6 border-t border-slate-200 space-y-4">
+                <div>
+                  <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
+                    Digital Habitat
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {channels.map((channel, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full border border-blue-200"
+                      >
+                        {channel}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {platforms && (
+                  <div>
+                    <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
+                      E-commerce Platforms
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {platforms.map((platform, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full border border-slate-300"
+                        >
+                          {platform}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <div>
+                  <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
+                    Applicable Industries
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {industries.map((industry, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-slate-50 text-slate-700 text-xs font-medium rounded-full border border-slate-200"
+                      >
+                        {industry}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            )}
 
-            <div>
-              <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
-                Applicable Industries
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {industries.map((industry, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 bg-slate-50 text-slate-700 text-xs font-medium rounded-full border border-slate-200"
+              <div className="pt-6 border-t border-slate-200 flex items-center justify-between">
+                <div className="flex items-center gap-2 text-slate-600">
+                  <Clock className="w-4 h-4" />
+                  <span className="text-sm font-medium">{integrationTime}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={handleShare}
+                    className="p-2 text-slate-400 hover:text-orange-500 transition-colors duration-200"
+                    aria-label="Share link"
                   >
-                    {industry}
-                  </span>
-                ))}
+                    <Share2 className="w-5 h-5" />
+                  </button>
+                  <a
+                    href="#cta"
+                    className="px-6 py-2.5 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-md hover:shadow-lg"
+                  >
+                    Book a Demo
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="pt-6 border-t border-slate-200 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-slate-600">
-              <Clock className="w-4 h-4" />
-              <span className="text-sm font-medium">{integrationTime}</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <button
-                onClick={handleShare}
-                className="p-2 text-slate-400 hover:text-orange-500 transition-colors duration-200"
-                aria-label="Share link"
-              >
-                <Share2 className="w-5 h-5" />
-              </button>
-              <a
-                href="#cta"
-                className="px-6 py-2.5 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-md hover:shadow-lg"
-              >
-                Book a Demo
-              </a>
-            </div>
-          </div>
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="w-full mt-4 px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold rounded-full transition-colors duration-200 flex items-center justify-center gap-2"
+          >
+            {isExpanded ? (
+              <>
+                Show less
+                <ChevronUp className="w-5 h-5" />
+              </>
+            ) : (
+              <>
+                Read more
+                <ChevronDown className="w-5 h-5" />
+              </>
+            )}
+          </button>
         </div>
 
-        <div className="relative lg:min-h-full">
+        <div className={`relative transition-all duration-500 ${isExpanded ? 'lg:min-h-full' : 'lg:h-80'}`}>
           <img
             src={imageUrl}
             alt={title}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover transition-all duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
         </div>
