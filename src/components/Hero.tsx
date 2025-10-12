@@ -51,17 +51,6 @@ export default function Hero() {
                 Explore AI Employees
               </a>
             </div>
-
-            <div className="pt-8 border-t border-slate-200">
-              <p className="text-sm text-slate-500 mb-4">Integrates with your channels</p>
-              <div className="flex flex-wrap gap-6 items-center">
-                <ChannelBadge icon={<MessageSquare />} label="WhatsApp" />
-                <ChannelBadge icon={<Send />} label="Telegram" />
-                <ChannelBadge icon={<Globe />} label="Website Chat" />
-                <ChannelBadge icon={<MessageSquare />} label="Instagram" />
-                <ChannelBadge icon={<MessageSquare />} label="Facebook" />
-              </div>
-            </div>
           </div>
 
           <div className="relative">
