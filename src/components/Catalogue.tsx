@@ -285,10 +285,9 @@ function AgentCard({
           </div>
 
           <div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2 leading-tight">
+            <h3 className="text-xl font-bold text-slate-900 mb-4 leading-tight">
               {title}
             </h3>
-            <p className="text-sm text-slate-500 font-medium mb-4">{subtitle}</p>
             <p className="text-slate-600 leading-relaxed">{description}</p>
           </div>
 
@@ -297,6 +296,14 @@ function AgentCard({
             style={{ maxHeight: isExpanded ? '2000px' : '0px' }}
           >
             <div className="space-y-6">
+              <div className="pt-4 border-t border-slate-200">
+                <p className="text-sm text-slate-700 font-medium leading-relaxed">
+                  <span className="text-slate-500 font-semibold">Human role synonym for digital employee:</span>
+                  <br />
+                  {subtitle}
+                </p>
+              </div>
+
               <div>
                 <h4 className="text-sm font-semibold text-slate-900 mb-3 flex items-center gap-2">
                   <Zap className="w-4 h-4 text-orange-500" />
