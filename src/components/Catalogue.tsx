@@ -52,7 +52,7 @@ export default function Catalogue() {
               Need a custom solution?
             </h3>
             <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
-              We specialize in building custom AI employees to increase sales and lower your operating costs
+              We specialize in building custom AI employees to increase sales and lower operating costs
             </p>
             <a
               href="#cta"
