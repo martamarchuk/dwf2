@@ -34,7 +34,7 @@ export default function CTASection() {
               See it working for your business in 1–4 weeks
             </h2>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Let's discuss how Digital Workforce can transform your business operations with custom AI employees tailored to your needs.
+              Let's discuss how Digital Workforce can transform your business operations with custom AI employees tailored to your needs
             </p>
 
             <div className="space-y-4 pt-4">
