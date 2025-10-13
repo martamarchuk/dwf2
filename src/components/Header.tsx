@@ -8,10 +8,10 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
-          <div className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-200">
             <img src="/logo 4_transparent_bg.png" alt="Digital Workforce Logo" className="h-10 w-auto" />
             <span className="text-2xl font-bold text-slate-900">Digital Workforce</span>
-          </div>
+          </a>
 
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#philosophy" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
