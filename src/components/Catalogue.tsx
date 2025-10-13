@@ -52,14 +52,13 @@ export default function Catalogue() {
               Need a custom solution?
             </h3>
             <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
-              We specialize in building tailored AI employees for your specific business needs.
-              Non-AI automations and products available to boost your business
+              We specialize in building custom AI employees to increase sales and lower your operating costs
             </p>
             <a
               href="#cta"
               className="inline-flex items-center px-8 py-4 bg-slate-900 text-white font-semibold rounded-full hover:bg-slate-800 transition-colors duration-200"
             >
-              Contact Us
+              Let’s Make It Real
             </a>
           </div>
         </div>
