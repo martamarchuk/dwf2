@@ -183,7 +183,7 @@ function getCatalogueItems(): AgentCardProps[] {
       badge: 'Case Study',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
-      subtitle: 'E-commerce transformation with full-cycle AI Sales Agent',
+      subtitle: 'Senior Sales Representative, Account Executive, Deal Closer',
       description: 'How a fully independent, full-cycle, text-based AI Sales Agent increased sales for the Shopify store MoldyFun by automating incoming inquiries and guiding customers through to purchase.',
       functions: [
         'Response time to clients dropped from several hours to instant 24/7',
