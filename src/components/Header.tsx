@@ -18,7 +18,7 @@ export default function Header() {
               Explore AI Employees
             </a>
             <a href="#philosophy" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
-              About Us
+              How We Think
             </a>
             <a href="#cta" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
               Contact
@@ -59,7 +59,7 @@ export default function Header() {
               className="block py-2 text-slate-900 font-medium hover:text-orange-500"
               onClick={() => setMobileMenuOpen(false)}
             >
-              About Us
+              How We Think
             </a>
             <a
               href="#cta"
