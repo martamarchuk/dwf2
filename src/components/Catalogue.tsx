@@ -4,7 +4,7 @@ import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
   'Ready-to-use (4)',
-  'Case studies (3)',
+  'Case studies (2)',
   'Upcoming AI employyes (1)',
   'Classic automations (1)',
 ];
@@ -155,7 +155,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (3)',
+      category: 'Case studies (2)',
       badge: 'Case Study',
       icon: <Briefcase className="w-12 h-12" />,
       title: 'Dubai Real Estate Agency: AI Sales Agent took over lead qualification and meeting scheduling',
@@ -179,7 +179,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (3)',
+      category: 'Case studies (2)',
       badge: 'Case Study',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
@@ -200,25 +200,6 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: '2-3 weeks',
       shareLink: 'https://digitalworkforce.one/#case-study-moldyfun',
       imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
-    },
-    {
-      category: 'Case studies (3)',
-      badge: 'Case Study',
-      icon: <Users className="w-12 h-12" />,
-      title: 'AI Customer Support Agent Implementation',
-      subtitle: 'Real-world business transformation',
-      description: 'See how businesses have successfully implemented AI sales agents to handle customer inquiries, qualification, and support at scale, reducing response times by 90% while maintaining high customer satisfaction.',
-      functions: [
-        'Handles 1000+ customer conversations simultaneously',
-        'Reduced customer wait time from hours to seconds',
-        'Increased lead qualification rate by 65%',
-        'Maintains 24/7 availability across all channels',
-      ],
-      channels: ['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM', 'CRM'],
-      industries: ['Real Estate', 'Hospitality', 'Travel', 'Wellness & Fitness', 'Healthcare & Clinics'],
-      integrationTime: '3-5 weeks',
-      shareLink: 'https://digitalworkforce.one/#case-study-customer-support',
-      imageUrl: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Upcoming AI employyes (1)',
