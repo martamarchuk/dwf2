@@ -14,11 +14,11 @@ export default function Header() {
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#catalogue" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
-              Explore AI Employees
-            </a>
             <a href="#philosophy" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
               How We Think
+            </a>
+            <a href="#catalogue" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
+              Explore AI Employees
             </a>
             <a href="#testimonials" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
               Client Stories
@@ -48,18 +48,18 @@ export default function Header() {
         <div className="md:hidden bg-white border-t">
           <div className="px-4 py-4 space-y-3">
             <a
-              href="#catalogue"
-              className="block py-2 text-slate-900 font-medium hover:text-orange-500"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Explore AI Employees
-            </a>
-            <a
               href="#philosophy"
               className="block py-2 text-slate-900 font-medium hover:text-orange-500"
               onClick={() => setMobileMenuOpen(false)}
             >
               How We Think
+            </a>
+            <a
+              href="#catalogue"
+              className="block py-2 text-slate-900 font-medium hover:text-orange-500"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Explore AI Employees
             </a>
             <a
               href="#testimonials"
