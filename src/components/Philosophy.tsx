@@ -5,7 +5,7 @@ export default function Philosophy() {
         <div className="text-center space-y-8">
           <div className="space-y-6">
             <p className="text-2xl lg:text-3xl font-bold text-slate-900 leading-relaxed">
-              We believe the more "universal" an IT solution claims to be, the less value it brings to a particular business.
+              We believe the more "universal" an IT solution claims to be, the less value it brings to a particular business
             </p>
 
             <p className="text-lg text-slate-600 leading-relaxed">
