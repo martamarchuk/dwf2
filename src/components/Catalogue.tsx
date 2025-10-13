@@ -4,7 +4,7 @@ import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
   'Ready-to-use (4)',
-  'Case studies (2)',
+  'Case studies (3)',
   'Upcoming AI employyes (1)',
   'Classic automations (1)',
 ];
@@ -155,7 +155,31 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (2)',
+      category: 'Case studies (3)',
+      badge: 'Case Study',
+      icon: <Briefcase className="w-12 h-12" />,
+      title: 'Dubai Real Estate Agency: AI Sales Agent took over lead qualification and meeting scheduling',
+      subtitle: 'Inbound Sales Representative (ISR) or Sales Qualification Representative (SQR)',
+      description: 'How the AI Sales Agent at a Dubai real estate agency took over lead qualification and scheduling Zoom meetings, leaving top agents to focus on closing deals with qualified leads.',
+      functions: [
+        '100% of incoming messages handled without losses',
+        'Time to first response: instant, 24/7',
+        'Share of qualified leads reaching meetings: +40%',
+        'Top agents spend their time only on clients with high purchase potential',
+        'Responds instantly 24/7 to all incoming messages',
+        'Communicates with clients in their own language',
+        'Qualifies leads based on predefined criteria',
+        'Automatically guides qualified prospects to book a Zoom meeting with top agents',
+      ],
+      channels: ['WhatsApp', 'Instagram DM', 'Website live chat'],
+      platforms: ['Kommo CRM'],
+      industries: ['Real Estate'],
+      integrationTime: '2-3 weeks',
+      shareLink: 'https://digitalworkforce.com/#case-study-dubai-real-estate',
+      imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Case studies (3)',
       badge: 'Case Study',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
@@ -178,7 +202,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (2)',
+      category: 'Case studies (3)',
       badge: 'Case Study',
       icon: <Users className="w-12 h-12" />,
       title: 'AI Customer Support Agent Implementation',
