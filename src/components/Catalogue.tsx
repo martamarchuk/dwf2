@@ -198,7 +198,7 @@ function getCatalogueItems(): AgentCardProps[] {
       platforms: ['Shopify', 'Kommo CRM'],
       industries: ['E-commerce & Retail'],
       integrationTime: '2-3 weeks',
-      shareLink: 'https://digitalworkforce.com/#case-study-moldyfun',
+      shareLink: 'https://digitalworkforce.one/#case-study-moldyfun',
       imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
@@ -217,7 +217,7 @@ function getCatalogueItems(): AgentCardProps[] {
       channels: ['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM', 'CRM'],
       industries: ['Real Estate', 'Hospitality', 'Travel', 'Wellness & Fitness', 'Healthcare & Clinics'],
       integrationTime: '3-5 weeks',
-      shareLink: 'https://digitalworkforce.com/#case-study-customer-support',
+      shareLink: 'https://digitalworkforce.one/#case-study-customer-support',
       imageUrl: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
@@ -236,7 +236,7 @@ function getCatalogueItems(): AgentCardProps[] {
       channels: ['Phone calls', 'Voice messages', 'WhatsApp voice', 'Telegram voice'],
       industries: ['Real Estate', 'Hospitality', 'Travel', 'Healthcare & Clinics', 'Financial Services'],
       integrationTime: 'Q2 2026',
-      shareLink: 'https://digitalworkforce.com/#voice-ai-agent',
+      shareLink: 'https://digitalworkforce.one/#voice-ai-agent',
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
@@ -256,7 +256,7 @@ function getCatalogueItems(): AgentCardProps[] {
       platforms: ['Zapier', 'Make', 'N8n', 'Custom integrations'],
       industries: ['All Industries'],
       integrationTime: '1-2 weeks',
-      shareLink: 'https://digitalworkforce.com/#automation-suite',
+      shareLink: 'https://digitalworkforce.one/#automation-suite',
       imageUrl: 'https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
   ];
