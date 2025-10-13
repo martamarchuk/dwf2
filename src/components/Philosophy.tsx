@@ -9,12 +9,12 @@ export default function Philosophy() {
             </p>
 
             <p className="text-lg text-slate-600 leading-relaxed">
-              That's why we build custom solutions – designed around your company's unique processes.
+              That's why we build custom solutions – designed around your company's unique processes
             </p>
 
             <p className="text-lg text-slate-600 leading-relaxed">
               Each solution is shaped around the way your business actually works, so AI technology and automation
-              become the foundation for growth and scalability.
+              become the foundation for growth and scalability
             </p>
           </div>
 
