@@ -58,7 +58,7 @@ export default function Catalogue() {
               href="#cta"
               className="inline-flex items-center px-8 py-4 bg-slate-900 text-white font-semibold rounded-full hover:bg-slate-800 transition-colors duration-200"
             >
-              Let’s Make It Real
+              Let’s Build It
             </a>
           </div>
         </div>
