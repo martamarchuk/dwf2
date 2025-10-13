@@ -20,8 +20,8 @@ export default function Header() {
             <a href="#philosophy" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
               How We Think
             </a>
-            <a href="#cta" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
-              Contact
+            <a href="#testimonials" className="text-slate-900 font-medium hover:text-orange-500 transition-colors duration-200">
+              Client Stories
             </a>
           </nav>
 
@@ -62,11 +62,11 @@ export default function Header() {
               How We Think
             </a>
             <a
-              href="#cta"
+              href="#testimonials"
               className="block py-2 text-slate-900 font-medium hover:text-orange-500"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Contact
+              Client Stories
             </a>
             <a
               href="#cta"
