@@ -48,17 +48,17 @@ export default function Catalogue() {
 
         <div className="mt-16 p-8 bg-white rounded-2xl shadow-lg border border-slate-200">
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">
               Need a custom solution?
             </h3>
-            <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
+            <p className="text-slate-600 mb-8 max-w-3xl mx-auto">
               We specialize in building custom AI employees to increase sales and lower operating costs
             </p>
             <a
               href="#cta"
               className="inline-flex items-center px-8 py-4 bg-slate-900 text-white font-semibold rounded-full hover:bg-slate-800 transition-colors duration-200"
             >
-              Let’s Talk ROI
+              Let's Talk ROI
             </a>
           </div>
         </div>
