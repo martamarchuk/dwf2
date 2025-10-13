@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-6">
               <p className="text-sm font-semibold text-orange-500 uppercase tracking-wider">
-                Tailored-made digital AI employees
+                Tailor-made digital AI employees
               </p>
 
               <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
@@ -18,7 +18,7 @@ export default function Hero() {
               <p className="text-lg text-slate-600 leading-relaxed">
                 At DigitalWorkforce, we create AI employees that free your team from repetitive tasks.
                 They take over routine operations, communication, client requests, qualification, and support –
-                so your team can stay focused on growth, sales, and strategy.
+                so your team can stay focused on growth, sales, and strategy
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
