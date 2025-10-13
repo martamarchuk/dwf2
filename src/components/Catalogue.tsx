@@ -86,7 +86,7 @@ function getCatalogueItems(): AgentCardProps[] {
       channels: ['Website live chat', 'WhatsApp', 'Telegram', 'Instagram DM', 'Facebook Messenger', 'TikTok DM', 'CRM'],
       industries: ['Real Estate', 'Hospitality', 'Travel', 'Wellness & Fitness', 'Healthcare & Clinics'],
       integrationTime: '1-3 weeks',
-      shareLink: 'https://digitalworkforce.com/#ai-sales-agent-for-incoming-comminication',
+      shareLink: 'https://digitalworkforce.one/#ai-sales-agent-for-incoming-comminication',
       imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
@@ -109,7 +109,7 @@ function getCatalogueItems(): AgentCardProps[] {
       platforms: ['Shopify', 'WooCommerce', 'Ecwid'],
       industries: ['E-commerce & Retail'],
       integrationTime: '1-3 weeks',
-      shareLink: 'https://digitalworkforce.com/#full-cycle-ecommerce-agent',
+      shareLink: 'https://digitalworkforce.one/#full-cycle-ecommerce-agent',
       imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
@@ -130,7 +130,7 @@ function getCatalogueItems(): AgentCardProps[] {
       channels: ['LinkedIn', 'Calendly', 'Google Calendar', 'CRM'],
       industries: ['IT & Software (SaaS, startups, B2B software)', 'Marketing & Digital Agencies', 'Consulting & Training', 'Financial Services', 'Recruiting & HR Tech', 'Real Estate', 'Medical Technology & Supplies', 'Manufacturing & Distribution', 'Logistics & Transportation', 'Education & EdTech'],
       integrationTime: '1-2 weeks',
-      shareLink: 'https://digitalworkforce.com/#linkedin-sdr',
+      shareLink: 'https://digitalworkforce.one/#linkedin-sdr',
       imageUrl: 'https://images.pexels.com/photos/5940844/pexels-photo-5940844.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
@@ -151,7 +151,7 @@ function getCatalogueItems(): AgentCardProps[] {
       channels: ['Telegram', 'CRM'],
       industries: ['Real Estate', 'Recruiting & HR', 'Digital Marketing Agencies', 'Education & EdTech', 'Fitness & Wellness', 'Travel & Hospitality', 'Finance & Investments'],
       integrationTime: '1-2 weeks',
-      shareLink: 'https://digitalworkforce.com/#telegram-lead-catcher',
+      shareLink: 'https://digitalworkforce.one/#telegram-lead-catcher',
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
@@ -175,7 +175,7 @@ function getCatalogueItems(): AgentCardProps[] {
       platforms: ['Kommo CRM'],
       industries: ['Real Estate'],
       integrationTime: '2-3 weeks',
-      shareLink: 'https://digitalworkforce.com/#case-study-dubai-real-estate',
+      shareLink: 'https://digitalworkforce.one/#case-study-dubai-real-estate',
       imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
