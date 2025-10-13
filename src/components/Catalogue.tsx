@@ -53,7 +53,7 @@ export default function Catalogue() {
             </h3>
             <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
               We specialize in building tailored AI employees for your specific business needs.
-              Non-AI automations and products available to boost your business.
+              Non-AI automations and products available to boost your business
             </p>
             <a
               href="#cta"
