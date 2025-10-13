@@ -4,7 +4,7 @@ import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
   'Ready-to-use (4)',
-  'Case studies (1)',
+  'Case studies (2)',
   'Upcoming AI employyes (1)',
   'Classic automations (1)',
 ];
@@ -155,7 +155,30 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (1)',
+      category: 'Case studies (2)',
+      badge: 'Case Study',
+      icon: <ShoppingCart className="w-12 h-12" />,
+      title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
+      subtitle: 'E-commerce transformation with full-cycle AI Sales Agent',
+      description: 'How a fully independent, full-cycle, text-based AI Sales Agent increased sales for the Shopify store MoldyFun by automating incoming inquiries and guiding customers through to purchase.',
+      functions: [
+        'Response time to clients dropped from several hours to instant 24/7',
+        'Conversion from inquiries to orders increased by 35%',
+        'Now 100% of clients complete purchases without manager involvement',
+        'Responds instantly to all incoming messages',
+        'Replies in the customer\'s language and generates invoices in their local currency',
+        'Assists clients in selecting products and guides them through to payment',
+        'Sends automatic follow-ups to ensure the deal is closed',
+      ],
+      channels: ['Instagram DM', 'Website live chat'],
+      platforms: ['Shopify', 'Kommo CRM'],
+      industries: ['E-commerce & Retail'],
+      integrationTime: '2-3 weeks',
+      shareLink: 'https://digitalworkforce.com/#case-study-moldyfun',
+      imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Case studies (2)',
       badge: 'Case Study',
       icon: <Users className="w-12 h-12" />,
       title: 'AI Customer Support Agent Implementation',
