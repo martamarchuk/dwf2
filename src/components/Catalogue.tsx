@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin } from 'lucide-react';
+import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
   'Ready-to-use (4)',
-  'Case studies (3)',
+  'Case studies (4)',
   'Upcoming AI employyes (1)',
   'Classic automations (1)',
 ];
@@ -154,7 +154,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (3)',
+      category: 'Case studies (4)',
       badge: 'Case Study',
       icon: <Briefcase className="w-12 h-12" />,
       title: 'Dubai Real Estate Agency: AI Sales Agent took over lead qualification and meeting scheduling',
@@ -178,7 +178,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (3)',
+      category: 'Case studies (4)',
       badge: 'Case Study',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
@@ -201,7 +201,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (3)',
+      category: 'Case studies (4)',
       badge: 'Case Study',
       icon: <Linkedin className="w-12 h-12" />,
       title: 'Digital Agency: AI LinkedIn SDR automated outreach and lead generation, booking meetings with qualified prospects',
@@ -221,6 +221,25 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: '2-3 weeks',
       shareLink: 'https://digitalworkforce.one/#case-study-digital-agency-linkedin',
       imageUrl: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Case studies (4)',
+      badge: 'Case Study',
+      icon: <Home className="w-12 h-12" />,
+      title: 'Bali Homes Rental Concierge Service: Fully Automated Listing Manager scaled property database',
+      subtitle: 'Listing Manager for Real Estate Business',
+      description: 'The concierge service was expanding quickly, but listing managers couldn\'t keep up with contacting property owners and agents to add new listings. Collecting details about villas, negotiating terms, and uploading properties into the internal real estate database required too much manual effort. All of these tasks were transferred to a fully automated Listing Manager, which dramatically accelerated business growth.',
+      functions: [
+        'Automatically contacts property owners and agents',
+        'Gathers all apartment details (photos, descriptions, pricing)',
+        'Negotiates cooperation terms on behalf of the company',
+        'Uploads and updates listings directly in the company\'s real estate database',
+      ],
+      channels: ['WhatsApp', 'Telegram', 'Google Spreadsheets', 'Google Drive'],
+      industries: ['Real Estate', 'Hospitality', 'Travel'],
+      integrationTime: '2-3 weeks',
+      shareLink: 'https://digitalworkforce.one/#case-study-bali-listing-manager',
+      imageUrl: 'https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Upcoming AI employyes (1)',
