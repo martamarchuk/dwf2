@@ -4,7 +4,7 @@ import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
   'Ready-to-use (4)',
-  'Case studies (2)',
+  'Case studies (3)',
   'Upcoming AI employyes (1)',
   'Classic automations (1)',
 ];
@@ -154,7 +154,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (2)',
+      category: 'Case studies (3)',
       badge: 'Case Study',
       icon: <Briefcase className="w-12 h-12" />,
       title: 'Dubai Real Estate Agency: AI Sales Agent took over lead qualification and meeting scheduling',
@@ -178,7 +178,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (2)',
+      category: 'Case studies (3)',
       badge: 'Case Study',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
@@ -199,6 +199,28 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: '2-3 weeks',
       shareLink: 'https://digitalworkforce.one/#case-study-moldyfun',
       imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Case studies (3)',
+      badge: 'Case Study',
+      icon: <Linkedin className="w-12 h-12" />,
+      title: 'Digital Agency: AI LinkedIn SDR automated outreach and lead generation, booking meetings with qualified prospects',
+      subtitle: 'Sales Development Representative (SDR)',
+      description: 'The agency needed a steady flow of B2B clients, but manual LinkedIn outreach was taking too much time and effort. Sales reps couldn\'t scale personalized communication, and sales opportunities were slipping away due to slow responses and a lack of systematic follow-ups.',
+      functions: [
+        'Scans LinkedIn to find suitable profiles',
+        'Automatically sends personalized connection requests',
+        'Waits for the invitation to be accepted',
+        'Generates and sends a personalized message sequence to get a reply',
+        'Engages in real-time conversations, adapting to the prospect\'s profile information and product context',
+        'Keeps the person engaged and warm in interest',
+        'Guides warm prospects to schedule meetings directly with the agency\'s sales team',
+      ],
+      channels: ['LinkedIn', 'Calendly', 'Kommo CRM'],
+      industries: ['Marketing & Digital Agencies'],
+      integrationTime: '2-3 weeks',
+      shareLink: 'https://digitalworkforce.one/#case-study-digital-agency-linkedin',
+      imageUrl: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Upcoming AI employyes (1)',
