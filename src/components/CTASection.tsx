@@ -6,6 +6,7 @@ export default function CTASection() {
     name: '',
     email: '',
     company: '',
+    companySize: '',
     useCase: '',
   });
   const [submitted, setSubmitted] = useState(false);
@@ -16,7 +17,7 @@ export default function CTASection() {
     setTimeout(() => setSubmitted(false), 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -130,6 +131,27 @@ export default function CTASection() {
                       placeholder="Your Company Inc."
                     />
                   </div>
+                </div>
+
+                <div>
+                  <label htmlFor="companySize" className="block text-sm font-medium text-slate-900 mb-2">
+                    Company Size
+                  </label>
+                  <select
+                    id="companySize"
+                    name="companySize"
+                    value={formData.companySize}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-200 outline-none appearance-none cursor-pointer"
+                  >
+                    <option value="">Select company size</option>
+                    <option value="just-me">Just me</option>
+                    <option value="2-10">2-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-150">51-150</option>
+                    <option value="lt-500">&lt; 500</option>
+                    <option value="gt-500">&gt; 500</option>
+                  </select>
                 </div>
 
                 <div>
