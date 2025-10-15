@@ -9,7 +9,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18">
           <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-200">
-            <img src="/logo 4_transparent_bg.png" alt="Digital Workforce Logo" className="h-10 w-auto" />
+            <img src="/logo 4_transparent_bg copy.png" alt="Digital Workforce Logo" className="h-10 w-auto" />
             <span className="text-2xl font-bold text-slate-900">Digital Workforce</span>
           </a>
 
