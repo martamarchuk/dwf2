@@ -154,7 +154,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (4)',
+      category: 'Case studies (7)',
       badge: 'Case Study',
       icon: <Briefcase className="w-12 h-12" />,
       title: 'Dubai Real Estate Agency: AI Sales Agent took over lead qualification and meeting scheduling',
@@ -178,7 +178,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (4)',
+      category: 'Case studies (7)',
       badge: 'Case Study',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
@@ -201,7 +201,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (4)',
+      category: 'Case studies (7)',
       badge: 'Case Study',
       icon: <Linkedin className="w-12 h-12" />,
       title: 'Digital Agency: AI LinkedIn SDR automated outreach and lead generation, booking meetings with qualified prospects',
@@ -223,7 +223,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (4)',
+      category: 'Case studies (7)',
       badge: 'Case Study',
       icon: <Home className="w-12 h-12" />,
       title: 'Bali Homes Rental Concierge Service: Fully Automated Listing Manager scaled property database',
