@@ -159,7 +159,7 @@ function getCatalogueItems(): AgentCardProps[] {
       icon: <Briefcase className="w-12 h-12" />,
       title: 'Dubai Real Estate Agency: AI Sales Agent took over lead qualification and meeting scheduling',
       subtitle: 'Inbound Sales Representative (ISR) or Sales Qualification Representative (SQR)',
-      description: 'How the AI Sales Agent at a Dubai real estate agency took over lead qualification and scheduling Zoom meetings, leaving top agents to focus on closing deals with qualified leads.',
+      description: 'The AI Sales Agent at a Dubai real estate agency took over lead qualification and scheduling Zoom meetings, leaving top agents to focus on closing deals with qualified leads.',
       functions: [
         '100% of incoming messages handled without losses',
         'Time to first response: instant, 24/7',
@@ -183,7 +183,7 @@ function getCatalogueItems(): AgentCardProps[] {
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
       subtitle: 'Senior Sales Representative, Account Executive, Deal Closer',
-      description: 'How a fully independent, full-cycle, text-based AI Sales Agent increased sales for the Shopify store MoldyFun by automating incoming inquiries and guiding customers through to purchase.',
+      description: 'A fully independent, full-cycle, text-based AI Sales Agent increased sales for the Shopify store MoldyFun by automating incoming inquiries and guiding customers through to purchase.',
       functions: [
         'Response time to clients dropped from several hours to instant 24/7',
         'Conversion from inquiries to orders increased by 35%',
