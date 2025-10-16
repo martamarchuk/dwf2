@@ -154,7 +154,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (7)',
+      category: 'Case studies (8)',
       badge: 'Case Study',
       icon: <Briefcase className="w-12 h-12" />,
       title: 'Dubai Real Estate Agency: AI Sales Agent took over lead qualification and meeting scheduling',
@@ -178,7 +178,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (7)',
+      category: 'Case studies (8)',
       badge: 'Case Study',
       icon: <ShoppingCart className="w-12 h-12" />,
       title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
@@ -201,7 +201,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (7)',
+      category: 'Case studies (8)',
       badge: 'Case Study',
       icon: <Linkedin className="w-12 h-12" />,
       title: 'Digital Agency: AI LinkedIn SDR automated outreach and lead generation, booking meetings with qualified prospects',
@@ -223,7 +223,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (7)',
+      category: 'Case studies (8)',
       badge: 'Case Study',
       icon: <Home className="w-12 h-12" />,
       title: 'Bali Homes Rental Concierge Service: Fully Automated Listing Manager scaled property database',
@@ -242,7 +242,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (7)',
+      category: 'Case studies (8)',
       badge: 'Case Study',
       icon: <MessageSquare className="w-12 h-12" />,
       title: 'Bali Home Rental Service: Telegram Lead Catcher Automated Client Acquisition',
@@ -262,7 +262,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (7)',
+      category: 'Case studies (8)',
       badge: 'Case Study',
       icon: <Video className="w-12 h-12" />,
       title: 'AI Transcription of Video Meetings and Automation of Follow-Up Actions',
@@ -281,7 +281,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Case studies (7)',
+      category: 'Case studies (8)',
       badge: 'Case Study',
       icon: <Instagram className="w-12 h-12" />,
       title: 'MoldyFun Shopify Store: Instagram Hashtag Lead Hunter automated influencer collaborations',
@@ -300,6 +300,26 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: '2-3 weeks',
       shareLink: 'https://digitalworkforce.one/#case-study-instagram-lead-hunter',
       imageUrl: 'https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Case studies (8)',
+      badge: 'Case Study',
+      icon: <MessageSquare className="w-12 h-12" />,
+      title: 'TranslateBot.io: AI Voice-to-Text + Translation Bot for Telegram',
+      subtitle: 'Multilingual Communication Assistant',
+      description: 'In multilingual group chats, people struggled to communicate smoothly — especially when some members spoke different languages or preferred voice messages. TranslateBot.io solved this communication gap completely. The AI-powered Telegram bot automatically transcribes voice messages into text, translates them into the desired language, and even generates voice-overs in the recipient\'s language. It works directly inside Telegram chats with no need for installation or switching apps. Teams, families, and communities can now chat freely and understand each other instantly in over 70 languages, all powered by AI automation.',
+      functions: [
+        'Converts voice messages to text instantly in group or private chats',
+        'Translates all messages between 70+ supported languages',
+        'Generates voice-overs in both directions for seamless communication',
+        'Works automatically 24/7 without additional setup',
+        'Ensures data privacy',
+      ],
+      channels: ['Telegram', 'WhatsApp (coming soon)'],
+      industries: ['Communication', 'Education', 'International Teams', 'Travel'],
+      integrationTime: 'Instant (add bot to chat)',
+      shareLink: 'https://digitalworkforce.one/#case-study-translatebot',
+      imageUrl: 'https://images.pexels.com/photos/5952647/pexels-photo-5952647.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Upcoming AI employyes (1)',
