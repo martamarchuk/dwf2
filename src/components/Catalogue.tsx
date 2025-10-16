@@ -27,7 +27,7 @@ export default function Catalogue() {
             Complete Solutions
           </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-            AI Employees Catalogue
+            Explore AI Employees
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Choose from our pre-built digital employees or let us create a custom solution tailored to your business
