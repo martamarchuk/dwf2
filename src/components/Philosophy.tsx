@@ -20,7 +20,7 @@ export default function Philosophy() {
 
           <div className="flex justify-end items-center gap-4 pt-8 border-t border-slate-200">
             <img
-              src="/IGOR_1974x1974.jpg"
+              src="/public/IGOR_1974x1974.jpg"
               alt="Igor Palatkevich"
               className="w-12 h-12 rounded-full object-cover"
             />
