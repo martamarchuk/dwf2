@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home } from 'lucide-react';
+import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
   'Ready-to-use (4)',
-  'Case studies (4)',
+  'Case studies (7)',
   'Upcoming AI employyes (1)',
   'Classic automations (1)',
 ];
@@ -240,6 +240,66 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: '2-3 weeks',
       shareLink: 'https://digitalworkforce.one/#case-study-bali-listing-manager',
       imageUrl: 'https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Case studies (7)',
+      badge: 'Case Study',
+      icon: <MessageSquare className="w-12 h-12" />,
+      title: 'Bali Home Rental Service: Telegram Lead Catcher Automated Client Acquisition',
+      subtitle: 'Lead Generation & Qualification Specialist',
+      description: 'The company relied on Telegram groups to find new villa rental leads, but managers couldn\'t monitor multiple chats around the clock. The Telegram Lead Catcher AI changed this completely – it scans public groups for buyer intent, starts smart conversations automatically, and qualifies prospects through adaptive questions. Only warm leads are transferred to the CRM. Operating 24/7 across dozens of chats, the system ensures no potential client goes unnoticed and delivers a steady flow of qualified leads without manual effort.',
+      functions: [
+        'Scans Telegram groups for buyer intent',
+        'Starts and maintains smart conversations automatically',
+        'Qualifies leads through adaptive questions',
+        'Transfers only warm leads to CRM',
+        'Works 24/7 across multiple chats simultaneously',
+      ],
+      channels: ['Telegram', 'CRM'],
+      industries: ['Real Estate', 'Hospitality', 'Travel'],
+      integrationTime: '2-3 weeks',
+      shareLink: 'https://digitalworkforce.one/#case-study-bali-telegram-lead-catcher',
+      imageUrl: 'https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Case studies (7)',
+      badge: 'Case Study',
+      icon: <Video className="w-12 h-12" />,
+      title: 'AI Transcription of Video Meetings and Automation of Follow-Up Actions',
+      subtitle: 'Meeting assistant, secretary',
+      description: 'The agency held dozens of client and internal meetings each week, but key insights and next steps often got lost in unstructured notes. The AI Transcription Assistant now records every Zoom or Google Meet call, transcribes by speaker, identifies meeting type, and instantly generates summaries, a draft of the offer and quotation, or creates follow-up tasks. As a result, post-meeting processing time dropped by over 80%.',
+      functions: [
+        'Saves video meeting recordings in the correct Google Drive folder',
+        'Transcribes conversations with clear speaker separation',
+        'Automatically identifies the meeting type based on content (sales, internal, client review, etc.)',
+        'Generates action items such as task lists, offers, or summaries, depending on the meeting type',
+      ],
+      channels: ['Zoom', 'Google Meet', 'Google Drive', 'Telegram', 'Slack'],
+      industries: ['Marketing & Digital Agencies', 'Consulting & Training', 'IT & Software', 'Real Estate'],
+      integrationTime: '2-3 weeks',
+      shareLink: 'https://digitalworkforce.one/#case-study-ai-transcription',
+      imageUrl: 'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Case studies (7)',
+      badge: 'Case Study',
+      icon: <Instagram className="w-12 h-12" />,
+      title: 'MoldyFun Shopify Store: Instagram Hashtag Lead Hunter automated influencer collaborations',
+      subtitle: 'Influencer Outreach and Partnership Manager',
+      description: 'The instagram store wanted to grow brand visibility and reach new audiences through influencer partnerships, by offering free product. But manually searching for creators on Instagram took too much time. The AI-powered Instagram Hashtag Lead Hunter now finds potential clients and influencers by scanning relevant hashtags, analyzes their profiles, and initiates collaboration outreach automatically.',
+      functions: [
+        'Searches Instagram for relevant hashtags to identify potential influencers',
+        'Analyzes creator profiles and audience relevance',
+        'Initiates collaboration messages automatically',
+        'Follows up to maintain conversation until agreement',
+        'Transfers accepted collaborations to CRM or spreadsheet',
+      ],
+      channels: ['Instagram', 'Google Spreadsheets', 'CRM'],
+      platforms: ['Shopify'],
+      industries: ['E-commerce & Retail', 'Fashion & Beauty', 'Food & Beverage'],
+      integrationTime: '2-3 weeks',
+      shareLink: 'https://digitalworkforce.one/#case-study-instagram-lead-hunter',
+      imageUrl: 'https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Upcoming AI employyes (1)',
