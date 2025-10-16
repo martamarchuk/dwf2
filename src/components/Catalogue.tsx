@@ -4,7 +4,7 @@ import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
   'Ready-to-use (4)',
-  'Case studies (7)',
+  'Case studies (8)',
   'Upcoming AI employyes (1)',
   'Classic automations (1)',
 ];
@@ -300,6 +300,26 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: '2-3 weeks',
       shareLink: 'https://digitalworkforce.one/#case-study-instagram-lead-hunter',
       imageUrl: 'https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Case studies (8)',
+      badge: 'Case Study',
+      icon: <Globe className="w-12 h-12" />,
+      title: 'TranslateBot.io: AI Voice-to-Text + Translation Bot for Telegram',
+      subtitle: 'Multilingual Communication Assistant',
+      description: 'In multilingual group chats, people struggled to communicate smoothly — especially when some members spoke different languages or preferred voice messages. TranslateBot.io solved this communication gap completely. The AI-powered Telegram bot automatically transcribes voice messages into text, translates them into the desired language, and even generates voice-overs in the recipient\'s language. It works directly inside Telegram chats with no need for installation or switching apps. Teams, families, and communities can now chat freely and understand each other instantly in over 70 languages, all powered by AI automation.',
+      functions: [
+        'Converts voice messages to text instantly in group or private chats',
+        'Translates all messages between 70+ supported languages',
+        'Generates voice-overs in both directions for seamless communication',
+        'Works automatically 24/7 without additional setup',
+        'Ensures data privacy',
+      ],
+      channels: ['Telegram', 'WhatsApp (coming soon)'],
+      industries: ['All Industries', 'Remote Teams', 'International Business', 'Education', 'Travel & Hospitality'],
+      integrationTime: '1-2 weeks',
+      shareLink: 'https://digitalworkforce.one/#case-study-translatebot',
+      imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Upcoming AI employyes (1)',
