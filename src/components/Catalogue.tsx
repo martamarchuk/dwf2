@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram, Calendar, Phone, Headset, ClipboardList, UserCheck, Target, Image, BookOpen, VideoIcon, PhoneCall } from 'lucide-react';
+import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram, Calendar, Phone, Headset, ClipboardList, UserCheck, Target, Image, BookOpen, VideoIcon, PhoneCall, Settings, TrendingUp, Gauge } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
   'Ready-to-use (4)',
   'Case studies (8)',
-  'Upcoming AI employees (10)',
-  'Classic automations (1)',
+  'Upcoming AI employees (11)',
+  'Classic Solutions (4)',
 ];
 
 export default function Catalogue() {
@@ -543,24 +543,91 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Classic automations (1)',
-      badge: 'Automation',
-      icon: <Zap className="w-12 h-12" />,
-      title: 'Business Process Automation Suite',
-      subtitle: 'Streamline operations without AI',
-      description: 'Classic automation tools that integrate with your existing systems to automate repetitive tasks, data entry, reporting, and workflow management without requiring AI implementation.',
+      category: 'Classic Solutions (4)',
+      badge: 'Classic Solution',
+      icon: <Settings className="w-12 h-12" />,
+      title: 'Kommo CRM Setup + All Communication Channels in One Interface',
+      subtitle: 'Multi-Channel CRM Setup',
+      description: 'Most CRMs are used only as a database, while communication still happens in WhatsApp, Telegram, Instagram, or email — making it impossible to track client interactions properly. Kommo is one of the few CRM systems that natively supports full multi-channel communication, allowing all client conversations to live in one interface. We integrate Kommo CRM into your business and connect all messaging channels, so every lead, message, and follow-up is recorded automatically and never lost.',
       functions: [
-        'Automated data entry and processing',
-        'Scheduled report generation and distribution',
-        'Workflow automation across multiple platforms',
-        'Integration with CRM, ERP, and other business tools',
+        'Set up Kommo CRM tailored to the sales process of your business',
+        'Connect WhatsApp, Telegram, Instagram DM, Email, and website forms directly into CRM',
+        'Ensure all conversations are logged under the correct contact automatically',
+        'Configure pipelines and deal stages so no lead gets lost between steps',
+        'Add reminders and basic follow-up logic to improve response time',
+        'Provide onboarding to ensure the team adopts the new workflow',
       ],
-      channels: ['Email', 'Slack', 'Microsoft Teams', 'CRM systems'],
-      platforms: ['Zapier', 'Make', 'N8n', 'Custom integrations'],
-      industries: ['All Industries'],
+      channels: ['Kommo CRM', 'WhatsApp / Telegram / Instagram DM / Email', 'Landing pages / web forms', 'Google Sheets or analytics connectors'],
+      industries: ['Real estate & property management', 'Travel & hospitality', 'E-commerce & product brands', 'Medical / wellness / clinics', 'Service-based businesses & agencies'],
       integrationTime: '1-2 weeks',
-      shareLink: 'https://digitalworkforce.one/#automation-suite',
-      imageUrl: 'https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&w=800',
+      shareLink: 'https://digitalworkforce.one/#kommo-crm-setup',
+      imageUrl: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Classic Solutions (4)',
+      badge: 'Classic Solution',
+      icon: <MessageSquare className="w-12 h-12" />,
+      title: 'Omni-Channel Communication Hub (Respond.io Setup)',
+      subtitle: 'Unified Communication Platform',
+      description: 'Most businesses handle conversations across multiple apps – WhatsApp, Instagram, email, TikTok, Messenger – which leads to lost messages, slow replies, and no visibility into client history. Respond.io brings all communication channels into a single interface, allowing sales and support teams to answer faster with full context. We implement and configure the platform so every inquiry is captured automatically and routed to the right manager, with conversation history stored in one place. This setup becomes the communication backbone that later allows AI assistants and automation to be added on top of it.',
+      functions: [
+        'Create a unified inbox for chats, calls, and emails',
+        'Capture leads automatically from Meta Click-to-Chat and TikTok ads',
+        'Provide two-way messaging from a single interface',
+        'Store full message history per client, regardless of channel',
+        'Log and centralize calls and voice messages',
+        'Enable instant internal handoff between managers or departments',
+      ],
+      channels: ['Email', 'WhatsApp', 'Facebook Messenger', 'Instagram DM', 'TikTok Messages', 'Web chat widgets & landing pages'],
+      industries: ['Real estate & property management', 'E-commerce & retail', 'Automotive sales & services', 'Education & online courses', 'Healthcare & clinics', 'Beauty & wellness', 'Consulting & agencies', 'Financial services & insurance'],
+      integrationTime: '1-2 weeks',
+      shareLink: 'https://digitalworkforce.one/#respond-io-setup',
+      imageUrl: 'https://images.pexels.com/photos/5324986/pexels-photo-5324986.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Classic Solutions (4)',
+      badge: 'Classic Solution',
+      icon: <TrendingUp className="w-12 h-12" />,
+      title: 'Tailor-Made End-to-End Analytics for Meta & Google Paid Traffic',
+      subtitle: 'Revenue-Based Attribution Analytics',
+      description: 'Most agencies claim to deliver end-to-end analytics, but in reality they only track leads — not revenue — because building a real data bridge between ad accounts, CRM, and messaging channels is technically complex. This solution unifies Meta and Google Ads data with real deal outcomes from your CRM, including attribution for leads coming directly from DMs on Instagram, Facebook, or WhatsApp. With full visibility from first click (or first message) to final payment, budget decisions are made on profit, not assumptions.',
+      functions: [
+        'Connect Meta & Google Ads data with CRM sales outcomes',
+        'Track the full journey: click → DM → lead → sale',
+        'Attribute revenue even from chat-based leads (DM-origin tracking)',
+        'Automatically calculate CAC and cost per paying client',
+        'Build dashboards by campaign, audience, keyword, or source',
+        'Provide real-time ROI visibility for budget decisions',
+        'Build custom reports based on business logic and KPIs',
+        'Send Slack / Telegram notifications on KPI changes or regular KPI snapshots',
+      ],
+      channels: ['Meta Ads', 'Google Ads', 'CRM (Kommo, HubSpot, Salesforce, etc)', 'Google Sheets or custom analytics dashboards', 'Messaging attribution (Instagram / Facebook / WhatsApp DMs)'],
+      industries: ['E-commerce & retail', 'Real estate & property development', 'Education & online courses', 'Automotive sales & services', 'Finance & insurance', 'Healthcare & aesthetic clinics', 'SaaS & subscription businesses', 'Marketing & advertising agencies'],
+      integrationTime: '2-3 weeks',
+      shareLink: 'https://digitalworkforce.one/#end-to-end-analytics',
+      imageUrl: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Classic Solutions (4)',
+      badge: 'Classic Solution',
+      icon: <Gauge className="w-12 h-12" />,
+      title: 'Call Tracking & Phone Lead Attribution',
+      subtitle: 'Phone Call Attribution System',
+      description: 'Phone calls are often the highest-intent leads, but most companies cannot attribute which campaign or source actually generated the call. As a result, phone-based conversions are treated as "blind spots" in marketing analytics. We implement call tracking using static and dynamic numbers so every incoming call is tied to a specific traffic source, campaign, or keyword. This enables full attribution for offline and online ads, giving a clear view of which channels actually produce paying clients.',
+      functions: [
+        'Assign unique tracking numbers to offline and online ad sources',
+        'Use dynamic number substitution for online traffic attribution',
+        'Attribute each call to campaign, keyword, or UTM',
+        'Automatically record and transcribe phone conversations',
+        'Save call data + traffic source + transcript into a clean Google Sheet',
+        'Push call events into analytics and CRM for complete visibility',
+        'Show which campaigns deliver real paying customers — not just clicks',
+      ],
+      channels: ['IP telephony / VoIP', 'CRM', 'Google Sheets for structured logging & transcripts', 'Offline and online advertising channels', 'Google Analytics (optional)'],
+      industries: ['Real estate & property sales', 'Travel & hospitality', 'Automotive sales & services', 'Healthcare & clinics', 'Wellness and SPA', 'Education & course enrollments', 'Home services & field operations', 'Marketing & advertising agencies'],
+      integrationTime: '1-2 weeks',
+      shareLink: 'https://digitalworkforce.one/#call-tracking',
+      imageUrl: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
   ];
 }
@@ -628,21 +695,23 @@ function AgentCard({
             style={{ maxHeight: isExpanded ? '2000px' : '0px' }}
           >
             <div className="space-y-6">
-              <div className="pt-4 border-t border-slate-200">
-                <div className="flex items-start gap-3">
-                  <Users className="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5" />
-                  <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    <span className="text-slate-500 font-semibold">Human role synonym for digital employee</span>
-                    <br />
-                    {subtitle}
-                  </p>
+              {badge !== 'Classic Solution' && (
+                <div className="pt-4 border-t border-slate-200">
+                  <div className="flex items-start gap-3">
+                    <Users className="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-sm text-slate-700 font-medium leading-relaxed">
+                      <span className="text-slate-500 font-semibold">Human role synonym for digital employee</span>
+                      <br />
+                      {subtitle}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              )}
 
               <div>
                 <h4 className="text-sm font-semibold text-slate-900 mb-3 flex items-center gap-2">
                   <Zap className="w-4 h-4 text-orange-500" />
-                  Digital Employee Functions
+                  {badge === 'Classic Solution' ? 'Functions or What We Do' : 'Digital Employee Functions'}
                 </h4>
                 <ul className="space-y-2">
                   {functions.map((func, index) => (
