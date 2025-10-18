@@ -322,7 +322,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <Calendar className="w-12 h-12" />,
       title: 'AI Reservation & Booking Manager for Travel & Rental Services',
@@ -343,7 +343,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <Phone className="w-12 h-12" />,
       title: 'AI Voice Receptionist or Voice Concierge AI',
@@ -364,7 +364,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/5668772/pexels-photo-5668772.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <Headset className="w-12 h-12" />,
       title: 'AI Sales Co-pilot / AI Sales Operations Assistant',
@@ -387,7 +387,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <ClipboardList className="w-12 h-12" />,
       title: 'AI Project Management Assistant',
@@ -411,7 +411,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <UserCheck className="w-12 h-12" />,
       title: 'AI Pre-Screening Recruiter (Voice & Text)',
@@ -434,7 +434,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/5439381/pexels-photo-5439381.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <Target className="w-12 h-12" />,
       title: 'AI Paid Traffic Manager (Autonomous Media Buyer) for Meta Ads',
@@ -457,7 +457,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <Image className="w-12 h-12" />,
       title: 'AI Content Generator for Social Media',
@@ -478,7 +478,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <BookOpen className="w-12 h-12" />,
       title: 'AI Company Knowledge Chatbase (Internal)',
@@ -499,7 +499,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3861943/pexels-photo-3861943.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <VideoIcon className="w-12 h-12" />,
       title: 'AI Video Content Generator based on AI Clone of the Founder/Spokesperson',
@@ -520,7 +520,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/3153207/pexels-photo-3153207.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (10)',
+      category: 'Upcoming AI employees (11)',
       badge: 'Upcoming AI employees',
       icon: <PhoneCall className="w-12 h-12" />,
       title: 'AI Call Analysis for Sales and Support Departments',
