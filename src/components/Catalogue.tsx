@@ -323,7 +323,7 @@ function getCatalogueItems(): AgentCardProps[] {
     },
     {
       category: 'Upcoming AI employees (2)',
-      badge: 'Coming Soon',
+      badge: 'Upcoming AI employees',
       icon: <Rocket className="w-12 h-12" />,
       title: 'Voice-enabled AI Sales Agent',
       subtitle: 'Next generation conversational AI',
@@ -342,7 +342,7 @@ function getCatalogueItems(): AgentCardProps[] {
     },
     {
       category: 'Upcoming AI employees (2)',
-      badge: 'Coming Soon',
+      badge: 'Upcoming AI employees',
       icon: <Calendar className="w-12 h-12" />,
       title: 'AI Reservation & Booking Manager for Travel & Rental Services',
       subtitle: 'Reservation & Booking Manager',
