@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram } from 'lucide-react';
+import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram, Calendar } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
   'Ready-to-use (4)',
   'Case studies (8)',
-  'Upcoming AI employees (1)',
+  'Upcoming AI employees (2)',
   'Classic automations (1)',
 ];
 
@@ -322,7 +322,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employees (1)',
+      category: 'Upcoming AI employees (2)',
       badge: 'Coming Soon',
       icon: <Rocket className="w-12 h-12" />,
       title: 'Voice-enabled AI Sales Agent',
@@ -339,6 +339,27 @@ function getCatalogueItems(): AgentCardProps[] {
       integrationTime: 'Q2 2026',
       shareLink: 'https://digitalworkforce.one/#voice-ai-agent',
       imageUrl: 'https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=800',
+    },
+    {
+      category: 'Upcoming AI employees (2)',
+      badge: 'Coming Soon',
+      icon: <Calendar className="w-12 h-12" />,
+      title: 'AI Reservation & Booking Manager for Travel & Rental Services',
+      subtitle: 'Reservation & Booking Manager',
+      description: 'Travel and rental businesses often work with suppliers who don\'t provide API access or portal integration, so availability must be requested manually by messaging each supplier individually. A manager typically writes to a specific hotel, villa owner, DMC, or activity provider via WhatsApp or email, waits for confirmation, follows up if needed, and then copies the result into the internal system. The AI Availability Check Manager replaces this manual communication – it prepares the request, sends it to the correct supplier, waits for the response, issues reminders if there is no reply, and records the received availability and pricing in Google Sheets or CRM.',
+      functions: [
+        'Receives request details and identifies which supplier to contact',
+        'Drafts and sends availability inquiry via WhatsApp or email',
+        'Tracks unanswered messages and sends follow-up reminders',
+        'Extracts key data (dates, price, terms, policy) from supplier response',
+        'Records results into Google Sheets and/or CRM',
+        'Notifies the manager when confirmation is received',
+      ],
+      channels: ['WhatsApp', 'Telegram', 'Email', 'Google Sheets', 'CRM', 'Booking system'],
+      industries: ['Travel Agencies & Tour Operators', 'Hospitality (Hotels, Resorts, Villas)', 'Transportation & Car Rentals', 'Concierge & Lifestyle Services', 'Adventure & Activity Providers', 'Destination Management Companies (DMCs)', 'Event & Group Travel Services'],
+      integrationTime: 'Q3 2026',
+      shareLink: 'https://digitalworkforce.one/#ai-booking-manager',
+      imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
       category: 'Classic automations (1)',
