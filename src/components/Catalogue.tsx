@@ -5,7 +5,7 @@ import CatalogueSegmentGroup from '@/components/ui/segment-group';
 const CATEGORIES = [
   'Ready-to-use (4)',
   'Case studies (8)',
-  'Upcoming AI employyes (1)',
+  'Upcoming AI employees (1)',
   'Classic automations (1)',
 ];
 
@@ -322,7 +322,7 @@ function getCatalogueItems(): AgentCardProps[] {
       imageUrl: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      category: 'Upcoming AI employyes (1)',
+      category: 'Upcoming AI employees (1)',
       badge: 'Coming Soon',
       icon: <Rocket className="w-12 h-12" />,
       title: 'Voice-enabled AI Sales Agent',
