@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram, Calendar, Phone, Headset, ClipboardList, UserCheck, Target, Image, BookOpen, VideoIcon, PhoneCall, Settings, TrendingUp, Gauge } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram, Calendar, Phone, Headset, ClipboardList, UserCheck, Target, Image, BookOpen, VideoIcon, PhoneCall, Settings, TrendingUp, Gauge, ExternalLink } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 
 const CATEGORIES = [
@@ -663,9 +664,16 @@ function AgentCard({
   imageUrl,
 }: AgentCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const navigate = useNavigate();
 
   const handleShare = () => {
     navigator.clipboard.writeText(shareLink);
+  };
+
+  const handleFullStory = () => {
+    if (title === 'Text-based AI Sales Agent for initial client communication') {
+      navigate('/employee/ai-sales-agent');
+    }
   };
 
   return (
@@ -775,12 +783,12 @@ function AgentCard({
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-slate-200 flex items-center justify-between">
-                <div className="flex items-center gap-2 text-slate-600">
-                  <Clock className="w-4 h-4" />
-                  <span className="text-sm font-medium">{integrationTime}</span>
-                </div>
-                <div className="flex items-center gap-3">
+              <div className="pt-6 border-t border-slate-200 space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-slate-600">
+                    <Clock className="w-4 h-4" />
+                    <span className="text-sm font-medium">{integrationTime}</span>
+                  </div>
                   <button
                     onClick={handleShare}
                     className="p-2 text-slate-400 hover:text-orange-500 transition-colors duration-200"
@@ -788,9 +796,20 @@ function AgentCard({
                   >
                     <Share2 className="w-5 h-5" />
                   </button>
+                </div>
+                <div className="flex items-center gap-3">
+                  {title === 'Text-based AI Sales Agent for initial client communication' && (
+                    <button
+                      onClick={handleFullStory}
+                      className="flex-1 px-6 py-2.5 bg-slate-900 text-white font-semibold rounded-full hover:bg-slate-800 transform hover:-translate-y-0.5 transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+                    >
+                      Full Story
+                      <ExternalLink className="w-4 h-4" />
+                    </button>
+                  )}
                   <a
                     href="#cta"
-                    className="px-6 py-2.5 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-md hover:shadow-lg"
+                    className="flex-1 px-6 py-2.5 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-md hover:shadow-lg text-center"
                   >
                     Book a Demo
                   </a>
