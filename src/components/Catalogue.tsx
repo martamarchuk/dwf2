@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Clock, Share2, CheckCircle, Zap, Users, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
+import { Clock, Share2, CheckCircle, Zap, Users, ChevronDown, ChevronUp, ExternalLink, Check } from 'lucide-react';
 import CatalogueSegmentGroup from '@/components/ui/segment-group';
 import { EMPLOYEES, EmployeeData } from '../data/employees';
 
@@ -86,10 +86,14 @@ function AgentCard(employee: EmployeeData) {
   } = employee;
 
   const [isExpanded, setIsExpanded] = useState(false);
+  const [copied, setCopied] = useState(false);
   const navigate = useNavigate();
 
-  const handleShare = () => {
-    navigator.clipboard.writeText(shareLink);
+  const handleShare = async () => {
+    const fullStoryUrl = `${window.location.origin}/employee/${id}`;
+    await navigator.clipboard.writeText(fullStoryUrl);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   const handleFullStory = () => {
@@ -211,10 +215,17 @@ function AgentCard(employee: EmployeeData) {
                   </div>
                   <button
                     onClick={handleShare}
-                    className="p-2 text-slate-400 hover:text-orange-500 transition-colors duration-200"
-                    aria-label="Share link"
+                    className="group/share flex items-center gap-2 px-3 py-2 text-slate-500 hover:text-orange-500 hover:bg-orange-50 rounded-full transition-all duration-200 relative"
+                    aria-label="Copy link to share"
                   >
-                    <Share2 className="w-5 h-5" />
+                    {copied ? (
+                      <Check className="w-4 h-4 text-green-500" />
+                    ) : (
+                      <Share2 className="w-4 h-4" />
+                    )}
+                    <span className="text-sm font-medium whitespace-nowrap">
+                      {copied ? 'Copied!' : 'Copy to Share'}
+                    </span>
                   </button>
                 </div>
                 <div className="flex items-center gap-3">
