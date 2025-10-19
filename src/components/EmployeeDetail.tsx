@@ -1,5 +1,6 @@
 import { Clock, CheckCircle, Zap, Users, ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import ContactForm from './ContactForm';
 
 interface EmployeeDetailProps {
@@ -33,6 +34,10 @@ export default function EmployeeDetail({
 }: EmployeeDetailProps) {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleBackToCatalogue = () => {
     navigate('/#catalogue');
   };
@@ -46,7 +51,7 @@ export default function EmployeeDetail({
             className="inline-flex items-center gap-2 text-slate-600 hover:text-orange-500 transition-colors duration-200 font-medium"
           >
             <ArrowLeft className="w-5 h-5" />
-            Back to Catalogue
+            Explore all AI Employees
           </button>
           <nav className="mt-4 text-sm text-slate-600">
             <span className="hover:text-orange-500 cursor-pointer" onClick={handleBackToCatalogue}>

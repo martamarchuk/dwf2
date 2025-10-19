@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -39,10 +39,10 @@ export default function ContactForm() {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-slate-900 mb-3">
-            Interested? Let's Talk
+            Book a Meeting
           </h2>
           <p className="text-slate-600">
-            Send us a message and we'll get back to you within 24 hours
+            Fill in your details and we'll schedule a call to discuss how this AI employee can help your business
           </p>
         </div>
 
@@ -103,18 +103,18 @@ export default function ContactForm() {
             className="w-full px-8 py-4 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 disabled:bg-slate-400 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center gap-2"
           >
             {isSubmitting ? (
-              'Sending...'
+              'Processing...'
             ) : (
               <>
-                Send Message
-                <Send className="w-5 h-5" />
+                Let's discuss
+                <Calendar className="w-5 h-5" />
               </>
             )}
           </button>
 
           {submitStatus === 'success' && (
             <div className="p-4 bg-green-50 text-green-700 rounded-xl text-center font-medium">
-              Message sent successfully! We'll get back to you soon.
+              Thank you! We'll contact you shortly to schedule your meeting.
             </div>
           )}
 
