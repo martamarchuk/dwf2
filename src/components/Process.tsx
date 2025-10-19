@@ -39,7 +39,7 @@ export default function Process() {
             The Process – Fast, Simple, Subscription-based
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            We make AI integration simple — strategy, implementation, and continuous improvement in just three steps
+            We make AI integration simple — strategy, implementation, and continuous improvement
           </p>
         </div>
 
