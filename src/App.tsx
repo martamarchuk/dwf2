@@ -7,7 +7,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/employee/ai-sales-agent" element={<EmployeePage />} />
+        <Route path="/employee/:id" element={<EmployeePage />} />
       </Routes>
     </Router>
   );
