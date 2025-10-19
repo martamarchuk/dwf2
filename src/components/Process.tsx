@@ -36,7 +36,7 @@ export default function Process() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">
-            The Process – Fast, Simple, Subscription-based
+            From First Meeting To Working AI – In 3 Steps
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
             We make AI integration simple — strategy, implementation, and continuous improvement
