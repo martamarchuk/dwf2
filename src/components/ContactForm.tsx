@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Calendar } from 'lucide-react';
+import { submitForm } from '../utils/formSubmission';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ export default function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -20,15 +22,35 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage('');
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setSubmitStatus('idle'), 3000);
+      const result = await submitForm({
+        formName: 'employee_booking_form',
+        field1: formData.name,
+        field2: formData.email,
+        field3: formData.message,
+      });
+
+      if (result.success) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitStatus('idle'), 5000);
+      } else {
+        setSubmitStatus('error');
+        setErrorMessage(result.error || 'Unknown error occurred');
+        setTimeout(() => {
+          setSubmitStatus('idle');
+          setErrorMessage('');
+        }, 5000);
+      }
     } catch (error) {
       setSubmitStatus('error');
-      setTimeout(() => setSubmitStatus('idle'), 3000);
+      setErrorMessage(error instanceof Error ? error.message : 'Unknown error occurred');
+      setTimeout(() => {
+        setSubmitStatus('idle');
+        setErrorMessage('');
+      }, 5000);
     } finally {
       setIsSubmitting(false);
     }
@@ -120,7 +142,7 @@ export default function ContactForm() {
 
           {submitStatus === 'error' && (
             <div className="p-4 bg-red-50 text-red-700 rounded-xl text-center font-medium">
-              Something went wrong. Please try again.
+              {errorMessage || 'Something went wrong. Please try again.'}
             </div>
           )}
         </form>

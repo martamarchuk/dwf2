@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Building2, MessageSquare, CheckCircle } from 'lucide-react';
+import { submitForm } from '../utils/formSubmission';
 
 export default function CTASection() {
   const [formData, setFormData] = useState({
@@ -9,11 +10,35 @@ export default function CTASection() {
     useCase: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string>('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      const result = await submitForm({
+        formName: 'home_cta_form',
+        field1: formData.name,
+        field2: formData.email,
+        field3: formData.company,
+        field4: formData.useCase,
+      });
+
+      if (result.success) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', company: '', useCase: '' });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setError(result.error || 'Failed to submit form. Please try again.');
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -152,10 +177,17 @@ export default function CTASection() {
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  disabled={isSubmitting}
+                  className="w-full px-8 py-4 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 disabled:bg-slate-400 disabled:cursor-not-allowed transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
-                  Book a Demo
+                  {isSubmitting ? 'Submitting...' : 'Book a Demo'}
                 </button>
+
+                {error && (
+                  <div className="p-4 bg-red-50 text-red-700 rounded-xl text-center text-sm font-medium">
+                    {error}
+                  </div>
+                )}
 
                 <p className="text-xs text-slate-500 text-center">
                   By submitting this form, you agree to our privacy policy and terms of service.
