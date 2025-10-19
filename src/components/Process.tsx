@@ -32,9 +32,9 @@ const PROCESS_STEPS = [
 
 export default function Process() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">
             The Process – Fast, Simple, Subscription-based
           </h2>
@@ -43,29 +43,29 @@ export default function Process() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {PROCESS_STEPS.map((step, index) => {
             const Icon = step.icon;
             return (
               <div
                 key={index}
-                className="flex flex-col items-start p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition-all duration-300"
+                className="flex flex-col items-start p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition-all duration-300"
               >
-                <div className="w-14 h-14 rounded-xl bg-white border-2 border-orange-500 flex items-center justify-center mb-6">
-                  <Icon className="w-7 h-7 text-orange-500" strokeWidth={1.5} />
+                <div className="flex items-center gap-4 mb-4 w-full">
+                  <div className="w-12 h-12 rounded-xl bg-white border-2 border-orange-500 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-6 h-6 text-orange-500" strokeWidth={1.5} />
+                  </div>
+                  <div className="flex-1">
+                    <span className="text-xs font-semibold text-orange-500 uppercase tracking-wider block mb-1">
+                      {step.step}
+                    </span>
+                    <h3 className="text-lg font-bold text-slate-900 leading-tight">
+                      {step.title}
+                    </h3>
+                  </div>
                 </div>
 
-                <div className="mb-2">
-                  <span className="text-sm font-semibold text-orange-500 uppercase tracking-wider">
-                    {step.step}
-                  </span>
-                </div>
-
-                <h3 className="text-xl font-bold text-slate-900 mb-4">
-                  {step.title}
-                </h3>
-
-                <div className="space-y-3">
+                <div className="space-y-2.5">
                   {step.description.map((line, lineIndex) => (
                     <p key={lineIndex} className="text-sm text-slate-600 leading-relaxed">
                       {line}
@@ -75,12 +75,6 @@ export default function Process() {
               </div>
             );
           })}
-        </div>
-
-        <div className="text-center">
-          <p className="text-lg font-medium text-slate-700">
-            Here's how companies are already scaling with AI Employees
-          </p>
         </div>
       </div>
     </section>
