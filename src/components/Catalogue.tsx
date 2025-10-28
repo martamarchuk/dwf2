@@ -102,8 +102,18 @@ function AgentCard(employee: EmployeeData) {
 
   return (
     <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+      {/* Mobile: Image at top */}
+      <div className="relative h-48 w-full lg:hidden">
+        <img
+          src={imageUrl}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+      </div>
+
       <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8">
-        <div className="p-8 space-y-6">
+        <div className="p-6 lg:p-8 space-y-6">
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-4">
               <div className="p-3 bg-orange-100 text-orange-600 rounded-2xl group-hover:scale-110 transition-transform duration-300">
@@ -265,7 +275,8 @@ function AgentCard(employee: EmployeeData) {
           </button>
         </div>
 
-        <div className="relative min-h-[400px] lg:min-h-full">
+        {/* Desktop: Image on right */}
+        <div className="relative min-h-[400px] lg:min-h-full hidden lg:block">
           <img
             src={imageUrl}
             alt={title}
