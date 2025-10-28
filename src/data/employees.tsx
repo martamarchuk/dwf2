@@ -1,5 +1,22 @@
 import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram, Calendar, Phone, Headset, ClipboardList, UserCheck, Target, Image, BookOpen, VideoIcon, PhoneCall, Settings, TrendingUp, Gauge } from 'lucide-react';
 
+interface BlogArticleSection {
+  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight';
+  content: string;
+  imageUrl?: string;
+  featureTitle?: string;
+}
+
+interface BlogArticleData {
+  title: string;
+  author: {
+    name: string;
+    avatarUrl: string;
+  };
+  readTime: string;
+  sections: BlogArticleSection[];
+}
+
 export interface EmployeeData {
   id: string;
   category: string;
@@ -15,6 +32,7 @@ export interface EmployeeData {
   integrationTime: string;
   shareLink: string;
   imageUrl: string;
+  blogArticle?: BlogArticleData;
 }
 
 export const EMPLOYEES: EmployeeData[] = [
@@ -154,6 +172,73 @@ export const EMPLOYEES: EmployeeData[] = [
     integrationTime: '2-3 weeks',
     shareLink: 'https://digitalworkforce.one/#case-study-moldyfun',
     imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
+    blogArticle: {
+      title: 'How We Built an AI Sales Agent for a Shopify Store That Sells Worldwide',
+      author: {
+        name: 'Igor Palatkevich',
+        avatarUrl: '/igor-70x70.jpg',
+      },
+      readTime: '3-5 min',
+      sections: [
+        { type: 'heading', content: '1. The Origin of the Problem' },
+        { type: 'paragraph', content: 'When demand becomes unmanageable' },
+        { type: 'paragraph', content: 'The project began with a simple but painful truth - the more influencer exposure the store received, the more sales it lost. This Shopify business ships worldwide, and most purchases happen not through the checkout page, but through direct conversations with customers in Instagram DMs. After influencer posts, up to 500 people could contact the owner in a single day. Even with product-market fit, scaling was impossible while support was manual.' },
+
+        { type: 'heading', content: '2. Why the Old Approach Failed' },
+        { type: 'paragraph', content: 'Outsourcing did not scale - it fractured brand experience' },
+        { type: 'paragraph', content: 'The owner tried hiring external chat operators. The problem: new people never knew the products deeply enough. Messages were missed, quality was inconsistent, and most importantly - trust was not transferred. The store wasn\'t losing traffic, it was losing capacity to reply properly. The real bottleneck was not marketing - it was human throughput.' },
+
+        { type: 'heading', content: '3. Building the Foundation' },
+        { type: 'paragraph', content: 'Before automation - understand the buying journey' },
+        { type: 'paragraph', content: 'We collected three sources of truth: Real historic customer conversations, Full product export from Shopify including variations, and Tone of Voice guidance to preserve the founder\'s personality in conversation. We did not start coding until we understood how people decide, not just how they ask.' },
+
+        { type: 'heading', content: '4. First Prototype and Internal Testing' },
+        { type: 'paragraph', content: 'Validate behavior before going live' },
+        { type: 'paragraph', content: 'We created a private Telegram testing environment. The founder role-played real chats with the AI assistant. He gave feedback on tone, timing, persuasion and logic. Only after several refinement loops did we prepare the system for real customers. For the first time, he saw an AI that truly behaved like a salesperson, not a scripted FAQ.' },
+        { type: 'feature-highlight', content: 'Private Telegram staging environment for realistic testing', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800' },
+
+        { type: 'heading', content: '5. The Breakthrough: Shopify Order Creation' },
+        { type: 'paragraph', content: 'From chat to checkout trigger' },
+        { type: 'paragraph', content: 'The assistant was upgraded from "consulting" to actually creating orders inside Shopify. When a user reached a clear purchase intent, the AI guided them into commitment and generated the order directly. This was the turning point - the AI stopped assisting the sale and began executing it.' },
+        { type: 'feature-highlight', content: 'Direct order creation inside Shopify', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800' },
+
+        { type: 'heading', content: '6. The Checkout Experience Upgrade' },
+        { type: 'paragraph', content: 'Payment link generation and dual-channel delivery' },
+        { type: 'paragraph', content: 'Once the order is created, the system collects the customer\'s details and automatically prepares a checkout link for payment. It then delivers that link in two places simultaneously: in the chat where the conversation happens, and by email, so the customer can finish payment later if they switch device or app. This removed friction and made the sale instant and "one-flow" instead of "chat → break → search → checkout → pay". The user stays in the same emotional momentum of purchase.' },
+        { type: 'feature-highlight', content: 'Instant payment link generation (chat + email)', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800' },
+
+        { type: 'heading', content: '7. The First Real Bottleneck' },
+        { type: 'paragraph', content: 'Fulfillment required SKU-level precision' },
+        { type: 'paragraph', content: 'When orders started flowing, fulfillment teams struggled because order drafts did not include SKU codes. We had solved front-end friction but uncovered a new back-end dependency. This led to phase two of development.' },
+
+        { type: 'heading', content: '8. Deep Upgrade - SKU Intelligence' },
+        { type: 'paragraph', content: 'Making automation fulfillable, not just conversational' },
+        { type: 'paragraph', content: 'We rebuilt the internal logic to map each variation to its correct SKU. We added a custom interface so the client could upload or update product SKU data anytime. Now the assistant creates fully valid, fulfillment-ready orders without manual correction.' },
+        { type: 'feature-highlight', content: 'Dynamic SKU-based product database', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800' },
+
+        { type: 'heading', content: '9. Operational Stability' },
+        { type: 'paragraph', content: '24/7 multilingual selling' },
+        { type: 'paragraph', content: 'Once SKU support was completed, the system reached stability. The assistant replies in any language automatically detected from the user\'s first message. It sells globally, without timezone, language or staffing constraints.' },
+
+        { type: 'heading', content: '10. Daily Reporting' },
+        { type: 'paragraph', content: 'Visibility without micromanagement' },
+        { type: 'paragraph', content: 'We added a daily Telegram report showing how many conversations and orders the AI generated. The founder can "feel" the performance without logging into dashboards.' },
+        { type: 'feature-highlight', content: 'Automated daily Telegram performance summary', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800' },
+
+        { type: 'heading', content: '11. The Follow-Up Engine' },
+        { type: 'paragraph', content: 'Recovering revenue instead of losing warm leads' },
+        { type: 'paragraph', content: 'We mapped the buying journey into six stages. Then we built an engine that sends contextual follow-ups based on where the user stopped. This recovered a meaningful number of "almost closed" sales that otherwise would have been lost. Shortly after launch, the founder started forwarding screenshots - people were completing purchases purely because of automated follow-ups.' },
+        { type: 'feature-highlight', content: 'Stage-based smart follow-ups', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800' },
+
+        { type: 'heading', content: '12. The New Reality' },
+        { type: 'paragraph', content: 'The founder is no longer the bottleneck' },
+        { type: 'paragraph', content: 'What used to consume his attention daily is now handled entirely by this system. The assistant speaks with customers, qualifies them, recommends products, creates orders, sends checkout links, follows up and reports results. On nearly every call, we spend a few minutes just sharing how satisfying it is to watch this thing run itself.' },
+
+        { type: 'heading', content: '13. For Shopify Store Owners' },
+        { type: 'paragraph', content: 'This is not a chatbot - this is a digital salesperson' },
+        { type: 'paragraph', content: 'If your sales depend on conversations, if your buyers ask before they buy, if your DMs are your real storefront - this type of automation is the only way to scale without cloning yourself. If you want to explore turning your Shopify traffic into automated revenue the same way - reach out and we will walk you through what it could look like for your store.' },
+      ],
+    },
   },
   {
     id: 'digital-agency-linkedin-case',

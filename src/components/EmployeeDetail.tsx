@@ -2,6 +2,24 @@ import { Clock, CheckCircle, Zap, Users, ArrowLeft, ChevronLeft, ChevronRight } 
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ContactForm from './ContactForm';
+import BlogArticle from './BlogArticle';
+
+interface BlogArticleSection {
+  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight';
+  content: string;
+  imageUrl?: string;
+  featureTitle?: string;
+}
+
+interface BlogArticleData {
+  title: string;
+  author: {
+    name: string;
+    avatarUrl: string;
+  };
+  readTime: string;
+  sections: BlogArticleSection[];
+}
 
 interface EmployeeDetailProps {
   badge: string;
@@ -16,6 +34,7 @@ interface EmployeeDetailProps {
   integrationTime: string;
   imageUrl: string;
   category: string;
+  blogArticle?: BlogArticleData;
 }
 
 export default function EmployeeDetail({
@@ -31,6 +50,7 @@ export default function EmployeeDetail({
   integrationTime,
   imageUrl,
   category,
+  blogArticle,
 }: EmployeeDetailProps) {
   const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -248,6 +268,15 @@ export default function EmployeeDetail({
             </div>
           </div>
         </div>
+
+        {blogArticle && (
+          <BlogArticle
+            title={blogArticle.title}
+            author={blogArticle.author}
+            readTime={blogArticle.readTime}
+            sections={blogArticle.sections}
+          />
+        )}
 
         <div id="cta">
           <ContactForm />
