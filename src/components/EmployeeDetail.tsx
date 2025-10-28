@@ -122,7 +122,7 @@ export default function EmployeeDetail({
           </button>
           <nav className="mt-4 text-sm text-slate-600">
             <span className="hover:text-orange-500 cursor-pointer" onClick={handleBackToCatalogue}>
-              Catalogue
+              AI Employees
             </span>
             <span className="mx-2">/</span>
             <span className="text-slate-400">{category.split(' (')[0]}</span>
@@ -133,6 +133,13 @@ export default function EmployeeDetail({
 
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
           <div className="lg:col-span-2 space-y-8">
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Overview</h2>
+              <p className="text-lg text-slate-700 leading-relaxed">
+                {description}
+              </p>
+            </div>
+
             {badge !== 'Classic Solution' && (
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <div className="flex items-start gap-4">
@@ -148,13 +155,6 @@ export default function EmployeeDetail({
                 </div>
               </div>
             )}
-
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Overview</h2>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                {description}
-              </p>
-            </div>
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
@@ -239,7 +239,7 @@ export default function EmployeeDetail({
 
               <div className="border-t border-slate-200 pt-6">
                 <a
-                  href="#contact"
+                  href="#cta"
                   className="block w-full px-6 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-md hover:shadow-lg text-center"
                 >
                   Book a Demo
@@ -249,7 +249,7 @@ export default function EmployeeDetail({
           </div>
         </div>
 
-        <div id="contact">
+        <div id="cta">
           <ContactForm />
         </div>
       </div>
