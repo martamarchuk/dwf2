@@ -1,4 +1,5 @@
-import { Clock } from 'lucide-react';
+import { Clock, X } from 'lucide-react';
+import { useState } from 'react';
 
 interface BlogArticleSection {
   type: 'heading' | 'paragraph' | 'image' | 'feature-highlight';
@@ -18,10 +19,23 @@ interface BlogArticleProps {
 }
 
 export default function BlogArticle({ title, author, readTime, sections }: BlogArticleProps) {
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
+  const openLightbox = (imageUrl: string) => {
+    setLightboxImage(imageUrl);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeLightbox = () => {
+    setLightboxImage(null);
+    document.body.style.overflow = 'unset';
+  };
+
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
-        <div className="p-8 lg:p-12">
+    <>
+    <article className="w-full py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-3xl shadow-xl overflow-hidden p-8 lg:p-12">
           <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8 leading-tight">
             {title}
           </h1>
@@ -82,24 +96,26 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
 
               if (section.type === 'feature-highlight') {
                 return (
-                  <div key={index} className="my-10 p-8 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl border-2 border-green-200 shadow-md">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex items-center justify-center w-8 h-8 bg-green-500 text-white rounded-lg font-bold text-lg">
-                        ✓
+                  <div key={index} className="my-16">
+                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+                      <div className="flex items-center gap-3">
+                        <div className="flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-xl font-bold text-xl">
+                          ✓
+                        </div>
+                        <h3 className="text-2xl lg:text-3xl font-bold text-slate-900">
+                          {section.content}
+                        </h3>
                       </div>
-                      <h3 className="text-xl font-bold text-slate-900 uppercase tracking-wide">
-                        {section.featureTitle || 'Feature Highlight'}
-                      </h3>
                     </div>
-                    <p className="text-lg text-slate-800 font-medium mb-4">
-                      {section.content}
-                    </p>
                     {section.imageUrl && (
-                      <div className="rounded-xl overflow-hidden shadow-md bg-white/50 p-4">
+                      <div
+                        className="w-full cursor-pointer group"
+                        onClick={() => openLightbox(section.imageUrl!)}
+                      >
                         <img
                           src={section.imageUrl}
                           alt={section.content}
-                          className="w-full h-auto rounded-lg"
+                          className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
                         />
                       </div>
                     )}
@@ -113,5 +129,27 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
         </div>
       </div>
     </article>
+
+    {lightboxImage && (
+      <div
+        className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        onClick={closeLightbox}
+      >
+        <button
+          onClick={closeLightbox}
+          className="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-200"
+          aria-label="Close"
+        >
+          <X className="w-8 h-8 text-white" />
+        </button>
+        <img
+          src={lightboxImage}
+          alt="Full size"
+          className="max-w-full max-h-full object-contain"
+          onClick={(e) => e.stopPropagation()}
+        />
+      </div>
+    )}
+    </>
   );
 }

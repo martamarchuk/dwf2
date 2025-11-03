@@ -195,17 +195,17 @@ export const EMPLOYEES: EmployeeData[] = [
         { type: 'heading', content: '4. First Prototype and Internal Testing' },
         { type: 'paragraph', content: 'Validate behavior before going live' },
         { type: 'paragraph', content: 'We created a private Telegram testing environment. The founder role-played real chats with the AI assistant. He gave feedback on tone, timing, persuasion and logic. Only after several refinement loops did we prepare the system for real customers. For the first time, he saw an AI that truly behaved like a salesperson, not a scripted FAQ.' },
-        { type: 'feature-highlight', content: 'Private Telegram staging environment for realistic testing', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800' },
+        { type: 'feature-highlight', content: 'Private Telegram staging environment for realistic testing', imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
         { type: 'heading', content: '5. The Breakthrough: Shopify Order Creation' },
         { type: 'paragraph', content: 'From chat to checkout trigger' },
         { type: 'paragraph', content: 'The assistant was upgraded from "consulting" to actually creating orders inside Shopify. When a user reached a clear purchase intent, the AI guided them into commitment and generated the order directly. This was the turning point - the AI stopped assisting the sale and began executing it.' },
-        { type: 'feature-highlight', content: 'Direct order creation inside Shopify', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800' },
+        { type: 'feature-highlight', content: 'Direct order creation inside Shopify', imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
         { type: 'heading', content: '6. The Checkout Experience Upgrade' },
         { type: 'paragraph', content: 'Payment link generation and dual-channel delivery' },
         { type: 'paragraph', content: 'Once the order is created, the system collects the customer\'s details and automatically prepares a checkout link for payment. It then delivers that link in two places simultaneously: in the chat where the conversation happens, and by email, so the customer can finish payment later if they switch device or app. This removed friction and made the sale instant and "one-flow" instead of "chat → break → search → checkout → pay". The user stays in the same emotional momentum of purchase.' },
-        { type: 'feature-highlight', content: 'Instant payment link generation (chat + email)', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800' },
+        { type: 'feature-highlight', content: 'Instant payment link generation (chat + email)', imageUrl: 'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
         { type: 'heading', content: '7. The First Real Bottleneck' },
         { type: 'paragraph', content: 'Fulfillment required SKU-level precision' },
@@ -214,7 +214,7 @@ export const EMPLOYEES: EmployeeData[] = [
         { type: 'heading', content: '8. Deep Upgrade - SKU Intelligence' },
         { type: 'paragraph', content: 'Making automation fulfillable, not just conversational' },
         { type: 'paragraph', content: 'We rebuilt the internal logic to map each variation to its correct SKU. We added a custom interface so the client could upload or update product SKU data anytime. Now the assistant creates fully valid, fulfillment-ready orders without manual correction.' },
-        { type: 'feature-highlight', content: 'Dynamic SKU-based product database', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800' },
+        { type: 'feature-highlight', content: 'Dynamic SKU-based product database', imageUrl: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
         { type: 'heading', content: '9. Operational Stability' },
         { type: 'paragraph', content: '24/7 multilingual selling' },
@@ -223,12 +223,12 @@ export const EMPLOYEES: EmployeeData[] = [
         { type: 'heading', content: '10. Daily Reporting' },
         { type: 'paragraph', content: 'Visibility without micromanagement' },
         { type: 'paragraph', content: 'We added a daily Telegram report showing how many conversations and orders the AI generated. The founder can "feel" the performance without logging into dashboards.' },
-        { type: 'feature-highlight', content: 'Automated daily Telegram performance summary', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800' },
+        { type: 'feature-highlight', content: 'Automated daily Telegram performance summary', imageUrl: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
         { type: 'heading', content: '11. The Follow-Up Engine' },
         { type: 'paragraph', content: 'Recovering revenue instead of losing warm leads' },
         { type: 'paragraph', content: 'We mapped the buying journey into six stages. Then we built an engine that sends contextual follow-ups based on where the user stopped. This recovered a meaningful number of "almost closed" sales that otherwise would have been lost. Shortly after launch, the founder started forwarding screenshots - people were completing purchases purely because of automated follow-ups.' },
-        { type: 'feature-highlight', content: 'Stage-based smart follow-ups', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800' },
+        { type: 'feature-highlight', content: 'Stage-based smart follow-ups', imageUrl: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
         { type: 'heading', content: '12. The New Reality' },
         { type: 'paragraph', content: 'The founder is no longer the bottleneck' },
