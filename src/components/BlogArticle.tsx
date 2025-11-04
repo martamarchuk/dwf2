@@ -88,7 +88,7 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                         ✓
                       </div>
                       <h3 className="text-xl font-bold text-slate-900 uppercase tracking-wide">
-                        {section.featureTitle || 'Feature Highlight'}
+                        {section.featureTitle || 'Feature'}
                       </h3>
                     </div>
                     <p className="text-lg text-slate-800 font-medium mb-4">
