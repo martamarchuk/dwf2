@@ -180,7 +180,7 @@ export const EMPLOYEES: EmployeeData[] = [
   },
   readTime: '3-5 min',
   sections: [
-    { type: 'heading', content: '1. The Origin of the Problem', imageUrl: '/images/blog/1-origin.jpg' },
+    { type: 'heading', content: '1. The Origin of the Problem'},
     { type: 'paragraph', content: 'When demand becomes unmanageable' },
     { type: 'paragraph', content: 'It started the way many good problems do – with growth.' },
     { type: 'paragraph', content: 'Every influencer post brought new waves of attention, but instead of excitement, the founder felt dread.' },
@@ -189,7 +189,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'He tried to keep up – answering from the phone at dinner, before sleep, on weekends – but each unread chat became a small failure. He knew people were ready to buy. They just needed answers faster than he could type.' },
     { type: 'paragraph', content: 'At some point, growth stopped feeling like achievement. It felt like a trap.' },
 
-    { type: 'heading', content: '2. Why the Old Approach Failed', imageUrl: '/images/blog/2-old-approach.jpg' },
+    { type: 'heading', content: '2. Why the Old Approach Failed'},
     { type: 'paragraph', content: 'When “just hire help” doesn’t solve it' },
     { type: 'paragraph', content: 'At first, the founder did what most would do – he tried to throw people at the problem. Not a permanent team, just temporary chat operators he hired during peak moments, when influencers tagged the store and the DMs turned into a flood.' },
     { type: 'paragraph', content: 'On paper, it seemed sensible. In reality, it hurt more than it helped.' },
@@ -199,7 +199,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'Traffic wasn’t the problem.' },
     { type: 'paragraph', content: 'No amount of outsourced labor could solve that.' },
 
-    { type: 'heading', content: '3. Building the Foundation', imageUrl: '/images/blog/3-foundation.jpg' },
+    { type: 'heading', content: '3. Building the Foundation'},
     { type: 'paragraph', content: 'Before fixing the system, understand the human side of buying' },
     { type: 'paragraph', content: 'When the founder finally decided to explore an AI solution, he hoped technology would free him from the constant pressure of DMs. But the truth was – AI alone wouldn’t fix anything unless it first understood how he sold, connected, and built trust.' },
     { type: 'paragraph', content: 'We began not with software, but with people – the emotional path customers walked before they felt ready to buy.' },
@@ -208,7 +208,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'This step wasn’t about data – it was about preserving the human heartbeat of the business.' },
     { type: 'paragraph', content: 'Only once we understood what made people feel safe and confident buying from him, did we begin shaping the first version of the AI assistant.' },
 
-    { type: 'heading', content: '4. First Prototype and Internal Testing', imageUrl: '/images/blog/4-prototype.jpg' },
+    { type: 'heading', content: '4. First Prototype and Internal Testing'},
     { type: 'paragraph', content: 'Let the AI learn to feel human before it meets customers' },
     { type: 'paragraph', content: 'With the foundation in place, we built the first prototype – not to impress, but to observe. We needed to see if an AI could truly hold a conversation that felt personal, warm, and human – the way the founder did.' },
     { type: 'paragraph', content: 'To do this safely, we created a private testing space in Telegram. There, the founder spoke to the AI as if it were a real customer – asking tricky questions, changing his mind mid-conversation, hesitating, testing tone, pushing its limits.' },
@@ -218,9 +218,9 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'And then, something shifted.' },
     { type: 'paragraph', content: 'For the first time, the founder caught himself forgetting he was talking to an AI. It wasn’t just answering – it was selling with empathy, the way he did.' },
     { type: 'paragraph', content: 'That moment was the first spark of relief: this could really work.' },
-    { type: 'feature-highlight', content: 'Private Telegram staging environment for realistic testing', imageUrl: '/images/blog/features/telegram-testing.jpg' },
+    { type: 'feature-highlight', content: 'Private Telegram staging environment for realistic testing', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
-    { type: 'heading', content: '5. The Breakthrough: Shopify Order Creation', imageUrl: '/images/blog/5-order-creation.jpg' },
+    { type: 'heading', content: '5. The Breakthrough: Shopify Order Creation'},
     { type: 'paragraph', content: 'The moment AI stopped assisting – and started selling' },
     { type: 'paragraph', content: 'Up to this point, the AI felt promising, but it was still a “helper.” It could answer, guide, recommend – but the founder was still the one who had to jump in to finalize the sale.' },
     { type: 'paragraph', content: 'The real breakthrough came when we upgraded the assistant from a conversational guide to a sales closer.' },
@@ -228,9 +228,9 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'It confirmed the choice, captured the details, and created the order inside Shopify itself.' },
     { type: 'paragraph', content: 'The first time the founder watched an order appear – fully created by the AI, without him touching a keyboard – something inside him exhaled. For the first time, the business didn’t depend on his presence to turn interest into revenue.' },
     { type: 'paragraph', content: 'The shift was subtle but life-changing: AI wasn’t assisting the sale anymore - It was completing it.' },
-    { type: 'feature-highlight', content: 'Direct order creation inside Shopify', imageUrl: '/images/blog/features/direct-order.jpg' },
+    { type: 'feature-highlight', content: 'Direct order creation inside Shopify', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
-    { type: 'heading', content: '6. The Checkout Experience Upgrade', imageUrl: '/images/blog/6-checkout.jpg' },
+    { type: 'heading', content: '6. The Checkout Experience Upgrade'},
     { type: 'paragraph', content: 'Removing the last friction so customers could say “yes” with ease' },
     { type: 'paragraph', content: 'There was still one moment that often broke the momentum of a sale: sending customers off to pay.' },
     { type: 'paragraph', content: 'Before, the process looked like this: chat → pause → search for product → go to checkout → try paying later… if they didn’t get distracted first. Many good intentions died in that gap.' },
@@ -240,9 +240,9 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: '1 – Directly in the chat, while the desire to purchase was still alive 2 – By email, so the customer could return and pay later from any device' },
     { type: 'paragraph', content: 'This tiny shift changed everything. Customers no longer had to “go somewhere else” to complete the purchase. The journey stayed fluid, warm, and uninterrupted.' },
     { type: 'paragraph', content: 'For the founder, it was another layer of relief – knowing that even if someone left the chat, the door to the sale stayed open.' },
-    { type: 'feature-highlight', content: 'Instant payment link generation (chat + email)', imageUrl: '/images/blog/features/payment-links.jpg' },
+    { type: 'feature-highlight', content: 'Instant payment link generation (chat + email)', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
-    { type: 'heading', content: '7. The First Real Bottleneck', imageUrl: '/images/blog/7-bottleneck.jpg' },
+    { type: 'heading', content: '7. The First Real Bottleneck'},
     { type: 'paragraph', content: 'When growth exposes the next weak link' },
     { type: 'paragraph', content: 'As orders began flowing automatically, the founder finally felt relief – sales were happening without him. But the moment looked smoother from the outside than on the inside.' },
     { type: 'paragraph', content: 'Fulfillment teams struggled, because AI-created orders didn’t include SKU codes needed for packing and shipping. The front-end was automated, but the back-end still depended on manual fixes.' },
