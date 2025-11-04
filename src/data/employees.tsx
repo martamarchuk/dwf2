@@ -276,7 +276,6 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'So we mapped the buying journey into six natural stages, then built a follow-up engine that gently re-engages people based on where they stopped. No spam. No pressure. Just timely, relevant check-ins that feel human.' },
     { type: 'paragraph', content: 'The result was immediate. Sales started coming in from people who would’ve disappeared forever – now returning, completing payment, and even thanking the assistant for the reminder.' },
     { type: 'paragraph', content: 'The founder began forwarding screenshots with a kind of disbelief and joy: revenue was being recovered automatically – without him lifting a finger.' },
-    { type: 'feature-highlight', content: 'Stage-based smart follow-ups', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800' },
   ],
 },
   },
