@@ -201,22 +201,24 @@ export const EMPLOYEES: EmployeeData[] = [
 
     { type: 'heading', content: '3. Building the Foundation'},
     { type: 'paragraph', content: 'Before fixing the system, understand the human side of buying' },
-    { type: 'paragraph', content: 'When the founder finally decided to explore an AI solution, he hoped technology would free him from the constant pressure of DMs. But the truth was – AI alone wouldn’t fix anything unless it first understood how he sold, connected, and built trust.' },
+    { type: 'paragraph', content: 'When the founder finally decided to explore an AI solution, he hoped technology would free him from the constant pressure of DMs. But the truth was – AI alone wouldn’t fix anything unless we as developers first understood how he sold, connected, and built trust.' },
     { type: 'paragraph', content: 'We began not with software, but with people – the emotional path customers walked before they felt ready to buy.' },
     { type: 'paragraph', content: 'We collected three essential sources of truth:' },
-    { type: 'paragraph', content: '• Real customer conversations – past DM exchanges that revealed hesitations, objections, excitement, and the subtle moments when a “maybe” turned into a “yes” • The full product reality – a complete export of all products and variations from Shopify, so the AI could know the store with the same depth as the founder • Tone of Voice mapping – translating the founder’s personality into guidelines, capturing the warmth, reassurance, and authenticity his buyers trusted' },
+    { type: 'paragraph', content: '1. Real customer conversations – past DM exchanges that revealed hesitations, objections, excitement, and the subtle moments when a “maybe” turned into a “yes”' },
+    { type: 'paragraph', content: '2. The full product reality – a complete export of all products and variations from Shopify, so the AI could know the store with the same depth as the founder ' },
+    { type: 'paragraph', content: '3. Tone of Voice mapping – translating the founder’s personality into guidelines, capturing the warmth, reassurance, and authenticity his buyers trusted' },
+
     { type: 'paragraph', content: 'This step wasn’t about data – it was about preserving the human heartbeat of the business.' },
-    { type: 'paragraph', content: 'Only once we understood what made people feel safe and confident buying from him, did we begin shaping the first version of the AI assistant.' },
+    { type: 'paragraph', content: 'Only once we understood what made people feel safe and confident buying from him, only then we begin shaping the first version of the AI assistant.' },
 
     { type: 'heading', content: '4. First Prototype and Internal Testing'},
-    { type: 'paragraph', content: 'Let the AI learn to feel human before it meets customers' },
     { type: 'paragraph', content: 'With the foundation in place, we built the first prototype – not to impress, but to observe. We needed to see if an AI could truly hold a conversation that felt personal, warm, and human – the way the founder did.' },
     { type: 'paragraph', content: 'To do this safely, we created a private testing space in Telegram. There, the founder spoke to the AI as if it were a real customer – asking tricky questions, changing his mind mid-conversation, hesitating, testing tone, pushing its limits.' },
     { type: 'paragraph', content: 'These were not technical tests. They were emotional ones.' },
     { type: 'paragraph', content: 'Was the timing right? Did it sound too robotic? Did it reassure, guide, and connect – or simply answer?' },
     { type: 'paragraph', content: 'In every round, the founder shared feedback – not as a developer, but as someone who genuinely cared about his customers’ experience. We refined, adjusted, trained, and tried again.' },
     { type: 'paragraph', content: 'And then, something shifted.' },
-    { type: 'paragraph', content: 'For the first time, the founder caught himself forgetting he was talking to an AI. It wasn’t just answering – it was selling with empathy, the way he did.' },
+    { type: 'paragraph', content: 'For the first time, the founder caught himself forgetting he was testing an AI sales agent. It wasn’t just answering – it was selling with empathy, the way he did.' },
     { type: 'paragraph', content: 'That moment was the first spark of relief: this could really work.' },
     { type: 'feature-highlight', content: 'Private Telegram staging environment for realistic testing', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
@@ -244,8 +246,8 @@ export const EMPLOYEES: EmployeeData[] = [
 
     { type: 'heading', content: '7. The First Real Bottleneck'},
     { type: 'paragraph', content: 'When growth exposes the next weak link' },
-    { type: 'paragraph', content: 'As orders began flowing automatically, the founder finally felt relief – sales were happening without him. But the moment looked smoother from the outside than on the inside.' },
-    { type: 'paragraph', content: 'Fulfillment teams struggled, because AI-created orders didn’t include SKU codes needed for packing and shipping. The front-end was automated, but the back-end still depended on manual fixes.' },
+    { type: 'paragraph', content: 'As orders began flowing automatically, sales were happening without a founder. But the moment looked smoother from the outside than on the inside.' },
+    { type: 'paragraph', content: 'Fulfillment teams struggled, because AI-created orders didn’t include SKU codes needed for packing and shipping. The front-end was automated, but the back-end still depended on additional manual work.' },
     { type: 'paragraph', content: 'It was clear: to be truly hands-free, the system had to support the entire journey – not just the sale.' },
 
     { type: 'heading', content: '8. Deep Upgrade – SKU Intelligence'},
@@ -262,7 +264,6 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'For the founder, this was more than convenience. It was a new kind of freedom – the first taste of a business that could run while he lived his life, not the other way around.' },
 
     { type: 'heading', content: '10. Daily Reporting'},
-    { type: 'paragraph', content: 'Staying connected to the business without being consumed by it' },
     { type: 'paragraph', content: 'Even with everything running on its own, the founder didn’t want to feel detached. He didn’t want dashboards or analytics spreadsheets – he wanted a simple sense of “How did we do today?”' },
     { type: 'paragraph', content: 'So we added a short daily Telegram report. Once a day, he receives a clear snapshot: how many conversations the AI handled, how many orders it created, and the results it generated.' },
     { type: 'paragraph', content: 'No logging in, no searching for data – just a gentle pulse of the business delivered to him, wherever he is.' },
@@ -270,14 +271,14 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'feature-highlight', content: 'Automated daily Telegram performance summary', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
     { type: 'heading', content: '11. The Follow-Up Engine'},
-    { type: 'paragraph', content: 'Turning “almost sales” into real revenue' },
     { type: 'paragraph', content: 'Even with smooth conversations and instant checkout links, one truth remained: many people simply didn’t buy on the first try.' },
     { type: 'paragraph', content: 'Sometimes they got distracted, needed time, or just weren’t ready in that moment. Before, those warm leads quietly faded away – and the founder carried the familiar guilt of “I should have followed up.”' },
     { type: 'paragraph', content: 'So we mapped the buying journey into six natural stages, then built a follow-up engine that gently re-engages people based on where they stopped. No spam. No pressure. Just timely, relevant check-ins that feel human.' },
-    { type: 'paragraph', content: 'The result was immediate. Sales started coming in from people who would’ve disappeared forever – now returning, completing payment, and even thanking the assistant for the reminder.' },
+    { type: 'paragraph', content: 'The result was immediate. Sales started coming in from people who would’ve disappeared forever – now returning, completing payment, and even thanking the sales manager for the reminder.' },
     { type: 'paragraph', content: 'The founder began forwarding screenshots with a kind of disbelief and joy: revenue was being recovered automatically – without him lifting a finger.' },
   ],
 },
+
   },
   {
     id: 'digital-agency-linkedin-case',
