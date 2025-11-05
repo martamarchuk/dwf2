@@ -94,7 +94,7 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
 
                 if (section.type === 'feature-highlight') {
                   return (
-                    <div key={index} className="my-10 p-8 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl border-2 border-green-200 shadow-md">
+                    <div key={index} className="my-10 p-4 sm:p-8 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl border-2 border-green-200 shadow-md">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="flex items-center justify-center w-8 h-8 bg-green-500 text-white rounded-lg font-bold text-lg">
                           ✓
@@ -109,7 +109,7 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                       {section.imageUrl && (
                         <button
                           onClick={() => openModal(section.imageUrl!)}
-                          className="w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
+                          className="w-full rounded-none sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
                         >
                           <img
                             src={section.imageUrl}
