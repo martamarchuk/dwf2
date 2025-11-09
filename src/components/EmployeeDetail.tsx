@@ -4,7 +4,7 @@ import { useEffect, useState, useMemo } from 'react';
 import ContactForm from './ContactForm';
 import BlogArticle from './BlogArticle';
 
-interface BlogArticleSection {
+export interface BlogArticleSection {
   type: 'heading' | 'paragraph' | 'image' | 'feature-highlight' | 'slider';
   content: string;
   imageUrl?: string;

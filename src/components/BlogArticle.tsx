@@ -95,6 +95,9 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                 }
 
                 if (section.type === 'feature-highlight') {
+                  const hasMultipleImages = section.images && section.images.length > 1;
+                  const hasSingleImage = section.images && section.images.length === 1;
+
                   return (
                     <div key={index} className="my-10 p-4 sm:p-8 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl border-2 border-green-200 shadow-md">
                       <div className="flex items-center gap-3 mb-4">
@@ -108,7 +111,22 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                       <p className="text-lg text-slate-800 font-medium mb-6">
                         {section.content}
                       </p>
-                      {section.imageUrl && (
+                      {hasMultipleImages && (
+                        <ImageSlider images={section.images!} />
+                      )}
+                      {hasSingleImage && (
+                        <button
+                          onClick={() => openModal(section.images![0])}
+                          className="w-full rounded-none sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
+                        >
+                          <img
+                            src={section.images![0]}
+                            alt={section.content}
+                            className="w-full h-auto"
+                          />
+                        </button>
+                      )}
+                      {section.imageUrl && !section.images && (
                         <button
                           onClick={() => openModal(section.imageUrl!)}
                           className="w-full rounded-none sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -125,9 +143,28 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                 }
 
                 if (section.type === 'slider' && section.images && section.images.length > 0) {
+                  const hasMultipleImages = section.images.length > 1;
+
                   return (
                     <div key={index} className="my-10">
-                      <ImageSlider images={section.images} />
+                      {hasMultipleImages ? (
+                        <ImageSlider images={section.images} />
+                      ) : (
+                        <div className="relative w-full max-w-5xl mx-auto">
+                          <div className="relative aspect-video bg-slate-100 rounded-2xl overflow-hidden shadow-lg">
+                            <button
+                              onClick={() => openModal(section.images![0])}
+                              className="w-full h-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            >
+                              <img
+                                src={section.images[0]}
+                                alt={section.content}
+                                className="w-full h-full object-contain"
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   );
                 }

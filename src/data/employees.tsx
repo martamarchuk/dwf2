@@ -221,7 +221,12 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'And then, something shifted.' },
     { type: 'paragraph', content: 'For the first time, the founder caught himself forgetting he was testing an AI sales agent. It wasn’t just answering – it was selling with empathy, the way he did.' },
     { type: 'paragraph', content: 'That moment was the first spark of relief: this could really work.' },
-    { type: 'feature-highlight', content: 'Private Telegram staging environment for realistic testing', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800' },
+    { type: 'feature-highlight', content: 'Private Telegram staging environment for realistic testing', featureTitle: 'Feature Highlight', images: [
+      '/projects/moldyfun/telegram-staging1.png',
+      '/projects/moldyfun/telegram-staging2.png',
+      '/projects/moldyfun/telegram-staging3.png',
+      '/projects/moldyfun/telegram-staging4.png'
+    ]},
 
     { type: 'heading', content: '5. The Breakthrough: Shopify Order Creation'},
     { type: 'paragraph', content: 'The moment AI stopped assisting – and started selling' },
