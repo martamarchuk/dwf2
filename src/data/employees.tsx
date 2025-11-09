@@ -186,8 +186,9 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'It started the way many good problems do – with growth.' },
     { type: 'paragraph', content: 'Every influencer post brought new waves of attention, but instead of excitement, the founder felt dread.' },
     { type: 'paragraph', content: 'The more his store was seen, the more messages poured in – and the less control he had.' },
-    { type: 'paragraph', content: 'This Shopify business shipped products to customers all over the world. Yet the real sales didn’t happen on the website; they happened in private Instagram DMs, one message at a time. After a single post by a big creator, his inbox could explode with five hundred people asking questions, choosing colors, checking prices, hesitating, disappearing.' },
-    { type: 'paragraph', content: 'He tried to keep up – answering from the phone at dinner, before sleep, on weekends – but each unread chat became a small failure. He knew people were ready to buy. They just needed answers faster than he could type.' },
+    { type: 'paragraph', content: 'This Shopify business shipped products to customers all over the world. Yet the real sales didn’t happen on the website by the customers themself - they happened by answering messages in Instagram DMs, and by reactivating clients.' },
+    { type: 'paragraph', content: 'And after a single post by a big creator, his inbox could explode with five hundred people asking questions, choosing sizes, checking prices, hesitating, disappearing.' },
+    { type: 'paragraph', content: 'The founder tried to keep up – answering from the phone at dinner, before sleep, on weekends – but each unread chat became a small failure.' },
     { type: 'paragraph', content: 'At some point, growth stopped feeling like achievement. It felt like a trap.' },
 
     { type: 'heading', content: '2. Why the Old Approach Failed'},
