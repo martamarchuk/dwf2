@@ -274,7 +274,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'Every inquiry is automatically captured as a lead and moves through stages on its own, reflecting where the customer is in the decision process. For the first time, the founder could see every conversation in one place, in the right order.' },
     { type: 'paragraph', content: 'What used to feel like juggling dozens of chats by hand now looks more like watching a perfectly tuned machine hum — the business finally runs itself.' },
  
-    { type: 'feature-highlight', content: 'Human-in-the-Loop as Safety Mode', featureTitle: 'Feature', images: [
+    { type: 'feature-highlight', content: 'CRM Integration - the order in everything', featureTitle: 'Feature', images: [
       '/projects/moldyfun/kommo_pipeline.png',
       '/projects/moldyfun/kommo_lead_full screen.png'
     ]},
