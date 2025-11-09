@@ -157,7 +157,7 @@ export const EMPLOYEES: EmployeeData[] = [
     icon: <ShoppingCart className="w-12 h-12" />,
     title: 'MoldyFun Shopify Store: AI Sales Agent that sells on 100% autopilot',
     subtitle: 'Senior Sales Representative, Account Executive, Deal Closer',
-    description: 'A fully independent, full-cycle, text-based AI Sales Agent increased sales for the Shopify store MoldyFun by automating incoming inquiries and guiding customers through to purchase, creating orders in the Shopify store, sending payment links to customers, and reactivating clients on every stage of the buying journey',
+    description: 'A fully independent, full-cycle, text-based AI Sales Agent increased sales for the Shopify store MoldyFun by answering all incoming inquiries, guiding customers through to purchase, creating orders in the Shopify store, sending payment links to customers, and reactivating clients on every stage of the buying journey',
     functions: [
       'Response time to clients dropped from several hours to instant 24/7',
       'Conversion from inquiries to orders increased by 35%',
