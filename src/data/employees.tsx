@@ -231,7 +231,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'It confirmed the choice, captured the details, and created the order inside Shopify itself.' },
     { type: 'paragraph', content: 'The first time the founder watched an order appear – fully created by the AI, without him touching a keyboard – something inside him exhaled. For the first time, the business didn’t depend on his presence to turn interest into revenue.' },
     { type: 'paragraph', content: 'The shift was subtle but life-changing: AI wasn’t assisting the sale anymore - It was completing it.' },
-    { type: 'feature-highlight', content: 'Direct order creation inside Shopify', featureTitle: 'Feature Highlight', imageUrl: 'public/projects/moldyfun/shopify2_blured.png' },
+    { type: 'feature-highlight', content: 'Direct order creation inside Shopify', featureTitle: 'Feature Highlight', imageUrl: '/projects/moldyfun/shopify2_blured.png' },
 
     { type: 'heading', content: '6. The Checkout Experience Upgrade'},
     { type: 'paragraph', content: 'Removing the last friction so customers could say “yes” with ease' },
@@ -261,7 +261,10 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'heading', content: '9. Operational Stability'},
     { type: 'paragraph', content: 'Selling around the clock, without the founder\'s presence' },
     { type: 'slider', content: 'Instagram conversation examples', images: [
-      '/projects/moldyfun/insta1.png'
+      '/projects/moldyfun/insta1.png',
+      '/projects/moldyfun/insta2.png',
+      '/projects/moldyfun/insta3.png',
+      '/projects/moldyfun/insta4.png'
     ]},    
     { type: 'paragraph', content: 'Once SKU support was in place, something shifted – the system no longer needed hand-holding. It began operating with a quiet, steady confidence.' },
     { type: 'paragraph', content: 'The assistant could now reply to anyone, at any hour, in any language detected from the first message. No time zones. No waiting. No "I\'ll answer later."' },
