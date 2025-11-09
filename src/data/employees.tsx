@@ -287,7 +287,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'It gave him something he hadn’t felt in a long time: the comfort of being informed, without the weight of being involved.' },
     { type: 'feature-highlight', content: 'Automated daily Telegram performance summary', featureTitle: 'Feature Highlight', imageUrl: '/projects/moldyfun/telegram_daily_reporting.png' },
 
-    { type: 'heading', content: '11. The Follow-Up Engine'},
+    { type: 'heading', content: '11. The Follow-Up on autopilot'},
     { type: 'paragraph', content: 'Even with smooth conversations and instant checkout links, one truth remained: many people simply didn’t buy on the first try.' },
     { type: 'paragraph', content: 'Sometimes they got distracted, needed time, or just weren’t ready in that moment. Before, those warm leads quietly faded away – and the founder carried the familiar guilt of “I should have followed up.”' },
     { type: 'paragraph', content: 'So we mapped the buying journey into six natural stages, then built a follow-up engine that gently re-engages people based on where they stopped. No spam. No pressure. Just timely, relevant check-ins that feel human.' },
