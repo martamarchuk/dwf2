@@ -155,7 +155,7 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                         <ImageSlider images={section.images} />
                       ) : (
                         <div className="relative w-full max-w-5xl mx-auto">
-                          <div className="relative aspect-video bg-slate-100 rounded-2xl overflow-hidden shadow-lg">
+                          <div className="relative bg-slate-100 rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: '16/9' }}>
                             <button
                               onClick={() => openModal(section.images![0])}
                               onTouchEnd={() => openModal(section.images![0])}
@@ -197,7 +197,8 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
               e.stopPropagation();
               closeModal();
             }}
-            className="absolute top-4 right-4 p-2 bg-white rounded-full hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white touch-manipulation z-[60]"
+            className="absolute top-4 right-4 p-2 bg-white rounded-full hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white touch-manipulation"
+            style={{ zIndex: 60 }}
             aria-label="Close modal"
           >
             <X className="w-6 h-6 text-slate-900" />

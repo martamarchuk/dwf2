@@ -97,7 +97,8 @@ export default function ImageSlider({ images, className = '' }: ImageSliderProps
       <div className={`relative w-full max-w-5xl mx-auto ${className || 'mb-12'}`}>
         <div
           ref={sliderRef}
-          className="relative aspect-video bg-slate-100 rounded-2xl overflow-hidden shadow-lg touch-pan-y"
+          className="relative bg-slate-100 rounded-2xl overflow-hidden shadow-lg"
+          style={{ aspectRatio: '16/9', touchAction: 'pan-y' }}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
@@ -176,7 +177,8 @@ export default function ImageSlider({ images, className = '' }: ImageSliderProps
               e.stopPropagation();
               handleCloseFullscreen();
             }}
-            className="absolute top-4 right-4 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-200 z-[60] touch-manipulation"
+            className="absolute top-4 right-4 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-200 touch-manipulation"
+            style={{ zIndex: 60 }}
             aria-label="Close fullscreen"
           >
             <X className="w-8 h-8" />
@@ -191,7 +193,8 @@ export default function ImageSlider({ images, className = '' }: ImageSliderProps
               e.stopPropagation();
               handlePrev();
             }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-200 z-[60] touch-manipulation"
+            className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-200 touch-manipulation"
+            style={{ zIndex: 60 }}
             aria-label="Previous image"
           >
             <ChevronLeft className="w-8 h-8" />
@@ -206,7 +209,8 @@ export default function ImageSlider({ images, className = '' }: ImageSliderProps
               e.stopPropagation();
               handleNext();
             }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-200 z-[60] touch-manipulation"
+            className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-200 touch-manipulation"
+            style={{ zIndex: 60 }}
             aria-label="Next image"
           >
             <ChevronRight className="w-8 h-8" />
@@ -225,7 +229,7 @@ export default function ImageSlider({ images, className = '' }: ImageSliderProps
             />
           </div>
 
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-[60]">
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3" style={{ zIndex: 60 }}>
             {images.map((_, index) => (
               <button
                 key={index}
