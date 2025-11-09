@@ -61,7 +61,6 @@ export default function EmployeeDetail({
     if (id === 'moldyfun-case') {
       return [
         imageUrl,
-        '/projects/moldyfun/website_full.png',
         '/projects/moldyfun/kommo_pipeline.png',
         '/projects/moldyfun/kommo_lead_full screen.png'
       ];
