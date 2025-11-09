@@ -171,7 +171,7 @@ export const EMPLOYEES: EmployeeData[] = [
     industries: ['E-commerce & Retail'],
     integrationTime: '2-3 weeks',
     shareLink: 'https://digitalworkforce.one/#case-study-moldyfun',
-    imageUrl: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/projects/moldyfun/website_header.png',
     blogArticle: {
   title: 'How We Built an AI Sales Agent for a Shopify Store That Sells Worldwide',
   author: {
