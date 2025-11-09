@@ -255,7 +255,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'This tiny shift changed everything. Customers no longer had to “go somewhere else” to complete the purchase. The journey stayed fluid, warm, and uninterrupted.' },
     { type: 'paragraph', content: 'For the founder, it was another layer of relief – knowing that even if someone left the chat, the door to the sale stayed open.' },
 
-        { type: 'heading', content: '7. Human in the Loop as Safety Mode for early stage'},
+    { type: 'heading', content: '7. Human in the Loop as Safety Mode for early stage'},
     { type: 'paragraph', content: 'Before letting the AI speak directly with real customers, we created a human-in-the-loop process - a safety buffer that allowed the founder to stay in control while we are rolling out AI sales system' },
     { type: 'paragraph', content: 'The AI sales agent’s responses appeared first in the Telegram group chat, where each message came with two buttons: Edit and Send it.' },
     { type: 'paragraph', content: 'If the founder felt the message truly reflected his tone and intention, he simply tapped Send it, and the reply went to the customer instantly. If something needed adjusting - a warmer phrase, a softer push, a clearer explanation — he tapped Edit, rewrote the message, and sent the refined version to the client' },
@@ -267,6 +267,18 @@ export const EMPLOYEES: EmployeeData[] = [
       '/projects/moldyfun/human-in-the-loop5.png'
     ]},
     { type: 'paragraph', content: 'This stage gave the founder confidence: the AI wasn’t brake his business while we as technical team tuning system and preparing it to full production level autopilot.' },
+
+    { type: 'heading', content: '9. CRM Integration - Bringing Order to Conversations'},
+    { type: 'paragraph', content: 'As conversations multiplied across Instagram and the website chat, one final step was needed – structure.' },
+    { type: 'paragraph', content: 'We connected the AI Sales Agent to the CRM and built a pipeline that mirrors the real buying journey.' },
+    { type: 'paragraph', content: 'Every inquiry is automatically captured as a lead and moves through stages on its own, reflecting where the customer is in the decision process. For the first time, the founder could see every conversation in one place, in the right order.' },
+    { type: 'paragraph', content: 'What used to feel like juggling dozens of chats by hand now looks more like watching a perfectly tuned machine hum — the business finally runs itself.' },
+ 
+    { type: 'feature-highlight', content: 'Human-in-the-Loop as Safety Mode', featureTitle: 'Feature', images: [
+      '/projects/moldyfun/kommo_pipeline.png',
+      '/projects/moldyfun/kommo_lead_full screen.png'
+    ]},
+ 
     
     { type: 'heading', content: '7. The First Real Bottleneck'},
     { type: 'paragraph', content: 'When growth exposes the next weak link' },
