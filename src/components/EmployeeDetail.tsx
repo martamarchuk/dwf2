@@ -55,7 +55,12 @@ export default function EmployeeDetail({
   const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [imageUrl, imageUrl, imageUrl];
+  const images = [
+    imageUrl,
+    '/projects/moldyfun/website_header.png',
+    '/projects/moldyfun/website_full.png',
+    '/projects/moldyfun/website_item_page.png'
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);
