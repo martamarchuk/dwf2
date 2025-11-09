@@ -266,7 +266,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'To remove the last dependency on the founder or staff, we rebuilt the system’s logic around SKU-level accuracy. Every product variation was mapped to the correct SKU, so orders could move straight to fulfillment without anyone “fixing” them.' },
     { type: 'paragraph', content: 'We also added a simple interface for the founder to update SKUs anytime, without tech help. Now, when the AI creates an order, it’s fully complete – accurate, structured, and ready to ship.' },  
     { type: 'paragraph', content: 'This was the moment the founder stopped worrying about what would break when sales increased. The system was no longer just selling – it was supporting the business like a true team member.' },
-    { type: 'feature-highlight', content: 'Simple product editor page', featureTitle: 'Feature Highlight', imageUrl: '/projects/moldyfun/product_database_editor.png' },
+    { type: 'feature-highlight', content: 'Simple interface for the founder to update SKUs anytime', featureTitle: 'Feature Highlight', imageUrl: '/projects/moldyfun/product_database_editor.png' },
     { type: 'heading', content: '9. Operational Stability'},
     { type: 'paragraph', content: 'Selling around the clock, without the founder\'s presence' },
     { type: 'slider', content: 'Instagram conversation examples', images: [
