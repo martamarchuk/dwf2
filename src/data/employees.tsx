@@ -1,10 +1,11 @@
 import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram, Calendar, Phone, Headset, ClipboardList, UserCheck, Target, Image, BookOpen, VideoIcon, PhoneCall, Settings, TrendingUp, Gauge } from 'lucide-react';
 
 interface BlogArticleSection {
-  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight';
+  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight' | 'slider';
   content: string;
   imageUrl?: string;
   featureTitle?: string;
+  images?: string[];
 }
 
 interface BlogArticleData {
@@ -258,10 +259,17 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'feature-highlight', content: 'Dynamic SKU-based product database', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
     { type: 'heading', content: '9. Operational Stability'},
-    { type: 'paragraph', content: 'Selling around the clock, without the founder’s presence' },
+    { type: 'paragraph', content: 'Selling around the clock, without the founder\'s presence' },
     { type: 'paragraph', content: 'Once SKU support was in place, something shifted – the system no longer needed hand-holding. It began operating with a quiet, steady confidence.' },
-    { type: 'paragraph', content: 'The assistant could now reply to anyone, at any hour, in any language detected from the first message. No time zones. No waiting. No “I’ll answer later.”' },
+    { type: 'paragraph', content: 'The assistant could now reply to anyone, at any hour, in any language detected from the first message. No time zones. No waiting. No "I\'ll answer later."' },
     { type: 'paragraph', content: 'For the founder, this was more than convenience. It was a new kind of freedom – the first taste of a business that could run while he lived his life, not the other way around.' },
+
+    { type: 'slider', content: 'Instagram conversation examples', images: [
+      '/projects/moldyfun/insta1.png',
+      '/projects/moldyfun/insta2.png',
+      '/projects/moldyfun/insta3.png',
+      '/projects/moldyfun/insta4.png'
+    ]},
 
     { type: 'heading', content: '10. Daily Reporting'},
     { type: 'paragraph', content: 'Even with everything running on its own, the founder didn’t want to feel detached. He didn’t want dashboards or analytics spreadsheets – he wanted a simple sense of “How did we do today?”' },

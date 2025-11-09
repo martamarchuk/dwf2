@@ -5,10 +5,11 @@ import ContactForm from './ContactForm';
 import BlogArticle from './BlogArticle';
 
 interface BlogArticleSection {
-  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight';
+  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight' | 'slider';
   content: string;
   imageUrl?: string;
   featureTitle?: string;
+  images?: string[];
 }
 
 interface BlogArticleData {

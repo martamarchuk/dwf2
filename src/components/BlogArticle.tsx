@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Clock, X } from 'lucide-react';
+import ImageSlider from './ImageSlider';
 
 interface BlogArticleSection {
-  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight';
+  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight' | 'slider';
   content: string;
   imageUrl?: string;
   featureTitle?: string;
+  images?: string[];
 }
 
 interface BlogArticleProps {
@@ -118,6 +120,14 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                           />
                         </button>
                       )}
+                    </div>
+                  );
+                }
+
+                if (section.type === 'slider' && section.images && section.images.length > 0) {
+                  return (
+                    <div key={index} className="my-10">
+                      <ImageSlider images={section.images} />
                     </div>
                   );
                 }
