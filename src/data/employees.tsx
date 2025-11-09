@@ -155,7 +155,7 @@ export const EMPLOYEES: EmployeeData[] = [
     category: 'Case studies (8)',
     badge: 'Case Study',
     icon: <ShoppingCart className="w-12 h-12" />,
-    title: 'MoldyFun Shopify Store: AI Sales Agent increased sales by automating incoming inquiries',
+    title: 'MoldyFun Shopify Store: AI Sales Agent that sells on 100% autopilot',
     subtitle: 'Senior Sales Representative, Account Executive, Deal Closer',
     description: 'A fully independent, full-cycle, text-based AI Sales Agent increased sales for the Shopify store MoldyFun by automating incoming inquiries and guiding customers through to purchase.',
     functions: [
