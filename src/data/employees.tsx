@@ -261,10 +261,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'To remove the last dependency on the founder or staff, we rebuilt the system’s logic around SKU-level accuracy. Every product variation was mapped to the correct SKU, so orders could move straight to fulfillment without anyone “fixing” them.' },
     { type: 'paragraph', content: 'We also added a simple interface for the founder to update SKUs anytime, without tech help. Now, when the AI creates an order, it’s fully complete – accurate, structured, and ready to ship.' },
      { type: 'slider', content: 'Instagram conversation examples', images: [
-      '/projects/moldyfun/insta1.png',
-      '/projects/moldyfun/insta2.png',
-      '/projects/moldyfun/insta3.png',
-      '/projects/moldyfun/insta4.png'
+      '/projects/moldyfun/insta1.png'
     ]},    
     { type: 'paragraph', content: 'This was the moment the founder stopped worrying about what would break when sales increased. The system was no longer just selling – it was supporting the business like a true team member.' },
     { type: 'feature-highlight', content: 'Dynamic SKU-based product database', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800' },
