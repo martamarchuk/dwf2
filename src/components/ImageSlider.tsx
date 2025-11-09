@@ -3,9 +3,10 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 interface ImageSliderProps {
   images: string[];
+  className?: string;
 }
 
-export default function ImageSlider({ images }: ImageSliderProps) {
+export default function ImageSlider({ images, className = '' }: ImageSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
@@ -62,22 +63,22 @@ export default function ImageSlider({ images }: ImageSliderProps) {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (isFullscreen) {
         if (e.key === 'Escape') {
-          handleCloseFullscreen();
+          setIsFullscreen(false);
         } else if (e.key === 'ArrowLeft') {
-          handlePrev();
+          setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
         } else if (e.key === 'ArrowRight') {
-          handleNext();
+          setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
         }
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isFullscreen]);
+  }, [isFullscreen, images.length]);
 
   return (
     <>
-      <div className="relative w-full max-w-5xl mx-auto mb-12">
+      <div className={`relative w-full max-w-5xl mx-auto ${className || 'mb-12'}`}>
         <div
           ref={sliderRef}
           className="relative aspect-video bg-slate-100 rounded-2xl overflow-hidden shadow-lg"

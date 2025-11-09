@@ -112,7 +112,7 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                         {section.content}
                       </p>
                       {hasMultipleImages && (
-                        <ImageSlider images={section.images!} />
+                        <ImageSlider images={section.images!} className="" />
                       )}
                       {hasSingleImage && (
                         <button
