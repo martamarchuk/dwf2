@@ -268,6 +268,15 @@ export const EMPLOYEES: EmployeeData[] = [
     ]},
     { type: 'paragraph', content: 'This stage gave the founder confidence: the AI wasn’t brake his business while we as technical team tuning system and preparing it to full production level autopilot.' },
 
+    { type: 'heading', content: '8. Where the AI Sales Assistant Lives? '},
+    { type: 'paragraph', content: 'We connected the AI Sales Agent to Instagram DMs and the website chat - the two places where all conversations and purchases started.' },
+    { type: 'paragraph', content: 'We also explored integrating TikTok DMs, but regional restrictions on the TikTok side made it impossible to connect as easy as Instagram or website chat, so we left this idea because this sales channel was less important for the founder' },
+    { type: 'feature-highlight', content: 'AI Sales Agent work through Instagram DMs and the website chat', featureTitle: 'Feature', images: [
+      '/projects/moldyfun/website_chat1.png',
+      '/projects/moldyfun/website_chat2.png',
+      '/projects/moldyfun/insta2.png'
+    ]},
+
     { type: 'heading', content: '9. CRM Integration - Bringing Order to Conversations'},
     { type: 'paragraph', content: 'As conversations multiplied across Instagram and the website chat, one final step was needed – structure.' },
     { type: 'paragraph', content: 'We connected the AI Sales Agent to the CRM and built a pipeline that mirrors the real buying journey.' },
