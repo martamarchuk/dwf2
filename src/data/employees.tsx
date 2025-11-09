@@ -245,7 +245,13 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'So we redesigned the experience around one simple principle: Don’t break the emotional flow of buying.' },
     { type: 'paragraph', content: 'Once the AI created the order, it collected the customer’s details and instantly generated a personal payment link. But we didn’t stop there.' },
     { type: 'paragraph', content: 'To protect the sale from getting lost in the chaos of daily life, the system delivered that link in two places at once:' },
-    { type: 'paragraph', content: '1 – Directly in the chat, while the desire to purchase was still alive 2 – By email, so the customer could return and pay later from any device' },
+    { type: 'paragraph', content: '1 – Directly in the chat, while the desire to purchase was still alive' },
+    { type: 'paragraph', content: '2 – By email, so the customer could return and pay later from any device' },
+     { type: 'slider', content: 'Instagram conversation examples', images: [
+      '/projects/moldyfun/insta4.png',
+      '/projects/moldyfun/gmail3.png',
+      '/projects/moldyfun/checkout_header.png'
+    ]},    
     { type: 'paragraph', content: 'This tiny shift changed everything. Customers no longer had to “go somewhere else” to complete the purchase. The journey stayed fluid, warm, and uninterrupted.' },
     { type: 'paragraph', content: 'For the founder, it was another layer of relief – knowing that even if someone left the chat, the door to the sale stayed open.' },
     { type: 'feature-highlight', content: 'Instant payment link generation (chat + email)', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800' },
@@ -259,10 +265,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'heading', content: '8. Deep Upgrade – SKU Intelligence'},
     { type: 'paragraph', content: 'So the business could run without “just one more manual step”' },
     { type: 'paragraph', content: 'To remove the last dependency on the founder or staff, we rebuilt the system’s logic around SKU-level accuracy. Every product variation was mapped to the correct SKU, so orders could move straight to fulfillment without anyone “fixing” them.' },
-    { type: 'paragraph', content: 'We also added a simple interface for the founder to update SKUs anytime, without tech help. Now, when the AI creates an order, it’s fully complete – accurate, structured, and ready to ship.' },
-     { type: 'slider', content: 'Instagram conversation examples', images: [
-      '/projects/moldyfun/insta1.png'
-    ]},    
+    { type: 'paragraph', content: 'We also added a simple interface for the founder to update SKUs anytime, without tech help. Now, when the AI creates an order, it’s fully complete – accurate, structured, and ready to ship.' },  
     { type: 'paragraph', content: 'This was the moment the founder stopped worrying about what would break when sales increased. The system was no longer just selling – it was supporting the business like a true team member.' },
     { type: 'feature-highlight', content: 'Dynamic SKU-based product database', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
