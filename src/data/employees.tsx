@@ -247,7 +247,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'To protect the sale from getting lost in the chaos of daily life, the system delivered that link in two places at once:' },
     { type: 'paragraph', content: '1 – Directly in the chat, while the desire to purchase was still alive' },
     { type: 'paragraph', content: '2 – By email, so the customer could return and pay later from any device' },
-     { type: 'slider', content: 'Instagram conversation examples', images: [
+     { type: 'slider', content: 'Checkout link to DM and to email', images: [
       '/projects/moldyfun/insta4.png',
       '/projects/moldyfun/gmail3.png',
       '/projects/moldyfun/checkout_header.png'
