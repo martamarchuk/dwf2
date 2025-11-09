@@ -258,7 +258,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'heading', content: '7. Human in the Loop as Safety Mode for early stage'},
     { type: 'paragraph', content: 'Before letting the AI speak directly with real customers, we created a human-in-the-loop process - a safety buffer that allowed the founder to stay in control while we are rolling out AI sales system' },
     { type: 'paragraph', content: 'The AI sales agent’s responses appeared first in the Telegram group chat, where each message came with two buttons: Edit and Send it.' },
-    { type: 'paragraph', content: 'If the founder felt the message truly reflected his tone and intention, he simply tapped Send it, and the reply went to the customer instantly. If something needed adjusting - a warmer phrase, a softer push, a clearer explanation — he tapped Edit, rewrote the message, and sent the refined version to the client' },
+    { type: 'paragraph', content: 'If the founder felt the message truly reflected his tone and intention, he simply tapped Send it, and the reply went to the customer instantly. If something needed adjusting - a warmer phrase, a softer push, a clearer explanation - he tapped Edit, rewrote the message, and sent the refined version to the client' },
     { type: 'feature-highlight', content: 'Human-in-the-Loop as Safety Mode', featureTitle: 'Feature', images: [
       '/projects/moldyfun/human-in-the-loop1.png',
       '/projects/moldyfun/human-in-the-loop2.png',
@@ -281,7 +281,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'As conversations multiplied across Instagram and the website chat, one final step was needed – structure.' },
     { type: 'paragraph', content: 'We connected the AI Sales Agent to the CRM and built a pipeline that mirrors the real buying journey.' },
     { type: 'paragraph', content: 'Every inquiry is automatically captured as a lead and moves through stages on its own, reflecting where the customer is in the decision process. For the first time, the founder could see every conversation in one place, in the right order.' },
-    { type: 'paragraph', content: 'What used to feel like juggling dozens of chats by hand now looks more like watching a perfectly tuned machine hum — the business finally runs itself.' },
+    { type: 'paragraph', content: 'What used to feel like juggling dozens of chats by hand now looks more like watching a perfectly tuned machine hum - the business finally runs itself.' },
  
     { type: 'feature-highlight', content: 'CRM Integration - the order in everything', featureTitle: 'Feature', images: [
       '/projects/moldyfun/kommo_pipeline.png',
@@ -450,7 +450,7 @@ export const EMPLOYEES: EmployeeData[] = [
     icon: <Globe className="w-12 h-12" />,
     title: 'TranslateBot.io: AI Voice-to-Text + Translation Bot for Telegram',
     subtitle: 'Multilingual Communication Assistant',
-    description: 'In multilingual group chats, people struggled to communicate smoothly — especially when some members spoke different languages or preferred voice messages. TranslateBot.io solved this communication gap completely. The AI-powered Telegram bot automatically transcribes voice messages into text, translates them into the desired language, and even generates voice-overs in the recipient\'s language. It works directly inside Telegram chats with no need for installation or switching apps. Teams, families, and communities can now chat freely and understand each other instantly in over 70 languages, all powered by AI automation.',
+    description: 'In multilingual group chats, people struggled to communicate smoothly - especially when some members spoke different languages or preferred voice messages. TranslateBot.io solved this communication gap completely. The AI-powered Telegram bot automatically transcribes voice messages into text, translates them into the desired language, and even generates voice-overs in the recipient\'s language. It works directly inside Telegram chats with no need for installation or switching apps. Teams, families, and communities can now chat freely and understand each other instantly in over 70 languages, all powered by AI automation.',
     functions: [
       'Converts voice messages to text instantly in group or private chats',
       'Translates all messages between 70+ supported languages',
@@ -539,7 +539,7 @@ export const EMPLOYEES: EmployeeData[] = [
     icon: <ClipboardList className="w-12 h-12" />,
     title: 'AI Project Management Assistant',
     subtitle: 'Project Management Assistant or Junior PM',
-    description: 'Most project managers spend the majority of their time coordinating people instead of managing the project. They constantly chase updates, ask for task statuses, remind team members about deadlines, and manually update PM tools. As a result, they lose focus on goals and slip into low-level coordination. The AI Project Management Assistant removes this burden by handling task-level communication, daily prioritisation, effort estimations, and structured reporting. The PM keeps the strategy — the AI handles the micro-coordination.',
+    description: 'Most project managers spend the majority of their time coordinating people instead of managing the project. They constantly chase updates, ask for task statuses, remind team members about deadlines, and manually update PM tools. As a result, they lose focus on goals and slip into low-level coordination. The AI Project Management Assistant removes this burden by handling task-level communication, daily prioritisation, effort estimations, and structured reporting. The PM keeps the strategy - the AI handles the micro-coordination.',
     functions: [
       'Proactively collects status updates from team members directly in chat',
       'Logs all updates into the task/project management system',
@@ -564,7 +564,7 @@ export const EMPLOYEES: EmployeeData[] = [
     icon: <UserCheck className="w-12 h-12" />,
     title: 'AI Pre-Screening Recruiter (Voice & Text)',
     subtitle: 'Recruiter / Talent Acquisition Specialist (first-stage)',
-    description: 'High-volume hiring usually collapses at the very first step: processing hundreds of applicants manually is slow, repetitive, and forces HR teams to spend time collecting basic information instead of actually recruiting. The AI Recruiter automates the initial stage of the hiring process by handling the first contact with candidates over voice or text, asking structured screening questions, collecting essential information, and scheduling interviews with HR. It is designed for mass-market roles and early-stage screening — not for senior or executive positions.',
+    description: 'High-volume hiring usually collapses at the very first step: processing hundreds of applicants manually is slow, repetitive, and forces HR teams to spend time collecting basic information instead of actually recruiting. The AI Recruiter automates the initial stage of the hiring process by handling the first contact with candidates over voice or text, asking structured screening questions, collecting essential information, and scheduling interviews with HR. It is designed for mass-market roles and early-stage screening - not for senior or executive positions.',
     functions: [
       'Handles incoming applications instantly and 24/7 via voice or chat',
       'Conducts first-step screening conversations using predefined questions',
@@ -612,7 +612,7 @@ export const EMPLOYEES: EmployeeData[] = [
     icon: <Image className="w-12 h-12" />,
     title: 'AI Content Generator for Social Media',
     subtitle: 'Content Creator or Social Media Content Producer',
-    description: 'Most companies struggle to post consistently because content creation takes time — especially when every visual and caption must be produced manually. The AI Content Generator automates the creation of ready-to-post social media content, generating both visuals and post texts from scratch. It is designed for fast, high-volume content production, making it ideal for daily social posting and campaign support without overloading a marketing team.',
+    description: 'Most companies struggle to post consistently because content creation takes time - especially when every visual and caption must be produced manually. The AI Content Generator automates the creation of ready-to-post social media content, generating both visuals and post texts from scratch. It is designed for fast, high-volume content production, making it ideal for daily social posting and campaign support without overloading a marketing team.',
     functions: [
       'Suggests ideas for content based on guidelines',
       'Generates visuals and post texts from scratch based on custom created guidelines and product line',
@@ -702,7 +702,7 @@ export const EMPLOYEES: EmployeeData[] = [
     icon: <Settings className="w-12 h-12" />,
     title: 'Kommo CRM Setup + All Communication Channels in One Interface',
     subtitle: 'Multi-Channel CRM Setup',
-    description: 'Most CRMs are used only as a database, while communication still happens in WhatsApp, Telegram, Instagram, or email — making it impossible to track client interactions properly. Kommo is one of the few CRM systems that natively supports full multi-channel communication, allowing all client conversations to live in one interface. We integrate Kommo CRM into your business and connect all messaging channels, so every lead, message, and follow-up is recorded automatically and never lost.',
+    description: 'Most CRMs are used only as a database, while communication still happens in WhatsApp, Telegram, Instagram, or email - making it impossible to track client interactions properly. Kommo is one of the few CRM systems that natively supports full multi-channel communication, allowing all client conversations to live in one interface. We integrate Kommo CRM into your business and connect all messaging channels, so every lead, message, and follow-up is recorded automatically and never lost.',
     functions: [
       'Set up Kommo CRM tailored to the sales process of your business',
       'Connect WhatsApp, Telegram, Instagram DM, Email, and website forms directly into CRM',
@@ -746,7 +746,7 @@ export const EMPLOYEES: EmployeeData[] = [
     icon: <TrendingUp className="w-12 h-12" />,
     title: 'Tailor-Made End-to-End Analytics for Meta & Google Paid Traffic',
     subtitle: 'Revenue-Based Attribution Analytics',
-    description: 'Most agencies claim to deliver end-to-end analytics, but in reality they only track leads — not revenue — because building a real data bridge between ad accounts, CRM, and messaging channels is technically complex. This solution unifies Meta and Google Ads data with real deal outcomes from your CRM, including attribution for leads coming directly from DMs on Instagram, Facebook, or WhatsApp. With full visibility from first click (or first message) to final payment, budget decisions are made on profit, not assumptions.',
+    description: 'Most agencies claim to deliver end-to-end analytics, but in reality they only track leads - not revenue - because building a real data bridge between ad accounts, CRM, and messaging channels is technically complex. This solution unifies Meta and Google Ads data with real deal outcomes from your CRM, including attribution for leads coming directly from DMs on Instagram, Facebook, or WhatsApp. With full visibility from first click (or first message) to final payment, budget decisions are made on profit, not assumptions.',
     functions: [
       'Connect Meta & Google Ads data with CRM sales outcomes',
       'Track the full journey: click → DM → lead → sale',
@@ -778,7 +778,7 @@ export const EMPLOYEES: EmployeeData[] = [
       'Automatically record and transcribe phone conversations',
       'Save call data + traffic source + transcript into a clean Google Sheet',
       'Push call events into analytics and CRM for complete visibility',
-      'Show which campaigns deliver real paying customers — not just clicks',
+      'Show which campaigns deliver real paying customers - not just clicks',
     ],
     channels: ['IP telephony / VoIP', 'CRM', 'Google Sheets for structured logging & transcripts', 'Offline and online advertising channels', 'Google Analytics (optional)'],
     industries: ['Real estate & property sales', 'Travel & hospitality', 'Automotive sales & services', 'Healthcare & clinics', 'Wellness and SPA', 'Education & course enrollments', 'Home services & field operations', 'Marketing & advertising agencies'],
