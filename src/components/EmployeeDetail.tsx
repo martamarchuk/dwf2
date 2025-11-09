@@ -22,6 +22,7 @@ interface BlogArticleData {
 }
 
 interface EmployeeDetailProps {
+  id: string;
   badge: string;
   icon: React.ReactNode;
   title: string;
@@ -38,6 +39,7 @@ interface EmployeeDetailProps {
 }
 
 export default function EmployeeDetail({
+  id,
   badge,
   icon,
   title,
@@ -55,12 +57,19 @@ export default function EmployeeDetail({
   const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [
-    imageUrl,
-    '/projects/moldyfun/website_header.png',
-    '/projects/moldyfun/website_full.png',
-    '/projects/moldyfun/website_item_page.png'
-  ];
+  const getImages = () => {
+    if (id === 'moldyfun-case') {
+      return [
+        imageUrl,
+        '/projects/moldyfun/website_header.png',
+        '/projects/moldyfun/website_full.png',
+        '/projects/moldyfun/website_item_page.png'
+      ];
+    }
+    return [imageUrl];
+  };
+
+  const images = getImages();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -82,9 +91,10 @@ export default function EmployeeDetail({
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-slate-50">
       <div className="relative w-full h-[70vh] min-h-[500px] max-h-[700px] overflow-hidden">
         <img
+          key={currentImageIndex}
           src={images[currentImageIndex]}
           alt={`${title} - Image ${currentImageIndex + 1}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-opacity duration-300"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
 
