@@ -261,9 +261,11 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'If the founder felt the message truly reflected his tone and intention, he simply tapped Send it, and the reply went to the customer instantly. If something needed adjusting - a warmer phrase, a softer push, a clearer explanation — he tapped Edit, rewrote the message, and sent the refined version to the client' },
     { type: 'paragraph', content: 'This stage gave the founder confidence: the AI wasn’t brake his business while we as technical team tuning system and preparing it to full production level autopilot.' },
     { type: 'feature-highlight', content: 'Human-in-the-Loop as Safety Mode', featureTitle: 'Feature', images: [
-      '/projects/moldyfun/insta4.png',
-      '/projects/moldyfun/gmail3.png',
-      '/projects/moldyfun/checkout_header.png'
+      '/projects/moldyfun/human-in-the-loop1.png',
+      '/projects/moldyfun/human-in-the-loop2.png',
+      '/projects/moldyfun/human-in-the-loop3.png',
+      '/projects/moldyfun/human-in-the-loop4.png',
+      '/projects/moldyfun/human-in-the-loop5.png'
     ]},
     { type: 'paragraph', content: 'This tiny shift changed everything. Customers no longer had to “go somewhere else” to complete the purchase. The journey stayed fluid, warm, and uninterrupted.' },
     { type: 'paragraph', content: 'For the founder, it was another layer of relief – knowing that even if someone left the chat, the door to the sale stayed open.' },
