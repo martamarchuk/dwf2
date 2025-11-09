@@ -117,24 +117,28 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                       {hasSingleImage && (
                         <button
                           onClick={() => openModal(section.images![0])}
-                          className="w-full rounded-none sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
+                          onTouchEnd={() => openModal(section.images![0])}
+                          className="w-full rounded-none sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500 touch-manipulation"
                         >
                           <img
                             src={section.images![0]}
                             alt={section.content}
-                            className="w-full h-auto"
+                            className="w-full h-auto select-none"
+                            draggable={false}
                           />
                         </button>
                       )}
                       {section.imageUrl && !section.images && (
                         <button
                           onClick={() => openModal(section.imageUrl!)}
-                          className="w-full rounded-none sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
+                          onTouchEnd={() => openModal(section.imageUrl!)}
+                          className="w-full rounded-none sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500 touch-manipulation"
                         >
                           <img
                             src={section.imageUrl}
                             alt={section.content}
-                            className="w-full h-auto"
+                            className="w-full h-auto select-none"
+                            draggable={false}
                           />
                         </button>
                       )}
@@ -154,12 +158,14 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                           <div className="relative aspect-video bg-slate-100 rounded-2xl overflow-hidden shadow-lg">
                             <button
                               onClick={() => openModal(section.images![0])}
-                              className="w-full h-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500"
+                              onTouchEnd={() => openModal(section.images![0])}
+                              className="w-full h-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 touch-manipulation"
                             >
                               <img
                                 src={section.images[0]}
                                 alt={section.content}
-                                className="w-full h-full object-contain"
+                                className="w-full h-full object-contain select-none"
+                                draggable={false}
                               />
                             </button>
                           </div>
@@ -180,20 +186,32 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
           onClick={closeModal}
+          onTouchEnd={closeModal}
         >
           <button
-            onClick={closeModal}
-            className="absolute top-4 right-4 p-2 bg-white rounded-full hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+            onClick={(e) => {
+              e.stopPropagation();
+              closeModal();
+            }}
+            onTouchEnd={(e) => {
+              e.stopPropagation();
+              closeModal();
+            }}
+            className="absolute top-4 right-4 p-2 bg-white rounded-full hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white touch-manipulation z-[60]"
             aria-label="Close modal"
           >
             <X className="w-6 h-6 text-slate-900" />
           </button>
-          <div className="max-w-7xl max-h-[90vh] overflow-auto">
+          <div
+            className="max-w-7xl max-h-[90vh] overflow-auto"
+            onClick={(e) => e.stopPropagation()}
+            onTouchEnd={(e) => e.stopPropagation()}
+          >
             <img
               src={modalImage}
               alt="Enlarged view"
-              className="w-full h-auto rounded-lg shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
+              className="w-full h-auto rounded-lg shadow-2xl select-none"
+              draggable={false}
             />
           </div>
         </div>
