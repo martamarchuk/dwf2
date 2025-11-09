@@ -247,14 +247,13 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'To protect the sale from getting lost in the chaos of daily life, the system delivered that link in two places at once:' },
     { type: 'paragraph', content: '1 – Directly in the chat, while the desire to purchase was still alive' },
     { type: 'paragraph', content: '2 – By email, so the customer could return and pay later from any device' },
-    { type: 'feature-highlight', content: 'Checkout link to DM and to email', featureTitle: 'Feature', images: [
+    { type: 'feature-highlight', content: 'Instant payment link generation (chat + email)', featureTitle: 'Feature', images: [
       '/projects/moldyfun/insta4.png',
       '/projects/moldyfun/gmail3.png',
       '/projects/moldyfun/checkout_header.png'
     ]},
     { type: 'paragraph', content: 'This tiny shift changed everything. Customers no longer had to “go somewhere else” to complete the purchase. The journey stayed fluid, warm, and uninterrupted.' },
     { type: 'paragraph', content: 'For the founder, it was another layer of relief – knowing that even if someone left the chat, the door to the sale stayed open.' },
-    { type: 'feature-highlight', content: 'Instant payment link generation (chat + email)', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800' },
 
     { type: 'heading', content: '7. The First Real Bottleneck'},
     { type: 'paragraph', content: 'When growth exposes the next weak link' },
