@@ -261,10 +261,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'heading', content: '9. Operational Stability'},
     { type: 'paragraph', content: 'Selling around the clock, without the founder\'s presence' },
     { type: 'slider', content: 'Instagram conversation examples', images: [
-      '/projects/moldyfun/insta1.png',
-      '/projects/moldyfun/insta2.png',
-      '/projects/moldyfun/insta3.png',
-      '/projects/moldyfun/insta4.png'
+      '/projects/moldyfun/insta1.png'
     ]},    
     { type: 'paragraph', content: 'Once SKU support was in place, something shifted – the system no longer needed hand-holding. It began operating with a quiet, steady confidence.' },
     { type: 'paragraph', content: 'The assistant could now reply to anyone, at any hour, in any language detected from the first message. No time zones. No waiting. No "I\'ll answer later."' },
