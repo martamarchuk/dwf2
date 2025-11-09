@@ -1,6 +1,6 @@
 import { Clock, CheckCircle, Zap, Users, ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import ContactForm from './ContactForm';
 import BlogArticle from './BlogArticle';
 
@@ -57,7 +57,7 @@ export default function EmployeeDetail({
   const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const getImages = () => {
+  const images = useMemo(() => {
     if (id === 'moldyfun-case') {
       return [
         imageUrl,
@@ -67,12 +67,11 @@ export default function EmployeeDetail({
       ];
     }
     return [imageUrl];
-  };
-
-  const images = getImages();
+  }, [id, imageUrl]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setCurrentImageIndex(0);
   }, []);
 
   const handleBackToCatalogue = () => {
@@ -80,11 +79,21 @@ export default function EmployeeDetail({
   };
 
   const handlePrevImage = () => {
-    setCurrentImageIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    console.log('Previous clicked, current:', currentImageIndex, 'total images:', images.length);
+    setCurrentImageIndex((prev) => {
+      const newIndex = prev === 0 ? images.length - 1 : prev - 1;
+      console.log('New index:', newIndex);
+      return newIndex;
+    });
   };
 
   const handleNextImage = () => {
-    setCurrentImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    console.log('Next clicked, current:', currentImageIndex, 'total images:', images.length);
+    setCurrentImageIndex((prev) => {
+      const newIndex = prev === images.length - 1 ? 0 : prev + 1;
+      console.log('New index:', newIndex);
+      return newIndex;
+    });
   };
 
   return (
@@ -96,11 +105,11 @@ export default function EmployeeDetail({
           alt={`${title} - Image ${currentImageIndex + 1}`}
           className="w-full h-full object-cover transition-opacity duration-300"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent pointer-events-none"></div>
 
         <button
           onClick={handlePrevImage}
-          className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white rounded-full transition-all duration-200"
+          className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white rounded-full transition-all duration-200 z-20 cursor-pointer"
           aria-label="Previous image"
         >
           <ChevronLeft className="w-6 h-6" />
@@ -108,18 +117,21 @@ export default function EmployeeDetail({
 
         <button
           onClick={handleNextImage}
-          className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white rounded-full transition-all duration-200"
+          className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white rounded-full transition-all duration-200 z-20 cursor-pointer"
           aria-label="Next image"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
 
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
           {images.map((_, index) => (
             <button
               key={index}
-              onClick={() => setCurrentImageIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-200 ${
+              onClick={() => {
+                console.log('Dot clicked, setting index to:', index);
+                setCurrentImageIndex(index);
+              }}
+              className={`w-2 h-2 rounded-full transition-all duration-200 cursor-pointer ${
                 index === currentImageIndex
                   ? 'bg-white w-8'
                   : 'bg-white/50 hover:bg-white/75'
@@ -129,9 +141,9 @@ export default function EmployeeDetail({
           ))}
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-12">
+        <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-12 pointer-events-none">
           <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-4 mb-4 pointer-events-auto">
               <div className="p-4 bg-white/95 backdrop-blur-sm text-orange-600 rounded-2xl">
                 {icon}
               </div>
@@ -139,7 +151,7 @@ export default function EmployeeDetail({
                 {badge}
               </span>
             </div>
-            <h1 className="text-4xl lg:text-6xl font-bold text-white drop-shadow-lg">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white drop-shadow-lg pointer-events-auto">
               {title}
             </h1>
           </div>
