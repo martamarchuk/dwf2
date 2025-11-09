@@ -293,6 +293,10 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'So we mapped the buying journey into six natural stages, then built a follow-up engine that gently re-engages people based on where they stopped. No spam. No pressure. Just timely, relevant check-ins that feel human.' },
     { type: 'paragraph', content: 'The result was immediate. Sales started coming in from people who would’ve disappeared forever – now returning, completing payment, and even thanking the sales manager for the reminder.' },
     { type: 'paragraph', content: 'The founder began forwarding screenshots with a kind of disbelief and joy: revenue was being recovered automatically – without him lifting a finger.' },
+    { type: 'feature-highlight', content: 'Follow-Up clients on autopilot', featureTitle: 'Feature', images: [
+      '/projects/moldyfun/follow-up-kommo.png',
+      '/projects/moldyfun/follow-up-insta.png'
+    ]},
   ],
 },
 
