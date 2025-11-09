@@ -297,6 +297,8 @@ export const EMPLOYEES: EmployeeData[] = [
       '/projects/moldyfun/follow-up-kommo.png',
       '/projects/moldyfun/follow-up-insta.png'
     ]},
+    { type: 'heading', content: 'Could it work for your online store?'},
+    { type: 'paragraph', content: 'If you’d like to see how an AI Sales Assistant could work for your store, send a short message with a link to your Shopify and where your conversations happen (Instagram, WhatsApp or site chat). I’ll review it and tell you honestly if this system can bring you more sales and free up your time — or if you’re not at the stage where it makes sense yet.' },
   ],
 },
 
