@@ -289,13 +289,13 @@ export const EMPLOYEES: EmployeeData[] = [
     ]},
  
     
-    { type: 'heading', content: '7. The First Real Bottleneck'},
+    { type: 'heading', content: '10. The First Real Bottleneck'},
     { type: 'paragraph', content: 'When growth exposes the next weak link' },
     { type: 'paragraph', content: 'As orders began flowing automatically, sales were happening without a founder. But the moment looked smoother from the outside than on the inside.' },
     { type: 'paragraph', content: 'Fulfillment teams struggled, because AI-created orders didn’t include SKU codes needed for packing and shipping. The front-end was automated, but the back-end still depended on additional manual work.' },
     { type: 'paragraph', content: 'It was clear: to be truly hands-free, the system had to support the entire journey – not just the sale.' },
 
-    { type: 'heading', content: '8. Deep Upgrade – adding SKU and product update interface'},
+    { type: 'heading', content: '11. Deep Upgrade – adding SKU and product update interface'},
     { type: 'paragraph', content: 'So the business could run without “just one more manual step”' },
     { type: 'paragraph', content: 'To remove the last dependency on the founder or staff, we rebuilt the system’s logic around SKU-level accuracy. Every product variation was mapped to the correct SKU, so orders could move straight to fulfillment without anyone “fixing” them.' },
     { type: 'paragraph', content: 'We also added a simple interface for the founder to update SKUs anytime, without tech help. Now, when the AI creates an order, it’s fully complete – accurate, structured, and ready to ship.' },  
@@ -313,14 +313,14 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'The assistant could now reply to anyone, at any hour, in any language detected from the first message. No time zones. No waiting. No "I\'ll answer later."' },
     { type: 'paragraph', content: 'For the founder, this was more than convenience. It was a new kind of freedom – the first taste of a business that could run while he lived his life, not the other way around.' },
 
-    { type: 'heading', content: '10. Daily Reporting'},
+    { type: 'heading', content: '12. Daily Reporting'},
     { type: 'paragraph', content: 'Even with everything running on its own, the founder didn’t want to feel detached. He didn’t want dashboards or analytics spreadsheets – he wanted a simple sense of “How did we do today?”' },
     { type: 'paragraph', content: 'So we added a short daily Telegram report. Once a day, he receives a clear snapshot: how many conversations the AI handled, how many orders it created, and the results it generated.' },
     { type: 'paragraph', content: 'No logging in, no searching for data – just a gentle pulse of the business delivered to him, wherever he is.' },
     { type: 'paragraph', content: 'It gave him something he hadn’t felt in a long time: the comfort of being informed, without the weight of being involved.' },
     { type: 'feature-highlight', content: 'Automated daily Telegram performance summary', featureTitle: 'Feature Highlight', imageUrl: '/projects/moldyfun/telegram_daily_reporting.png' },
 
-    { type: 'heading', content: '11. The Follow-Up on autopilot'},
+    { type: 'heading', content: '13. The Follow-Up on autopilot'},
     { type: 'paragraph', content: 'Even with smooth conversations and instant checkout links, one truth remained: many people simply didn’t buy on the first try.' },
     { type: 'paragraph', content: 'Sometimes they got distracted, needed time, or just weren’t ready in that moment. Before, those warm leads quietly faded away – and the founder carried the familiar guilt of “I should have followed up.”' },
     { type: 'paragraph', content: 'So we mapped the buying journey into six natural stages, then built a follow-up engine that gently re-engages people based on where they stopped. No spam. No pressure. Just timely, relevant check-ins that feel human.' },
