@@ -285,7 +285,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'So we added a short daily Telegram report. Once a day, he receives a clear snapshot: how many conversations the AI handled, how many orders it created, and the results it generated.' },
     { type: 'paragraph', content: 'No logging in, no searching for data – just a gentle pulse of the business delivered to him, wherever he is.' },
     { type: 'paragraph', content: 'It gave him something he hadn’t felt in a long time: the comfort of being informed, without the weight of being involved.' },
-    { type: 'feature-highlight', content: 'Automated daily Telegram performance summary', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800' },
+    { type: 'feature-highlight', content: 'Automated daily Telegram performance summary', featureTitle: 'Feature Highlight', imageUrl: '/projects/moldyfun/telegram_daily_reporting.png' },
 
     { type: 'heading', content: '11. The Follow-Up Engine'},
     { type: 'paragraph', content: 'Even with smooth conversations and instant checkout links, one truth remained: many people simply didn’t buy on the first try.' },
