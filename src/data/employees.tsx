@@ -231,7 +231,7 @@ export const EMPLOYEES: EmployeeData[] = [
     { type: 'paragraph', content: 'It confirmed the choice, captured the details, and created the order inside Shopify itself.' },
     { type: 'paragraph', content: 'The first time the founder watched an order appear – fully created by the AI, without him touching a keyboard – something inside him exhaled. For the first time, the business didn’t depend on his presence to turn interest into revenue.' },
     { type: 'paragraph', content: 'The shift was subtle but life-changing: AI wasn’t assisting the sale anymore - It was completing it.' },
-    { type: 'feature-highlight', content: 'Direct order creation inside Shopify', featureTitle: 'Feature Highlight', imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800' },
+    { type: 'feature-highlight', content: 'Direct order creation inside Shopify', featureTitle: 'Feature Highlight', imageUrl: 'public/projects/moldyfun/shopify2_blured.png' },
 
     { type: 'heading', content: '6. The Checkout Experience Upgrade'},
     { type: 'paragraph', content: 'Removing the last friction so customers could say “yes” with ease' },
