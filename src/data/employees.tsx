@@ -174,7 +174,7 @@ export const EMPLOYEES: EmployeeData[] = [
     shareLink: 'https://digitalworkforce.one/#case-study-moldyfun',
     imageUrl: '/projects/moldyfun/website_header.png',
     blogArticle: {
-  title: 'How We Built an AI Sales Agent for a Shopify Store That Sells Worldwide',
+  title: 'How We Built an AI Sales Agent for a Shopify Store That Sells Worldwide – And Freed the Founder From Constant Client Messaging',
   author: {
     name: 'Igor Palatkevich',
     avatarUrl: '/igor-70x70.jpg',
