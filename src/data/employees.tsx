@@ -62,7 +62,7 @@ export const EMPLOYEES: EmployeeData[] = [
     category: 'Ready-to-use (4)',
     badge: 'Ready-to-use',
     icon: <ShoppingCart className="w-12 h-12" />,
-    title: 'Full-cycle AI Sales Agent for e-commerce',
+    title: 'AI Sales Agent for e-commerce (Shopify) that sells on autopilot',
     subtitle: 'In-house shop consultant and top sales agent',
     description: 'A full-cycle AI Sales Agent that responds instantly, consults customers in any language, creates Shopify orders, sends payment links, manages CRM updates, and follows up automatically - all without you touching a keyboard',
     functions: [
