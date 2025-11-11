@@ -3,11 +3,12 @@ import { Clock, X } from 'lucide-react';
 import ImageSlider from './ImageSlider';
 
 interface BlogArticleSection {
-  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight' | 'slider';
+  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight' | 'slider' | 'image-with-text';
   content: string;
   imageUrl?: string;
   featureTitle?: string;
   images?: string[];
+  align?: 'left' | 'right' | 'center';
 }
 
 interface BlogArticleProps {
@@ -173,6 +174,38 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                           </div>
                         </div>
                       )}
+                    </div>
+                  );
+                }
+
+                if (section.type === 'image-with-text' && section.imageUrl) {
+                  const align = section.align || 'left';
+                  const isCenter = align === 'center';
+                  const isRight = align === 'right';
+
+                  return (
+                    <div key={index} className={`my-10 ${isCenter ? 'text-center' : ''}`}>
+                      <div className={`flex flex-col ${isCenter ? 'items-center' : isRight ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 md:gap-8 items-start`}>
+                        <div className={`${isCenter ? 'w-full max-w-2xl' : 'w-full md:w-1/2 flex-shrink-0'}`}>
+                          <button
+                            onClick={() => openModal(section.imageUrl!)}
+                            onTouchEnd={() => openModal(section.imageUrl!)}
+                            className="w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 touch-manipulation"
+                          >
+                            <img
+                              src={section.imageUrl}
+                              alt={section.content}
+                              className="w-full h-auto select-none"
+                              draggable={false}
+                            />
+                          </button>
+                        </div>
+                        <div className={`${isCenter ? 'w-full max-w-3xl' : 'flex-1'}`}>
+                          <p className="text-lg text-slate-700 leading-relaxed">
+                            {section.content}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   );
                 }

@@ -1,11 +1,12 @@
 import { MessageSquare, ShoppingCart, Clock, Share2, CheckCircle, Globe, Zap, Users, Briefcase, Rocket, ChevronDown, ChevronUp, Linkedin, Home, Video, Instagram, Calendar, Phone, Headset, ClipboardList, UserCheck, Target, Image, BookOpen, VideoIcon, PhoneCall, Settings, TrendingUp, Gauge } from 'lucide-react';
 
 interface BlogArticleSection {
-  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight' | 'slider';
+  type: 'heading' | 'paragraph' | 'image' | 'feature-highlight' | 'slider' | 'image-with-text';
   content: string;
   imageUrl?: string;
   featureTitle?: string;
   images?: string[];
+  align?: 'left' | 'right' | 'center';
 }
 
 interface BlogArticleData {
@@ -103,16 +104,18 @@ sections: [
   { type: 'paragraph', content: 'You try to keep up, reply faster, maybe even hire extra help, but messages still slip through' },
   { type: 'paragraph', content: 'Sales are lost not because of bad marketing, but because no one answered in time, fast enough or forgot to follow up' },
 
-  { type: 'heading', content: '2. Why Traditional Solutions Don’t Work' },
-  { type: 'paragraph', content: 'You can’t scale human attention' },
-  { type: 'paragraph', content: 'Hiring more people can fix the bottleneck, but it brings extra costs, which can sometimes be significant for a Shopify store, and it takes time to teach new hires how to approach clients' },
-  { type: 'slider', content: 'Instagram conversation examples', images: [
-    '/projects/ai_sales_agent_shopify/keyboard.webp'
-  ]}, 
-  { type: 'paragraph', content: 'Chatbots sound robotic, pre-scripted, and fail when the question isn’t on their list' },
+  { type: 'heading', content: '2. Why Traditional Solutions Don\'t Work' },
+  { type: 'paragraph', content: 'You can\'t scale human attention' },
+  {
+    type: 'image-with-text',
+    content: 'Hiring more people can fix the bottleneck, but it brings extra costs, which can sometimes be significant for a Shopify store, and it takes time to teach new hires how to approach clients',
+    imageUrl: '/projects/ai_sales_agent_shopify/keyboard.webp',
+    align: 'right'
+  }, 
+  { type: 'paragraph', content: 'Chatbots sound robotic, pre-scripted, and fail when the question isn\'t on their list' },
   { type: 'paragraph', content: 'Basic automation can send a greeting, but not close a sale' },
   { type: 'paragraph', content: 'And no human team can stay online 24/7 across all time zones' },
-  { type: 'paragraph', content: 'What stores really need is instant, personal, intelligent communication – the kind only AI can sustain at scale.\nAI which don’t look like AI, but we will return to this later' },
+  { type: 'paragraph', content: 'What stores really need is instant, personal, intelligent communication – the kind only AI can sustain at scale.\nAI which don\'t look like AI, but we will return to this later' },
 
   { type: 'heading', content: '3. What Is an AI Sales Agent' },
   { type: 'paragraph', content: 'A digital employee, not a chatbot' },
