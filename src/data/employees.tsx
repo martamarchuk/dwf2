@@ -106,6 +106,9 @@ sections: [
   { type: 'heading', content: '2. Why Traditional Solutions Don’t Work' },
   { type: 'paragraph', content: 'You can’t scale human attention' },
   { type: 'paragraph', content: 'Hiring more people can fix the bottleneck, but it brings extra costs, which can sometimes be significant for a Shopify store, and it takes time to teach new hires how to approach clients' },
+  { type: 'slider', content: 'Instagram conversation examples', images: [
+    '/projects/ai_sales_agent_shopify/keyboard.webp'
+  ]}, 
   { type: 'paragraph', content: 'Chatbots sound robotic, pre-scripted, and fail when the question isn’t on their list' },
   { type: 'paragraph', content: 'Basic automation can send a greeting, but not close a sale' },
   { type: 'paragraph', content: 'And no human team can stay online 24/7 across all time zones' },
