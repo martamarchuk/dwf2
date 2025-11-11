@@ -80,6 +80,170 @@ export const EMPLOYEES: EmployeeData[] = [
     integrationTime: '1-3 weeks',
     shareLink: 'https://digitalworkforce.one/#full-cycle-ecommerce-agent',
     imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800',
+    blogArticle: {
+  title: 'How We Built an AI Sales Agent for a Shopify Store and Freed the Founder From Constant Client Messaging',
+  author: {
+    name: 'Igor Palatkevich',
+    avatarUrl: '/igor-70x70.jpg',
+  },
+  readTime: '3-5 min',
+  sections: [
+    { type: 'heading', content: '1. The Origin of the Problem'},
+    { type: 'paragraph', content: 'When demand becomes unmanageable' },
+    { type: 'paragraph', content: 'It started the way many good problems do – with growth.' },
+    { type: 'paragraph', content: 'Every influencer post brought new waves of attention, but instead of excitement, the founder felt dread.' },
+    { type: 'paragraph', content: 'The more his store was seen, the more messages poured in – and the less control he had.' },
+    { type: 'paragraph', content: 'This Shopify business shipped products to customers all over the world. Yet the real sales didn’t happen on the website by the customers themself - they happened by answering messages in Instagram DMs, and by reactivating clients.' },
+    { type: 'paragraph', content: 'And after a single post by a big creator, his inbox could explode with five hundred people asking questions, choosing sizes, checking prices, hesitating, disappearing.' },
+    { type: 'paragraph', content: 'The founder tried to keep up – answering from the phone at dinner, before sleep, on weekends – but each unread chat became a small failure.' },
+    { type: 'paragraph', content: 'At some point, growth stopped feeling like achievement. It felt like a trap.' },
+
+    { type: 'heading', content: '2. Why the Old Approach Failed'},
+    { type: 'paragraph', content: 'When “just hire help” doesn’t solve it' },
+    { type: 'paragraph', content: 'At first, the founder did what most would do – he tried to throw people at the problem. Not a permanent team, just temporary chat operators he hired during peak moments, when influencers tagged the store and the DMs turned into a flood.' },
+    { type: 'paragraph', content: 'On paper, it seemed sensible. In reality, it hurt more than it helped.' },
+    { type: 'paragraph', content: 'These outsourced operators didn’t know the products, didn’t understand the nuances of customer questions, and couldn’t mirror the warmth and personality that made people trust the brand in the first place.' },
+    { type: 'paragraph', content: 'Their replies were safe, generic, mechanical..' },
+    { type: 'paragraph', content: 'Messages slipped through the cracks. Answers lacked confidence and care. And each time he scrolled through those conversations, the founder felt a sting of guilt: “They reached out to me… and this doesn’t feel like me at all.”' },
+    { type: 'paragraph', content: 'Traffic wasn’t the problem.' },
+    { type: 'paragraph', content: 'No amount of outsourced labor could solve that.' },
+
+    { type: 'heading', content: '3. Building the Foundation'},
+    { type: 'paragraph', content: 'Before fixing the system, understand the human side of buying' },
+    { type: 'paragraph', content: 'When the founder finally decided to explore an AI solution, he hoped technology would free him from the constant pressure of DMs. But the truth was – AI alone wouldn’t fix anything unless we as developers first understood how he sold, connected, and built trust.' },
+    { type: 'paragraph', content: 'We began not with software, but with people – the emotional path customers walked before they felt ready to buy.' },
+    { type: 'paragraph', content: 'We collected three essential sources of truth:' },
+    { type: 'paragraph', content: '1. Real customer conversations – past DM exchanges that revealed hesitations, objections, excitement, and the subtle moments when a “maybe” turned into a “yes”' },
+    { type: 'paragraph', content: '2. The full product reality – a complete export of all products and variations from Shopify, so the AI could know the store with the same depth as the founder ' },
+    { type: 'paragraph', content: '3. Tone of Voice mapping – translating the founder’s personality into guidelines, capturing the warmth, reassurance, and authenticity his buyers trusted' },
+
+    { type: 'paragraph', content: 'This step wasn’t about data – it was about preserving the human heartbeat of the business.' },
+    { type: 'paragraph', content: 'Only once we understood what made people feel safe and confident buying from him, only then we begin shaping the first version of the AI assistant.' },
+
+    { type: 'heading', content: '4. First Prototype and Internal Testing'},
+    { type: 'paragraph', content: 'With the foundation in place, we built the first prototype – not to impress, but to observe. We needed to see if an AI could truly hold a conversation that felt personal, warm, and human – the way the founder did.' },
+    { type: 'paragraph', content: 'To do this safely, we created a private testing space in Telegram. There, the founder spoke to the AI as if it were a real customer – asking tricky questions, changing his mind mid-conversation, hesitating, testing tone, pushing its limits.' },
+    { type: 'paragraph', content: 'These were not technical tests. They were emotional ones.' },
+    { type: 'paragraph', content: 'Was the timing right? Did it sound too robotic? Did it reassure, guide, and connect – or simply answer?' },
+    { type: 'paragraph', content: 'In every round, the founder shared feedback – not as a developer, but as someone who genuinely cared about his customers’ experience. We refined, adjusted, trained, and tried again.' },
+    { type: 'paragraph', content: 'And then, something shifted.' },
+    { type: 'paragraph', content: 'For the first time, the founder caught himself forgetting he was testing an AI sales agent. It wasn’t just answering – it was selling with empathy, the way he did.' },
+    { type: 'paragraph', content: 'That moment was the first spark of relief: this could really work.' },
+    { type: 'feature-highlight', content: 'Private Telegram staging environment for realistic testing', featureTitle: 'Feature Highlight', images: [
+      '/projects/moldyfun/telegram-staging1.png',
+      '/projects/moldyfun/telegram-staging2.png',
+      '/projects/moldyfun/telegram-staging3.png',
+      '/projects/moldyfun/telegram-staging4.png'
+    ]},
+
+    { type: 'heading', content: '5. The Breakthrough: Shopify Order Creation'},
+    { type: 'paragraph', content: 'The moment AI stopped assisting – and started selling' },
+    { type: 'paragraph', content: 'Up to this point, the AI felt promising, but it was still a “helper.” It could answer, guide, recommend – but the founder was still the one who had to jump in to finalize the sale.' },
+    { type: 'paragraph', content: 'The real breakthrough came when we upgraded the assistant from a conversational guide to a sales closer.' },
+    { type: 'paragraph', content: 'We connected it directly to Shopify. Now, when a customer reached a clear buying intention, the AI didn’t just encourage the purchase – it took action.' },
+    { type: 'paragraph', content: 'It confirmed the choice, captured the details, and created the order inside Shopify itself.' },
+    { type: 'paragraph', content: 'The first time the founder watched an order appear – fully created by the AI, without him touching a keyboard – something inside him exhaled. For the first time, the business didn’t depend on his presence to turn interest into revenue.' },
+    { type: 'paragraph', content: 'The shift was subtle but life-changing: AI wasn’t assisting the sale anymore - It was completing it.' },
+    { type: 'feature-highlight', content: 'Direct order creation inside Shopify', featureTitle: 'Feature Highlight', imageUrl: '/projects/moldyfun/shopify2_blured.png' },
+
+    { type: 'heading', content: '6. The Checkout Experience Upgrade'},
+    { type: 'paragraph', content: 'Removing the last friction so customers could say “yes” with ease' },
+    { type: 'paragraph', content: 'There was still one moment that often broke the momentum of a sale: sending customers off to pay.' },
+    { type: 'paragraph', content: 'Before, the process looked like this: chat → pause → search for product → go to checkout → try paying later… if they didn’t get distracted first. Many good intentions died in that gap.' },
+    { type: 'paragraph', content: 'So we redesigned the experience around one simple principle: Don’t break the emotional flow of buying.' },
+    { type: 'paragraph', content: 'Once the AI created the order, it collected the customer’s details and instantly generated a personal payment link. But we didn’t stop there.' },
+    { type: 'paragraph', content: 'To protect the sale from getting lost in the chaos of daily life, the system delivered that link in two places at once:' },
+    { type: 'paragraph', content: '1 – Directly in the chat, while the desire to purchase was still alive' },
+    { type: 'paragraph', content: '2 – By email, so the customer could return and pay later from any device' },
+    { type: 'feature-highlight', content: 'Instant payment link generation (chat + email)', featureTitle: 'Feature', images: [
+      '/projects/moldyfun/insta4.png',
+      '/projects/moldyfun/gmail3.png',
+      '/projects/moldyfun/checkout_header.png'
+    ]},
+    { type: 'paragraph', content: 'This tiny shift changed everything. Customers no longer had to “go somewhere else” to complete the purchase. The journey stayed fluid, warm, and uninterrupted.' },
+    { type: 'paragraph', content: 'For the founder, it was another layer of relief – knowing that even if someone left the chat, the door to the sale stayed open.' },
+
+    { type: 'heading', content: '7. Human in the Loop as Safety Mode for early stage'},
+    { type: 'paragraph', content: 'Before letting the AI speak directly with real customers, we created a human-in-the-loop process - a safety buffer that allowed the founder to stay in control while we are rolling out AI sales system' },
+    { type: 'paragraph', content: 'The AI sales agent’s responses appeared first in the Telegram group chat, where each message came with two buttons: Edit and Send it.' },
+    { type: 'paragraph', content: 'If the founder felt the message truly reflected his tone and intention, he simply tapped Send it, and the reply went to the customer instantly. If something needed adjusting - a warmer phrase, a softer push, a clearer explanation - he tapped Edit, rewrote the message, and sent the refined version to the client' },
+    { type: 'feature-highlight', content: 'Human-in-the-Loop as Safety Mode', featureTitle: 'Feature', images: [
+      '/projects/moldyfun/human-in-the-loop1.png',
+      '/projects/moldyfun/human-in-the-loop2.png',
+      '/projects/moldyfun/human-in-the-loop3.png',
+      '/projects/moldyfun/human-in-the-loop4.png',
+      '/projects/moldyfun/human-in-the-loop5.png'
+    ]},
+    { type: 'paragraph', content: 'This stage gave the founder confidence: the AI wasn’t brake his business while we as technical team tuning system and preparing it to full production level autopilot.' },
+
+    { type: 'heading', content: '8. Where the AI Sales Assistant Lives? '},
+    { type: 'paragraph', content: 'We connected the AI Sales Agent to Instagram DMs and the website chat - the two places where all conversations and purchases started.' },
+    { type: 'paragraph', content: 'We also explored integrating TikTok DMs, but regional restrictions on the TikTok side made it impossible to connect as easy as Instagram or website chat, so we left this idea because this sales channel was less important for the founder' },
+    { type: 'feature-highlight', content: 'AI Sales Agent work through Instagram DMs and the website chat', featureTitle: 'Feature', images: [
+      '/projects/moldyfun/website_chat1.png',
+      '/projects/moldyfun/website_chat2.png',
+      '/projects/moldyfun/insta2.png'
+    ]},
+
+    { type: 'heading', content: '9. CRM Integration - Bringing Order to Conversations'},
+    { type: 'paragraph', content: 'As conversations multiplied across Instagram and the website chat, one final step was needed – structure.' },
+    { type: 'paragraph', content: 'We connected the AI Sales Agent to the CRM and built a pipeline that mirrors the real buying journey.' },
+    { type: 'paragraph', content: 'Every inquiry is automatically captured as a lead and moves through stages on its own, reflecting where the customer is in the decision process. For the first time, the founder could see every conversation in one place, in the right order.' },
+    { type: 'paragraph', content: 'What used to feel like juggling dozens of chats by hand now looks more like watching a perfectly tuned machine hum - the business finally runs itself.' },
+ 
+    { type: 'feature-highlight', content: 'CRM Integration - the order in everything', featureTitle: 'Feature', images: [
+      '/projects/moldyfun/kommo_pipeline.png',
+      '/projects/moldyfun/kommo_lead_full screen.png'
+    ]},
+ 
+    
+    { type: 'heading', content: '10. The First Real Bottleneck'},
+    { type: 'paragraph', content: 'When growth exposes the next weak link' },
+    { type: 'paragraph', content: 'As orders began flowing automatically, sales were happening without a founder. But the moment looked smoother from the outside than on the inside.' },
+    { type: 'paragraph', content: 'Fulfillment teams struggled, because AI-created orders didn’t include SKU codes needed for packing and shipping. The front-end was automated, but the back-end still depended on additional manual work.' },
+    { type: 'paragraph', content: 'It was clear: to be truly hands-free, the system had to support the entire journey – not just the sale.' },
+
+    { type: 'heading', content: '11. Deep Upgrade – adding SKU and product update interface'},
+    { type: 'paragraph', content: 'So the business could run without “just one more manual step”' },
+    { type: 'paragraph', content: 'To remove the last dependency on the founder or staff, we rebuilt the system’s logic around SKU-level accuracy. Every product variation was mapped to the correct SKU, so orders could move straight to fulfillment without anyone “fixing” them.' },
+    { type: 'paragraph', content: 'We also added a simple interface for the founder to update SKUs anytime, without tech help. Now, when the AI creates an order, it’s fully complete – accurate, structured, and ready to ship.' },  
+    { type: 'paragraph', content: 'This was the moment the founder stopped worrying about what would break when sales increased. The system was no longer just selling – it was supporting the business like a true team member.' },
+    { type: 'feature-highlight', content: 'Simple interface to update SKUs anytime', featureTitle: 'Feature Highlight', imageUrl: '/projects/moldyfun/product_database_editor.png' },
+    
+    { type: 'heading', content: '12. Operational Stability'},
+    { type: 'paragraph', content: 'Selling around the clock, without the founder\'s presence' },
+    { type: 'slider', content: 'Instagram conversation examples', images: [
+      '/projects/moldyfun/insta1.png',
+      '/projects/moldyfun/insta2.png',
+      '/projects/moldyfun/insta3.png',
+      '/projects/moldyfun/insta4.png'
+    ]},    
+    { type: 'paragraph', content: 'Once SKU support was in place, something shifted – the system no longer needed hand-holding. It began operating with a quiet, steady confidence.' },
+    { type: 'paragraph', content: 'The assistant could now reply to anyone, at any hour, in any language detected from the first message. No time zones. No waiting. No "I\'ll answer later."' },
+    { type: 'paragraph', content: 'For the founder, this was more than convenience. It was a new kind of freedom – the first taste of a business that could run while he lived his life, not the other way around.' },
+
+    { type: 'heading', content: '13. Daily Reporting'},
+    { type: 'paragraph', content: 'Even with everything running on its own, the founder didn’t want to feel detached. He didn’t want dashboards or analytics spreadsheets – he wanted a simple sense of “How did we do today?”' },
+    { type: 'paragraph', content: 'So we added a short daily Telegram report. Once a day, he receives a clear snapshot: how many conversations the AI handled, how many orders it created, and the results it generated.' },
+    { type: 'paragraph', content: 'No logging in, no searching for data – just a gentle pulse of the business delivered to him, wherever he is.' },
+    { type: 'paragraph', content: 'It gave him something he hadn’t felt in a long time: the comfort of being informed, without the weight of being involved.' },
+    { type: 'feature-highlight', content: 'Automated daily Telegram performance summary', featureTitle: 'Feature Highlight', imageUrl: '/projects/moldyfun/telegram_daily_reporting.png' },
+
+    { type: 'heading', content: '14. The Follow-Up on autopilot'},
+    { type: 'paragraph', content: 'Even with smooth conversations and instant checkout links, one truth remained: many people simply didn’t buy on the first try.' },
+    { type: 'paragraph', content: 'Sometimes they got distracted, needed time, or just weren’t ready in that moment. Before, those warm leads quietly faded away – and the founder carried the familiar guilt of “I should have followed up.”' },
+    { type: 'paragraph', content: 'So we mapped the buying journey into six natural stages, then built a follow-up engine that gently re-engages people based on where they stopped. No spam. No pressure. Just timely, relevant check-ins that feel human.' },
+    { type: 'paragraph', content: 'The result was immediate. Sales started coming in from people who would’ve disappeared forever – now returning, completing payment, and even thanking the sales manager for the reminder.' },
+    { type: 'paragraph', content: 'The founder began forwarding screenshots with a kind of disbelief and joy: revenue was being recovered automatically – without him lifting a finger.' },
+    { type: 'feature-highlight', content: 'Follow-Up clients on autopilot', featureTitle: 'Feature', images: [
+      '/projects/moldyfun/follow-up-kommo.png',
+      '/projects/moldyfun/follow-up-insta.png'
+    ]},
+    { type: 'heading', content: 'Could it work for your online store?'},
+    { type: 'paragraph', content: 'If you’d like to see how an AI Sales Assistant could work for your store, send a short message with a link to your Shopify and where your conversations happen (Instagram, WhatsApp or site chat).' },
+    { type: 'paragraph', content: 'I’ll review it and tell you honestly if this system can bring you more sales and free up your time - or if you’re not at the stage where it makes sense yet.' },
+  ],
+},
   },
   {
     id: 'linkedin-sdr',
