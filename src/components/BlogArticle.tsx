@@ -159,18 +159,12 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                       ) : (
                         <div className="relative w-full max-w-5xl mx-auto">
                           <div className="relative bg-slate-100 rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: '16/9' }}>
-                            <button
-                              onClick={() => openModal(section.images![0])}
-                              onTouchEnd={() => openModal(section.images![0])}
-                              className="w-full h-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 touch-manipulation"
-                            >
-                              <img
+                            <img
                                 src={section.images[0]}
                                 alt={section.content}
                                 className="w-full h-full object-contain select-none"
                                 draggable={false}
                               />
-                            </button>
                           </div>
                         </div>
                       )}
