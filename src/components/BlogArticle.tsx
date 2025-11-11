@@ -187,16 +187,12 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                     <div key={index} className={`my-10 ${isCenter ? 'text-center' : ''}`}>
                       <div className={`flex flex-col ${isCenter ? 'items-center' : isRight ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 md:gap-8 items-start`}>
                         <div className={`${isCenter ? 'w-full max-w-2xl' : 'w-auto'} flex-shrink-0`}>
-                          <button
-                            className="w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 touch-manipulation"
-                          >
                             <img
                               src={section.imageUrl}
                               alt={section.content}
                               className="w-auto h-auto max-w-none select-none"
                               draggable={false}
                             />
-                          </button>
                         </div>
                         <div className={`${isCenter ? 'w-full max-w-3xl' : 'flex-1'}`}>
                           <p className="text-lg text-slate-700 leading-relaxed">
