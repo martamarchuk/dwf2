@@ -159,12 +159,18 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                       ) : (
                         <div className="relative w-full max-w-5xl mx-auto">
                           <div className="relative bg-slate-100 rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: '16/9' }}>
-                            <img
+                            <button
+                              onClick={() => openModal(section.images![0])}
+                              onTouchEnd={() => openModal(section.images![0])}
+                              className="w-full h-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 touch-manipulation"
+                            >
+                              <img
                                 src={section.images[0]}
                                 alt={section.content}
                                 className="w-full h-full object-contain select-none"
                                 draggable={false}
                               />
+                            </button>
                           </div>
                         </div>
                       )}
@@ -181,18 +187,12 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                     <div key={index} className={`my-10 ${isCenter ? 'text-center' : ''}`}>
                       <div className={`flex flex-col ${isCenter ? 'items-center' : isRight ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 md:gap-8 items-start`}>
                         <div className={`${isCenter ? 'w-full max-w-2xl' : 'w-auto'} flex-shrink-0`}>
-                          <button
-                            onClick={() => openModal(section.imageUrl!)}
-                            onTouchEnd={() => openModal(section.imageUrl!)}
-                            className="w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500 touch-manipulation"
-                          >
                             <img
                               src={section.imageUrl}
                               alt={section.content}
                               className="w-auto h-auto max-w-none select-none"
                               draggable={false}
                             />
-                          </button>
                         </div>
                         <div className={`${isCenter ? 'w-full max-w-3xl' : 'flex-1'}`}>
                           <p className="text-lg text-slate-700 leading-relaxed">
