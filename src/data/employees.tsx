@@ -79,7 +79,7 @@ export const EMPLOYEES: EmployeeData[] = [
     industries: ['E-commerce & Retail'],
     integrationTime: '1-3 weeks',
     shareLink: 'https://digitalworkforce.one/#full-cycle-ecommerce-agent',
-    imageUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: 'https://images.pexels.com/photos/4065137/pexels-photo-4065137.jpeg?auto=compress&cs=tinysrgb&w=800',
     blogArticle: {
   title: 'How Shopify Stores Put Sales on Autopilot with AI Sales Agents',
   author: {
