@@ -64,7 +64,7 @@ export const EMPLOYEES: EmployeeData[] = [
     icon: <ShoppingCart className="w-12 h-12" />,
     title: 'Full-cycle AI Sales Agent for e-commerce',
     subtitle: 'In-house shop consultant and top sales agent',
-    description: 'A fully independent, full-cycle, text-based AI Sales Agent designed for e-commerce stores like Shopify in any DM or website chat.',
+    description: 'A full-cycle AI Sales Agent that responds instantly, consults customers in any language, creates Shopify orders, sends payment links, manages CRM updates, and follows up automatically - all without you touching a keyboard',
     functions: [
       'Responds instantly to all incoming messages from clients on any DM, WhatsApp or website chat',
       'Engages and consults customers about your products',
@@ -89,7 +89,6 @@ export const EMPLOYEES: EmployeeData[] = [
   readTime: '8-10 min',
   sections: [
     { type: 'paragraph', content: 'Your digital salesperson that never sleeps' },
-    { type: 'paragraph', content: 'A full-cycle AI Sales Agent that responds instantly, consults customers in any language, creates Shopify orders, sends payment links, manages CRM updates, and follows up automatically - all without you touching a keyboard' },
     { type: 'heading', content: '1. The Origin of the Problem'},
     { type: 'paragraph', content: 'Too many conversations, too little time' },
     { type: 'paragraph', content: 'Every growing online store reaches the same breaking point' },
