@@ -186,7 +186,7 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                   return (
                     <div key={index} className={`my-10 ${isCenter ? 'text-center' : ''}`}>
                       <div className={`flex flex-col ${isCenter ? 'items-center' : isRight ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 md:gap-8 items-start`}>
-                        <div className={`${isCenter ? 'w-full max-w-2xl' : 'w-full md:w-1/2 flex-shrink-0'}`}>
+                        <div className={`${isCenter ? 'w-full max-w-2xl' : 'w-auto'} flex-shrink-0`}>
                           <button
                             onClick={() => openModal(section.imageUrl!)}
                             onTouchEnd={() => openModal(section.imageUrl!)}
