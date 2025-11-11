@@ -80,7 +80,7 @@ export const EMPLOYEES: EmployeeData[] = [
     integrationTime: '1-3 weeks',
     shareLink: 'https://digitalworkforce.one/#full-cycle-ecommerce-agent',
     imageUrl: 'https://images.pexels.com/photos/4065137/pexels-photo-4065137.jpeg?auto=compress&cs=tinysrgb&w=800',
-    blogArticle: {
+blogArticle: {
   title: 'How Shopify Stores Put Sales on Autopilot with AI Sales Agents',
   author: {
     name: 'Igor Palatkevich',
@@ -331,7 +331,7 @@ sections: [
     shareLink: 'https://digitalworkforce.one/#case-study-moldyfun',
     imageUrl: '/projects/moldyfun/website_header.png',
     blogArticle: {
-  title: 'How We Built an AI Sales Agent for a Shopify Store and Freed the Founder From Constant Client Messaging',
+  title: 'How we built an AI Sales Agent for a Shopify store and freed the founder from сonstant messaging',
   author: {
     name: 'Igor Palatkevich',
     avatarUrl: '/igor-70x70.jpg',
