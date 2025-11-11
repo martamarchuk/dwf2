@@ -55,14 +55,16 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
               </div>
             </div>
 
-            <!--<div className="relative h-80 lg:h-96 mb-12 rounded-2xl overflow-hidden">
+            {/*
+            <div className="relative h-80 lg:h-96 mb-12 rounded-2xl overflow-hidden">
               <img
                 src="https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Hero"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent"></div>
-            </div>-->
+            </div>
+            */}
 
             <div className="prose prose-lg max-w-none">
               {sections.map((section, index) => {
