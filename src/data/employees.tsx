@@ -105,10 +105,9 @@ sections: [
   { type: 'paragraph', content: 'Sales are lost not because of bad marketing, but because no one answered in time, fast enough or forgot to follow up' },
 
   { type: 'heading', content: '2. Why Traditional Solutions Don\'t Work' },
-  { type: 'paragraph', content: 'You can\'t scale human attention' },
   {
     type: 'image-with-text',
-    content: 'Hiring more people can fix the bottleneck, but it brings extra costs, which can sometimes be significant for a Shopify store, and it takes time to teach new hires how to approach clients',
+    content: 'You can\'t scale human attention\n\nHiring more people can fix the bottleneck, but it brings extra costs, which can sometimes be significant for a Shopify store, and it takes time to teach new hires how to approach clients',
     imageUrl: '/projects/ai_sales_agent_shopify/keyboard.webp',
     align: 'right'
   }, 
