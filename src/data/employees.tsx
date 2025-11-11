@@ -89,7 +89,12 @@ export const EMPLOYEES: EmployeeData[] = [
   readTime: '8-10 min',
 sections: [
   { type: 'paragraph', content: 'Every growing online store eventually reaches the same breaking point – too many conversations, too little time.' },
-
+  { type: 'slider', content: 'Instagram conversation examples', images: [
+    '/projects/moldyfun/insta1.png',
+    '/projects/moldyfun/insta2.png',
+    '/projects/moldyfun/insta3.png',
+    '/projects/moldyfun/insta4.png'
+  ]}, 
   { type: 'heading', content: '1. The Problem Every Online Store Faces' },
   { type: 'paragraph', content: 'Too many conversations, too little time' },
   { type: 'paragraph', content: 'Every growing online store reaches the same breaking point' },
