@@ -108,7 +108,7 @@ sections: [
   {
     type: 'image-with-text',
     content: 'You can\'t scale human attention. Hiring more people can fix the bottleneck, but it brings extra costs, which can sometimes be significant for a Shopify store, and it takes time to teach new hires how to approach clients',
-    imageUrl: '/projects/ai_sales_agent_shopify/keyboard2.webp',
+    imageUrl: 'https://images.pexels.com/photos/4226118/pexels-photo-4226118.jpeg?auto=compress&cs=tinysrgb&w=250',
     align: 'right'
   }, 
   { type: 'paragraph', content: 'Chatbots sound robotic, pre-scripted, and fail when the question isn\'t on their list' },
