@@ -195,7 +195,7 @@ export default function BlogArticle({ title, author, readTime, sections }: BlogA
                             <img
                               src={section.imageUrl}
                               alt={section.content}
-                              className="w-full h-auto select-none"
+                              className="w-auto h-auto max-w-none select-none"
                               draggable={false}
                             />
                           </button>
