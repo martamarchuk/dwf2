@@ -1,3 +1,6 @@
 {
-  "template": "bolt-vite-react-ts"
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "startCommand": "npm start",
+  "devCommand": "npm run dev"
 }
