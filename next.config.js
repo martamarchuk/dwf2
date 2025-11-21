@@ -16,6 +16,10 @@ const nextConfig = {
     workerThreads: false,
     cpus: 1,
   },
+  // Force restart marker
+  env: {
+    NEXT_VERSION: '14.2.18',
+  },
 }
 
 export default nextConfig
