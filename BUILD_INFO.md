@@ -1,7 +1,7 @@
 # Build Information
 
-This is a Next.js 15 application using:
-- Framework: Next.js 15.0.3
+This is a Next.js 14 application using:
+- Framework: Next.js 14.2.18
 - Build: Static Site Generation (SSG)
 - Node: 20.x
 

@@ -1,10 +1,10 @@
 # Digital Workforce
 
-Next.js 15 application with Static Site Generation (SSG) for AI employee catalog.
+Next.js 14 application with Static Site Generation (SSG) for AI employee catalog.
 
 ## Tech Stack
 
-- **Framework**: Next.js 15.0.3 (App Router)
+- **Framework**: Next.js 14.2.18 (App Router)
 - **Language**: TypeScript
 - **Styling**: Custom CSS (no Tailwind)
 - **Node**: 20.x

@@ -8,9 +8,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
-  const { id } = await params;
-  const employee = getEmployeeById(id);
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  const employee = getEmployeeById(params.id);
 
   if (!employee) {
     return {
@@ -30,9 +29,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function EmployeePage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const employee = getEmployeeById(id);
+export default async function EmployeePage({ params }: { params: { id: string } }) {
+  const employee = getEmployeeById(params.id);
 
   if (!employee) {
     notFound();
