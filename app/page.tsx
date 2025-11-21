@@ -6,7 +6,7 @@ export default function HomePage() {
           Digital Workforce
         </h1>
         <p className="text-lg text-slate-600">
-          Migrating to Next.js with SSG...
+          Next.js 14.2.18 - Ready
         </p>
       </div>
     </div>
