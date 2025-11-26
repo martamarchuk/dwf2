@@ -1,8 +1,18 @@
-import { useEffect } from 'react';
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Client-Info, Apikey",
+};
 
-export default function Sitemap() {
-  useEffect(() => {
-    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+Deno.serve(async (req: Request) => {
+  if (req.method === "OPTIONS") {
+    return new Response(null, {
+      status: 200,
+      headers: corsHeaders,
+    });
+  }
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://digitalworkforce.one/</loc>
@@ -168,10 +178,11 @@ export default function Sitemap() {
   </url>
 </urlset>`;
 
-    const blob = new Blob([xml], { type: 'application/xml' });
-    const url = URL.createObjectURL(blob);
-    window.location.href = url;
-  }, []);
-
-  return null;
-}
+  return new Response(xml, {
+    status: 200,
+    headers: {
+      ...corsHeaders,
+      "Content-Type": "application/xml; charset=utf-8",
+    },
+  });
+});
